@@ -1,0 +1,18 @@
+# R-b Reproduction field: the S0 population organised in labs; a claim is certified by two independent reproductions on fresh
+# data draws (variant b). The budget is paired with S0 at the same seed: compute is matched quarter by quarter, and data floats
+# under a ceiling of 2x S0's realized data. The 60-scientist base of the reported repository world R-b-150.
+extends: ../base.yaml
+scenario: R-b
+regime: repository
+population: 60
+horizon_quarters: 8
+population_profile:
+  care: {auto_share: 0.0}
+  throughput: {t1_share: 0.0}
+repository:
+  variant: b
+  reproductions_k: 2
+budget:
+  rule: pairing
+  paired_scenario: S0
+  data_ceiling_multiple: 2.0     # data may float up to 2x S0's realized data; compute is the balanced resource

@@ -1,0 +1,20 @@
+# Smoke test R: a small repository world for the tests, 12 scientists in 3 labs x 6 quarters, variant b, paired with smoke-P.
+# With three labs the baseline view rule (agenda, theory, menu) puts almost no claim in another lab's view, so the smoke
+# test uses the `all` view knob; the reported R-b-150 runs use the baseline rule.
+# Idle lab calls are skipped as in R-b-150; the budget pairs compute only, with data under a 2x ceiling.
+extends: R-b.yaml
+scenario: smoke-R
+population: 12
+horizon_quarters: 6
+handbook:
+  snapshots: [4, 6]
+landscape:
+  fringe_pool: 40
+  legacy: {size: 30, core_share: 0.70, t_threshold: 1.96}
+repository:
+  view_rule: all
+  skip_idle_lab_calls: true
+budget:
+  rule: pairing
+  paired_scenario: smoke-P
+  data_ceiling_multiple: 2.0

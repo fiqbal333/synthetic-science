@@ -1,0 +1,523 @@
+world,metric,n_seeds,mean,min,max,per_seed
+S0-150,nodes_legacy_library,3,100.0,100.0,100.0,s1=100.0; s2=100.0; s3=100.0
+S0-150,nodes_warmstart_published,3,17.0,13.0,20.0,s1=20.0; s2=18.0; s3=13.0
+S0-150,nodes_run_published,3,14.0,8.0,18.0,s1=16.0; s2=18.0; s3=8.0
+S0-150,nodes_run_published_live_authored,3,10.333333333333334,6.0,13.0,s1=12.0; s2=13.0; s3=6.0
+S0-150,studies_not_published,3,172.66666666666666,162.0,183.0,s1=173.0; s2=183.0; s3=162.0
+S0-150,citations_all,3,30.0,16.0,42.0,s1=42.0; s2=32.0; s3=16.0
+S0-150,citations_in_run,3,22.0,14.0,28.0,s1=28.0; s2=24.0; s3=14.0
+S0-150,builds_on_refs_all_studies,3,293.0,230.0,327.0,s1=322.0; s2=327.0; s3=230.0
+S0-150,builds_on_refs_live_studies,3,224.66666666666666,187.0,270.0,s1=217.0; s2=270.0; s3=187.0
+S0-150,refs_per_live_study,3,2.1149786955096688,1.8888888888888888,2.3893805309734515,s1=2.067; s2=2.389; s3=1.889
+S0-150,refs_made_per_run_published_paper,3,1.611111111111111,1.3333333333333333,1.75,s1=1.75; s2=1.333; s3=1.75
+S0-150,share_run_published_citing_anything,3,0.7800925925925926,0.6875,0.875,s1=0.688; s2=0.778; s3=0.875
+S0-150,citations_in_run_per_published_node,3,0.1660184735051045,0.11570247933884298,0.20588235294117646,s1=0.206; s2=0.176; s3=0.116
+S0-150,mean_citations_in_run_legacy_library,3,0.10999999999999999,0.09,0.12,s1=0.12; s2=0.12; s3=0.09
+S0-150,mean_citations_in_run_warmstart_published,3,0.3232193732193733,0.23076923076923078,0.3888888888888889,s1=0.35; s2=0.389; s3=0.231
+S0-150,mean_citations_in_run_run_published,3,0.3634259259259259,0.25,0.5625,s1=0.562; s2=0.278; s3=0.25
+S0-150,share_in_run_citations_to_inherited,3,0.7757936507936508,0.6785714285714286,0.8571428571428571,s1=0.679; s2=0.792; s3=0.857
+S0-150,share_in_run_citations_to_legacy_library,3,0.5238095238095238,0.42857142857142855,0.6428571428571429,s1=0.429; s2=0.5; s3=0.643
+S0-150,share_in_run_citations_to_run_work,3,0.22420634920634921,0.14285714285714285,0.32142857142857145,s1=0.321; s2=0.208; s3=0.143
+S0-150,share_live_refs_to_inherited,3,0.8101317077281657,0.7373271889400922,0.8481481481481481,s1=0.737; s2=0.848; s3=0.845
+S0-150,self_citation_share_in_run_citations,3,0.023809523809523808,0.0,0.07142857142857142,s1=0.071; s2=0.0; s3=0.0
+S0-150,self_citation_share_live_refs,3,0.03752390931391564,0.025925925925925925,0.059907834101382486,s1=0.06; s2=0.026; s3=0.027
+S0-150,self_cites_engine_total,3,9.333333333333334,7.0,12.0,s1=12.0; s2=7.0; s3=9.0
+S0-150,same_question_share_live_refs,3,0.8380303136786376,0.8235294117647058,0.8518518518518519,s1=0.839; s2=0.852; s3=0.824
+S0-150,published_units_true,3,85.33333333333333,80.0,96.0,s1=96.0; s2=80.0; s3=80.0
+S0-150,mean_citations_in_run_per_true_unit,3,0.13958333333333334,0.05,0.2125,s1=0.156; s2=0.212; s3=0.05
+S0-150,share_true_units_cited_in_run,3,0.12430555555555554,0.05,0.1875,s1=0.135; s2=0.188; s3=0.05
+S0-150,mean_live_refs_per_true_unit,3,1.6472222222222221,1.4166666666666667,1.975,s1=1.417; s2=1.975; s3=1.55
+S0-150,share_in_run_citations_to_true,3,0.5099206349206349,0.2857142857142857,0.7083333333333334,s1=0.536; s2=0.708; s3=0.286
+S0-150,share_live_refs_to_true,3,0.6250049666874461,0.5851851851851851,0.6631016042780749,s1=0.627; s2=0.585; s3=0.663
+S0-150,published_units_false,3,45.333333333333336,40.0,56.0,s1=40.0; s2=56.0; s3=40.0
+S0-150,mean_citations_in_run_per_false_unit,3,0.2333333333333333,0.125,0.325,s1=0.325; s2=0.125; s3=0.25
+S0-150,share_false_units_cited_in_run,3,0.16904761904761903,0.10714285714285714,0.2,s1=0.2; s2=0.107; s3=0.2
+S0-150,mean_live_refs_per_false_unit,3,1.866666666666667,1.575,2.025,s1=2.025; s2=2.0; s3=1.575
+S0-150,share_in_run_citations_to_false,3,0.4900793650793651,0.2916666666666667,0.7142857142857143,s1=0.464; s2=0.292; s3=0.714
+S0-150,share_live_refs_to_false,3,0.37499503331255385,0.33689839572192515,0.4148148148148148,s1=0.373; s2=0.415; s3=0.337
+S0-150,published_units_unknown,3,0.3333333333333333,0.0,1.0,s1=0.0; s2=0.0; s3=1.0
+S0-150,mean_citations_in_run_per_unknown_unit,1,0.0,0.0,0.0,s1=n/a; s2=n/a; s3=0.0
+S0-150,share_unknown_units_cited_in_run,1,0.0,0.0,0.0,s1=n/a; s2=n/a; s3=0.0
+S0-150,mean_live_refs_per_unknown_unit,1,0.0,0.0,0.0,s1=n/a; s2=n/a; s3=0.0
+S0-150,share_in_run_citations_to_unknown,3,0.0,0.0,0.0,s1=0.0; s2=0.0; s3=0.0
+S0-150,share_live_refs_to_unknown,3,0.0,0.0,0.0,s1=0.0; s2=0.0; s3=0.0
+S0-150,inherited_false_units,3,41.666666666666664,34.0,51.0,s1=34.0; s2=51.0; s3=40.0
+S0-150,inherited_false_overturned_by_Q20,3,4.333333333333333,2.0,7.0,s1=2.0; s2=4.0; s3=7.0
+S0-150,inherited_false_discovery_units,3,37.666666666666664,30.0,48.0,s1=30.0; s2=48.0; s3=35.0
+S0-150,inherited_false_discovery_overturned_by_Q20,3,4.0,2.0,6.0,s1=2.0; s2=4.0; s3=6.0
+S0-150,inherited_false_citations_before_overturn,3,0.6666666666666666,0.0,1.0,s1=1.0; s2=0.0; s3=1.0
+S0-150,inherited_false_citations_after_overturn,3,4.666666666666667,2.0,8.0,s1=2.0; s2=4.0; s3=8.0
+S0-150,inherited_false_citations_never_overturned,3,2.6666666666666665,1.0,6.0,s1=6.0; s2=1.0; s3=1.0
+S0-150,inherited_false_citations_per_unit_quarter_before,3,0.015942028985507246,0.0,0.03333333333333333,s1=0.033; s2=0.0; s3=0.014
+S0-150,inherited_false_citations_per_unit_quarter_after,3,0.15978090766823164,0.11267605633802817,0.2,s1=0.2; s2=0.167; s3=0.113
+S0-150,inherited_false_citations_per_unit_quarter_never_overturned,3,0.003984660434128519,0.0010638297872340426,0.009375,s1=0.009; s2=0.001; s3=0.002
+S0-150,inherited_true_citations_per_unit_quarter,3,0.005877192565366858,0.0013698630136986301,0.010447761194029851,s1=0.006; s2=0.01; s3=0.001
+S0-150,inherited_false_live_refs_before_overturn,3,17.0,13.0,21.0,s1=13.0; s2=21.0; s3=17.0
+S0-150,inherited_false_live_refs_after_overturn,3,11.666666666666666,0.0,20.0,s1=0.0; s2=15.0; s3=20.0
+S0-150,inherited_false_live_refs_never_overturned,3,46.666666666666664,26.0,68.0,s1=46.0; s2=68.0; s3=26.0
+S0-150,inherited_false_live_refs_per_unit_quarter_before,3,0.35157004830917876,0.2463768115942029,0.43333333333333335,s1=0.433; s2=0.375; s3=0.246
+S0-150,inherited_false_live_refs_per_unit_quarter_after,3,0.3022300469483568,0.0,0.625,s1=0.0; s2=0.625; s3=0.282
+S0-150,inherited_false_live_refs_per_unit_quarter_never_overturned,3,0.06120312164195143,0.03939393939393939,0.07234042553191489,s1=0.072; s2=0.072; s3=0.039
+S0-150,inherited_true_live_refs_per_unit_quarter,3,0.07235766849093177,0.05872093023255814,0.09328358208955224,s1=0.059; s2=0.093; s3=0.065
+S0-150,in_run_citations_made_by_first_study,3,3.3333333333333335,3.0,4.0,s1=3.0; s2=3.0; s3=4.0
+S0-150,run_papers_first_study,3,5.0,3.0,6.0,s1=6.0; s2=6.0; s3=3.0
+S0-150,mean_citations_in_run_received_by_first_study,3,0.611111111111111,0.3333333333333333,1.0,s1=1.0; s2=0.5; s3=0.333
+S0-150,mean_refs_made_by_first_study_run_papers,3,0.7777777777777777,0.5,1.3333333333333333,s1=0.5; s2=0.5; s3=1.333
+S0-150,in_run_citations_made_by_replication,3,12.333333333333334,3.0,20.0,s1=20.0; s2=14.0; s3=3.0
+S0-150,run_papers_replication,3,5.0,2.0,7.0,s1=7.0; s2=6.0; s3=2.0
+S0-150,mean_citations_in_run_received_by_replication,3,0.15079365079365079,0.0,0.2857142857142857,s1=0.286; s2=0.167; s3=0.0
+S0-150,mean_refs_made_by_replication_run_papers,3,2.2301587301587302,1.5,2.857142857142857,s1=2.857; s2=2.333; s3=1.5
+S0-150,in_run_citations_made_by_extension,3,3.3333333333333335,1.0,7.0,s1=2.0; s2=7.0; s3=1.0
+S0-150,run_papers_extension,3,3.0,1.0,6.0,s1=2.0; s2=6.0; s3=1.0
+S0-150,mean_citations_in_run_received_by_extension,3,0.2222222222222222,0.0,0.5,s1=0.5; s2=0.167; s3=0.0
+S0-150,mean_refs_made_by_extension_run_papers,3,1.0555555555555556,1.0,1.1666666666666667,s1=1.0; s2=1.167; s3=1.0
+S0-150,in_run_citations_made_by_contradiction,3,3.0,0.0,6.0,s1=3.0; s2=0.0; s3=6.0
+S0-150,run_papers_contradiction,3,1.0,0.0,2.0,s1=1.0; s2=0.0; s3=2.0
+S0-150,mean_citations_in_run_received_by_contradiction,2,0.25,0.0,0.5,s1=0.0; s2=n/a; s3=0.5
+S0-150,mean_refs_made_by_contradiction_run_papers,2,3.0,3.0,3.0,s1=3.0; s2=n/a; s3=3.0
+S0-150,gini_in_run_citations_published_nodes,3,0.8845389050937179,0.8633578431372549,0.9126328217237308,s1=0.878; s2=0.863; s3=0.913
+S0-150,top10pct_share_in_run_citations,3,0.8194444444444445,0.7083333333333334,1.0,s1=0.75; s2=0.708; s3=1.0
+S0-150,gini_live_refs_published_nodes,3,0.7108063636981417,0.6558536261987891,0.769212523719165,s1=0.769; s2=0.707; s3=0.656
+S0-150,top10pct_share_live_refs,3,0.49617368833055114,0.45185185185185184,0.5714285714285714,s1=0.571; s2=0.452; s3=0.465
+S0-150,share_published_nodes_never_cited_in_run,3,0.8640009722897424,0.8455882352941176,0.9008264462809917,s1=0.846; s2=0.846; s3=0.901
+S0-150,questions_with_earliest_and_later,3,12.666666666666666,9.0,15.0,s1=15.0; s2=14.0; s3=9.0
+S0-150,mean_in_run_citations_earliest_cohort,3,0.6808670256946119,0.5757575757575758,0.8461538461538461,s1=0.576; s2=0.621; s3=0.846
+S0-150,mean_in_run_citations_later_papers,3,0.19019771651350595,0.15789473684210525,0.2222222222222222,s1=0.19; s2=0.158; s3=0.222
+S0-150,mean_live_refs_earliest_cohort,3,3.5956380783966995,3.3333333333333335,4.068965517241379,s1=3.333; s2=4.069; s3=3.385
+S0-150,mean_live_refs_later_papers,3,2.9133945976051234,2.1052631578947367,3.5238095238095237,s1=3.524; s2=2.105; s3=3.111
+S0-150,max_citation_depth,3,2.0,2.0,2.0,s1=2.0; s2=2.0; s3=2.0
+S0-150,mean_citation_depth_run_published,3,0.9027777777777778,0.8333333333333334,1.0,s1=0.875; s2=0.833; s3=1.0
+S0-150,max_builds_on_depth,3,2.6666666666666665,2.0,3.0,s1=3.0; s2=3.0; s3=2.0
+S0-150,mean_builds_on_depth_live_studies,3,1.1632149561353102,1.0909090909090908,1.2571428571428571,s1=1.257; s2=1.142; s3=1.091
+S0-150,claims_filed,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,claims_filed_focal,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,certified_focal_run_units,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,certified_all_kinds_run,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_certified_focal_2plus_data_labs,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_certified_all_kinds_2plus_data_labs,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,mean_data_labs_per_certified_focal,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_certified_focal_2plus_labs_indep_of_proposer,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_certified_focal_corroborated_at_cert,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_certified_focal_on_reused_data,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_certified_focal_on_other_labs_data,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,analyses,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_analyses_reusing_deposit,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_analyses_using_other_labs_deposit,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_analyses_pooled,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,deposits_analysis,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,deposits_verification,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,deposits_decisive_test,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_analysis_deposits_reused,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_analysis_deposits_used_by_other_lab,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,mean_analyses_per_analysis_deposit,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_verification_deposits_reused_in_analyses,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,claims_first_claim,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,claims_replication,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,claims_extension,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,claims_contradiction,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_claims_linked_to_earlier_claim,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_focal_claims_linked_to_earlier_claim,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,claim_references_all,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,claim_references_stated,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_stated_refs_to_inherited,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_stated_refs_to_own_lab,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_stated_refs_to_false,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_stated_refs_to_true,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,max_reference_depth,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,mean_reference_depth_live_claims,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,mean_reference_depth_live_focal,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,filed_focal_true,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_verified,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_reproduced_at_least_once,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_ever_endorsed,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_certified_at_Q20,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_with_endorse_vote,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_with_challenge_vote,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_referenced_by_later_claim,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_true_focal_deposits_reused_later,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,mean_endorse_votes_true_focal,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,filed_focal_false,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_verified,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_reproduced_at_least_once,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_ever_endorsed,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_certified_at_Q20,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_with_endorse_vote,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_with_challenge_vote,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_referenced_by_later_claim,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_false_focal_deposits_reused_later,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,mean_endorse_votes_false_focal,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,filed_focal_unknown,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_verified,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_reproduced_at_least_once,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_ever_endorsed,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_certified_at_Q20,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_with_endorse_vote,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_with_challenge_vote,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_referenced_by_later_claim,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,share_unknown_focal_deposits_reused_later,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,mean_endorse_votes_unknown_focal,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_before_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_after_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_per_unit_quarter_before,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_per_unit_quarter_after,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_per_unit_quarter_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_true_refs_per_unit_quarter,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_stated_before_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_stated_after_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_stated_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_stated_per_unit_quarter_before,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_stated_per_unit_quarter_after,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_false_refs_stated_per_unit_quarter_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inherited_true_refs_stated_per_unit_quarter,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,gini_endorse_votes_certified_focal_run,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,gini_refs_received_certified_focal_all,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,top10pct_share_refs_received_certified_focal_all,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0P-150,nodes_legacy_library,2,100.0,100.0,100.0,s1=100.0; s2=100.0
+S0P-150,nodes_warmstart_published,2,19.0,18.0,20.0,s1=20.0; s2=18.0
+S0P-150,nodes_run_published,2,12.5,12.0,13.0,s1=12.0; s2=13.0
+S0P-150,nodes_run_published_live_authored,2,10.0,10.0,10.0,s1=10.0; s2=10.0
+S0P-150,studies_not_published,2,182.5,179.0,186.0,s1=179.0; s2=186.0
+S0P-150,citations_all,2,31.0,31.0,31.0,s1=31.0; s2=31.0
+S0P-150,citations_in_run,2,20.0,17.0,23.0,s1=17.0; s2=23.0
+S0P-150,builds_on_refs_all_studies,2,321.0,312.0,330.0,s1=312.0; s2=330.0
+S0P-150,builds_on_refs_live_studies,2,240.5,210.0,271.0,s1=210.0; s2=271.0
+S0P-150,refs_per_live_study,2,2.202029131935674,1.9626168224299065,2.4414414414414414,s1=1.963; s2=2.441
+S0P-150,refs_made_per_run_published_paper,2,1.592948717948718,1.4166666666666667,1.7692307692307692,s1=1.417; s2=1.769
+S0P-150,share_run_published_citing_anything,2,0.7948717948717949,0.6666666666666666,0.9230769230769231,s1=0.667; s2=0.923
+S0P-150,citations_in_run_per_published_node,2,0.1521801989359241,0.12878787878787878,0.17557251908396945,s1=0.129; s2=0.176
+S0P-150,mean_citations_in_run_legacy_library,2,0.1,0.09,0.11,s1=0.09; s2=0.11
+S0P-150,mean_citations_in_run_warmstart_published,2,0.2722222222222222,0.1,0.4444444444444444,s1=0.1; s2=0.444
+S0P-150,mean_citations_in_run_run_published,2,0.40384615384615385,0.3076923076923077,0.5,s1=0.5; s2=0.308
+S0P-150,share_in_run_citations_to_inherited,2,0.7365728900255755,0.6470588235294118,0.8260869565217391,s1=0.647; s2=0.826
+S0P-150,share_in_run_citations_to_legacy_library,2,0.5038363171355499,0.4782608695652174,0.5294117647058824,s1=0.529; s2=0.478
+S0P-150,share_in_run_citations_to_run_work,2,0.26342710997442453,0.17391304347826086,0.35294117647058826,s1=0.353; s2=0.174
+S0P-150,share_live_refs_to_inherited,2,0.864294500087858,0.8523985239852399,0.8761904761904762,s1=0.876; s2=0.852
+S0P-150,self_citation_share_in_run_citations,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,self_citation_share_live_refs,2,0.04940256545422597,0.03690036900369004,0.06190476190476191,s1=0.062; s2=0.037
+S0P-150,self_cites_engine_total,2,11.0,9.0,13.0,s1=13.0; s2=9.0
+S0P-150,same_question_share_live_refs,2,0.8090581620101915,0.7952380952380952,0.8228782287822878,s1=0.795; s2=0.823
+S0P-150,published_units_true,2,84.5,78.0,91.0,s1=91.0; s2=78.0
+S0P-150,mean_citations_in_run_per_true_unit,2,0.12271062271062272,0.06593406593406594,0.1794871794871795,s1=0.066; s2=0.179
+S0P-150,share_true_units_cited_in_run,2,0.10989010989010989,0.06593406593406594,0.15384615384615385,s1=0.066; s2=0.154
+S0P-150,mean_live_refs_per_true_unit,2,1.7326007326007327,1.2857142857142858,2.1794871794871793,s1=1.286; s2=2.179
+S0P-150,share_in_run_citations_to_true,2,0.4808184143222507,0.35294117647058826,0.6086956521739131,s1=0.353; s2=0.609
+S0P-150,share_live_refs_to_true,2,0.592224565102794,0.5571428571428572,0.6273062730627307,s1=0.557; s2=0.627
+S0P-150,published_units_false,2,47.0,41.0,53.0,s1=41.0; s2=53.0
+S0P-150,mean_citations_in_run_per_false_unit,2,0.21905200184077311,0.16981132075471697,0.2682926829268293,s1=0.268; s2=0.17
+S0P-150,share_false_units_cited_in_run,2,0.14473078693051084,0.09433962264150944,0.1951219512195122,s1=0.195; s2=0.094
+S0P-150,mean_live_refs_per_false_unit,2,2.08697653014266,1.9056603773584906,2.268292682926829,s1=2.268; s2=1.906
+S0P-150,share_in_run_citations_to_false,2,0.5191815856777494,0.391304347826087,0.6470588235294118,s1=0.647; s2=0.391
+S0P-150,share_live_refs_to_false,2,0.40777543489720613,0.3726937269372694,0.44285714285714284,s1=0.443; s2=0.373
+S0P-150,published_units_unknown,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,mean_citations_in_run_per_unknown_unit,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_units_cited_in_run,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_live_refs_per_unknown_unit,0,,,,s1=n/a; s2=n/a
+S0P-150,share_in_run_citations_to_unknown,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,share_live_refs_to_unknown,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,inherited_false_units,2,42.5,34.0,51.0,s1=34.0; s2=51.0
+S0P-150,inherited_false_overturned_by_Q20,2,2.5,2.0,3.0,s1=2.0; s2=3.0
+S0P-150,inherited_false_discovery_units,2,39.0,30.0,48.0,s1=30.0; s2=48.0
+S0P-150,inherited_false_discovery_overturned_by_Q20,2,2.5,2.0,3.0,s1=2.0; s2=3.0
+S0P-150,inherited_false_citations_before_overturn,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,inherited_false_citations_after_overturn,2,4.5,2.0,7.0,s1=2.0; s2=7.0
+S0P-150,inherited_false_citations_never_overturned,2,2.5,2.0,3.0,s1=3.0; s2=2.0
+S0P-150,inherited_false_citations_per_unit_quarter_before,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,inherited_false_citations_per_unit_quarter_after,2,0.22587719298245612,0.08333333333333333,0.3684210526315789,s1=0.083; s2=0.368
+S0P-150,inherited_false_citations_per_unit_quarter_never_overturned,2,0.0033854166666666668,0.0020833333333333333,0.0046875,s1=0.005; s2=0.002
+S0P-150,inherited_true_citations_per_unit_quarter,2,0.005475529330093718,0.0034883720930232558,0.007462686567164179,s1=0.003; s2=0.007
+S0P-150,inherited_false_live_refs_before_overturn,2,8.0,2.0,14.0,s1=2.0; s2=14.0
+S0P-150,inherited_false_live_refs_after_overturn,2,13.0,4.0,22.0,s1=4.0; s2=22.0
+S0P-150,inherited_false_live_refs_never_overturned,2,62.0,61.0,63.0,s1=63.0; s2=61.0
+S0P-150,inherited_false_live_refs_per_unit_quarter_before,2,0.23323170731707318,0.125,0.34146341463414637,s1=0.125; s2=0.341
+S0P-150,inherited_false_live_refs_per_unit_quarter_after,2,0.662280701754386,0.16666666666666666,1.1578947368421053,s1=0.167; s2=1.158
+S0P-150,inherited_false_live_refs_per_unit_quarter_never_overturned,2,0.08098958333333334,0.06354166666666666,0.0984375,s1=0.098; s2=0.064
+S0P-150,inherited_true_live_refs_per_unit_quarter,2,0.08343023255813953,0.06686046511627906,0.1,s1=0.067; s2=0.1
+S0P-150,in_run_citations_made_by_first_study,2,3.5,0.0,7.0,s1=0.0; s2=7.0
+S0P-150,run_papers_first_study,2,4.0,4.0,4.0,s1=4.0; s2=4.0
+S0P-150,mean_citations_in_run_received_by_first_study,2,0.5,0.25,0.75,s1=0.75; s2=0.25
+S0P-150,mean_refs_made_by_first_study_run_papers,2,0.875,0.0,1.75,s1=0.0; s2=1.75
+S0P-150,in_run_citations_made_by_replication,2,4.5,3.0,6.0,s1=6.0; s2=3.0
+S0P-150,run_papers_replication,2,2.0,2.0,2.0,s1=2.0; s2=2.0
+S0P-150,mean_citations_in_run_received_by_replication,2,0.25,0.0,0.5,s1=0.0; s2=0.5
+S0P-150,mean_refs_made_by_replication_run_papers,2,2.25,1.5,3.0,s1=3.0; s2=1.5
+S0P-150,in_run_citations_made_by_extension,2,10.0,8.0,12.0,s1=8.0; s2=12.0
+S0P-150,run_papers_extension,2,5.5,5.0,6.0,s1=5.0; s2=6.0
+S0P-150,mean_citations_in_run_received_by_extension,2,0.4666666666666667,0.3333333333333333,0.6,s1=0.6; s2=0.333
+S0P-150,mean_refs_made_by_extension_run_papers,2,1.8,1.6,2.0,s1=1.6; s2=2.0
+S0P-150,in_run_citations_made_by_contradiction,2,2.0,1.0,3.0,s1=3.0; s2=1.0
+S0P-150,run_papers_contradiction,2,1.0,1.0,1.0,s1=1.0; s2=1.0
+S0P-150,mean_citations_in_run_received_by_contradiction,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,mean_refs_made_by_contradiction_run_papers,2,2.0,1.0,3.0,s1=3.0; s2=1.0
+S0P-150,gini_in_run_citations_published_nodes,2,0.9039361075269199,0.8974444075672088,0.910427807486631,s1=0.91; s2=0.897
+S0P-150,top10pct_share_in_run_citations,2,0.9347826086956521,0.8695652173913043,1.0,s1=1.0; s2=0.87
+S0P-150,gini_live_refs_published_nodes,2,0.70565439024074,0.6652770344497339,0.746031746031746,s1=0.746; s2=0.665
+S0P-150,top10pct_share_live_refs,2,0.4799156562994201,0.41697416974169743,0.5428571428571428,s1=0.543; s2=0.417
+S0P-150,share_published_nodes_never_cited_in_run,2,0.8820842007864909,0.8702290076335878,0.8939393939393939,s1=0.894; s2=0.87
+S0P-150,questions_with_earliest_and_later,2,12.0,11.0,13.0,s1=13.0; s2=11.0
+S0P-150,mean_in_run_citations_earliest_cohort,2,0.5229885057471264,0.3793103448275862,0.6666666666666666,s1=0.379; s2=0.667
+S0P-150,mean_in_run_citations_later_papers,2,0.2673611111111111,0.2222222222222222,0.3125,s1=0.222; s2=0.312
+S0P-150,mean_live_refs_earliest_cohort,2,3.5213464696223316,2.1379310344827585,4.904761904761905,s1=2.138; s2=4.905
+S0P-150,mean_live_refs_later_papers,2,2.9305555555555554,2.75,3.111111111111111,s1=3.111; s2=2.75
+S0P-150,max_citation_depth,2,2.5,2.0,3.0,s1=3.0; s2=2.0
+S0P-150,mean_citation_depth_run_published,2,1.1538461538461537,1.0,1.3076923076923077,s1=1.0; s2=1.308
+S0P-150,max_builds_on_depth,2,3.0,3.0,3.0,s1=3.0; s2=3.0
+S0P-150,mean_builds_on_depth_live_studies,2,1.2234150037888356,1.1495327102803738,1.2972972972972974,s1=1.15; s2=1.297
+S0P-150,claims_filed,0,,,,s1=n/a; s2=n/a
+S0P-150,claims_filed_focal,0,,,,s1=n/a; s2=n/a
+S0P-150,certified_focal_run_units,0,,,,s1=n/a; s2=n/a
+S0P-150,certified_all_kinds_run,0,,,,s1=n/a; s2=n/a
+S0P-150,share_certified_focal_2plus_data_labs,0,,,,s1=n/a; s2=n/a
+S0P-150,share_certified_all_kinds_2plus_data_labs,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_data_labs_per_certified_focal,0,,,,s1=n/a; s2=n/a
+S0P-150,share_certified_focal_2plus_labs_indep_of_proposer,0,,,,s1=n/a; s2=n/a
+S0P-150,share_certified_focal_corroborated_at_cert,0,,,,s1=n/a; s2=n/a
+S0P-150,share_certified_focal_on_reused_data,0,,,,s1=n/a; s2=n/a
+S0P-150,share_certified_focal_on_other_labs_data,0,,,,s1=n/a; s2=n/a
+S0P-150,analyses,0,,,,s1=n/a; s2=n/a
+S0P-150,share_analyses_reusing_deposit,0,,,,s1=n/a; s2=n/a
+S0P-150,share_analyses_using_other_labs_deposit,0,,,,s1=n/a; s2=n/a
+S0P-150,share_analyses_pooled,0,,,,s1=n/a; s2=n/a
+S0P-150,deposits_analysis,0,,,,s1=n/a; s2=n/a
+S0P-150,deposits_verification,0,,,,s1=n/a; s2=n/a
+S0P-150,deposits_decisive_test,0,,,,s1=n/a; s2=n/a
+S0P-150,share_analysis_deposits_reused,0,,,,s1=n/a; s2=n/a
+S0P-150,share_analysis_deposits_used_by_other_lab,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_analyses_per_analysis_deposit,0,,,,s1=n/a; s2=n/a
+S0P-150,share_verification_deposits_reused_in_analyses,0,,,,s1=n/a; s2=n/a
+S0P-150,claims_first_claim,0,,,,s1=n/a; s2=n/a
+S0P-150,claims_replication,0,,,,s1=n/a; s2=n/a
+S0P-150,claims_extension,0,,,,s1=n/a; s2=n/a
+S0P-150,claims_contradiction,0,,,,s1=n/a; s2=n/a
+S0P-150,share_claims_linked_to_earlier_claim,0,,,,s1=n/a; s2=n/a
+S0P-150,share_focal_claims_linked_to_earlier_claim,0,,,,s1=n/a; s2=n/a
+S0P-150,claim_references_all,0,,,,s1=n/a; s2=n/a
+S0P-150,claim_references_stated,0,,,,s1=n/a; s2=n/a
+S0P-150,share_stated_refs_to_inherited,0,,,,s1=n/a; s2=n/a
+S0P-150,share_stated_refs_to_own_lab,0,,,,s1=n/a; s2=n/a
+S0P-150,share_stated_refs_to_false,0,,,,s1=n/a; s2=n/a
+S0P-150,share_stated_refs_to_true,0,,,,s1=n/a; s2=n/a
+S0P-150,max_reference_depth,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_reference_depth_live_claims,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_reference_depth_live_focal,0,,,,s1=n/a; s2=n/a
+S0P-150,filed_focal_true,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_verified,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_reproduced_at_least_once,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_ever_endorsed,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_certified_at_Q20,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_with_endorse_vote,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_with_challenge_vote,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_referenced_by_later_claim,0,,,,s1=n/a; s2=n/a
+S0P-150,share_true_focal_deposits_reused_later,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_endorse_votes_true_focal,0,,,,s1=n/a; s2=n/a
+S0P-150,filed_focal_false,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_verified,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_reproduced_at_least_once,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_ever_endorsed,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_certified_at_Q20,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_with_endorse_vote,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_with_challenge_vote,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_referenced_by_later_claim,0,,,,s1=n/a; s2=n/a
+S0P-150,share_false_focal_deposits_reused_later,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_endorse_votes_false_focal,0,,,,s1=n/a; s2=n/a
+S0P-150,filed_focal_unknown,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_verified,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_reproduced_at_least_once,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_ever_endorsed,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_certified_at_Q20,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_with_endorse_vote,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_with_challenge_vote,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_referenced_by_later_claim,0,,,,s1=n/a; s2=n/a
+S0P-150,share_unknown_focal_deposits_reused_later,0,,,,s1=n/a; s2=n/a
+S0P-150,mean_endorse_votes_unknown_focal,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_before_overturn,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_after_overturn,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_never_overturned,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_per_unit_quarter_before,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_per_unit_quarter_after,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_per_unit_quarter_never_overturned,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_true_refs_per_unit_quarter,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_stated_before_overturn,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_stated_after_overturn,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_stated_never_overturned,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_stated_per_unit_quarter_before,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_stated_per_unit_quarter_after,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_false_refs_stated_per_unit_quarter_never_overturned,0,,,,s1=n/a; s2=n/a
+S0P-150,inherited_true_refs_stated_per_unit_quarter,0,,,,s1=n/a; s2=n/a
+S0P-150,gini_endorse_votes_certified_focal_run,0,,,,s1=n/a; s2=n/a
+S0P-150,gini_refs_received_certified_focal_all,0,,,,s1=n/a; s2=n/a
+S0P-150,top10pct_share_refs_received_certified_focal_all,0,,,,s1=n/a; s2=n/a
+R-b-150,nodes_legacy_library,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,nodes_warmstart_published,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,nodes_run_published,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,nodes_run_published_live_authored,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,studies_not_published,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,citations_all,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,citations_in_run,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,builds_on_refs_all_studies,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,builds_on_refs_live_studies,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,refs_per_live_study,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,refs_made_per_run_published_paper,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_run_published_citing_anything,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,citations_in_run_per_published_node,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_legacy_library,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_warmstart_published,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_run_published,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_in_run_citations_to_inherited,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_in_run_citations_to_legacy_library,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_in_run_citations_to_run_work,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_live_refs_to_inherited,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,self_citation_share_in_run_citations,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,self_citation_share_live_refs,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,self_cites_engine_total,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,same_question_share_live_refs,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,published_units_true,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_per_true_unit,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_true_units_cited_in_run,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_live_refs_per_true_unit,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_in_run_citations_to_true,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_live_refs_to_true,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,published_units_false,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_per_false_unit,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_false_units_cited_in_run,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_live_refs_per_false_unit,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_in_run_citations_to_false,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_live_refs_to_false,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,published_units_unknown,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_per_unknown_unit,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_unknown_units_cited_in_run,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_live_refs_per_unknown_unit,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_in_run_citations_to_unknown,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_live_refs_to_unknown,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_units,3,36.333333333333336,27.0,48.0,s1=27.0; s2=48.0; s3=34.0
+R-b-150,inherited_false_overturned_by_Q20,3,0.6666666666666666,0.0,2.0,s1=0.0; s2=0.0; s3=2.0
+R-b-150,inherited_false_discovery_units,3,36.333333333333336,27.0,48.0,s1=27.0; s2=48.0; s3=34.0
+R-b-150,inherited_false_discovery_overturned_by_Q20,3,0.6666666666666666,0.0,2.0,s1=0.0; s2=0.0; s3=2.0
+R-b-150,inherited_false_citations_before_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_citations_after_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_citations_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_citations_per_unit_quarter_before,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_citations_per_unit_quarter_after,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_citations_per_unit_quarter_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_true_citations_per_unit_quarter,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_live_refs_before_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_live_refs_after_overturn,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_live_refs_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_live_refs_per_unit_quarter_before,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_live_refs_per_unit_quarter_after,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_false_live_refs_per_unit_quarter_never_overturned,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,inherited_true_live_refs_per_unit_quarter,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,in_run_citations_made_by_first_study,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,run_papers_first_study,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_received_by_first_study,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_refs_made_by_first_study_run_papers,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,in_run_citations_made_by_replication,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,run_papers_replication,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_received_by_replication,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_refs_made_by_replication_run_papers,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,in_run_citations_made_by_extension,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,run_papers_extension,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_received_by_extension,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_refs_made_by_extension_run_papers,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,in_run_citations_made_by_contradiction,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,run_papers_contradiction,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citations_in_run_received_by_contradiction,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_refs_made_by_contradiction_run_papers,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,gini_in_run_citations_published_nodes,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,top10pct_share_in_run_citations,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,gini_live_refs_published_nodes,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,top10pct_share_live_refs,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,share_published_nodes_never_cited_in_run,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,questions_with_earliest_and_later,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_in_run_citations_earliest_cohort,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_in_run_citations_later_papers,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_live_refs_earliest_cohort,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_live_refs_later_papers,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,max_citation_depth,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_citation_depth_run_published,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,max_builds_on_depth,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,mean_builds_on_depth_live_studies,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,claims_filed,3,279.0,258.0,293.0,s1=286.0; s2=258.0; s3=293.0
+R-b-150,claims_filed_focal,3,85.0,81.0,92.0,s1=82.0; s2=81.0; s3=92.0
+R-b-150,certified_focal_run_units,3,13.666666666666666,5.0,25.0,s1=11.0; s2=5.0; s3=25.0
+R-b-150,certified_all_kinds_run,3,50.0,34.0,76.0,s1=40.0; s2=34.0; s3=76.0
+R-b-150,share_certified_focal_2plus_data_labs,3,1.0,1.0,1.0,s1=1.0; s2=1.0; s3=1.0
+R-b-150,share_certified_all_kinds_2plus_data_labs,3,1.0,1.0,1.0,s1=1.0; s2=1.0; s3=1.0
+R-b-150,mean_data_labs_per_certified_focal,3,2.869090909090909,2.727272727272727,3.08,s1=2.727; s2=2.8; s3=3.08
+R-b-150,share_certified_focal_2plus_labs_indep_of_proposer,3,1.0,1.0,1.0,s1=1.0; s2=1.0; s3=1.0
+R-b-150,share_certified_focal_corroborated_at_cert,3,0.23393939393939397,0.18181818181818182,0.32,s1=0.182; s2=0.2; s3=0.32
+R-b-150,share_certified_focal_on_reused_data,3,0.4254545454545455,0.2,0.6363636363636364,s1=0.636; s2=0.2; s3=0.44
+R-b-150,share_certified_focal_on_other_labs_data,3,0.3854545454545455,0.2,0.6363636363636364,s1=0.636; s2=0.2; s3=0.32
+R-b-150,analyses,3,80.33333333333333,70.0,100.0,s1=71.0; s2=70.0; s3=100.0
+R-b-150,share_analyses_reusing_deposit,3,0.49453386988598264,0.35,0.647887323943662,s1=0.648; s2=0.486; s3=0.35
+R-b-150,share_analyses_using_other_labs_deposit,3,0.4145942320590208,0.28,0.5352112676056338,s1=0.535; s2=0.429; s3=0.28
+R-b-150,share_analyses_pooled,3,0.21444668008048293,0.12,0.36619718309859156,s1=0.366; s2=0.157; s3=0.12
+R-b-150,deposits_analysis,3,42.0,25.0,65.0,s1=25.0; s2=36.0; s3=65.0
+R-b-150,deposits_verification,3,311.6666666666667,254.0,388.0,s1=254.0; s2=293.0; s3=388.0
+R-b-150,deposits_decisive_test,3,0.0,0.0,0.0,s1=0.0; s2=0.0; s3=0.0
+R-b-150,share_analysis_deposits_reused,3,0.14683760683760683,0.12,0.16666666666666666,s1=0.12; s2=0.167; s3=0.154
+R-b-150,share_analysis_deposits_used_by_other_lab,3,0.1417094017094017,0.12,0.16666666666666666,s1=0.12; s2=0.167; s3=0.138
+R-b-150,mean_analyses_per_analysis_deposit,3,1.1663532763532765,1.12,1.1944444444444444,s1=1.12; s2=1.194; s3=1.185
+R-b-150,share_verification_deposits_reused_in_analyses,3,0.13816635992701046,0.06958762886597938,0.23228346456692914,s1=0.232; s2=0.113; s3=0.07
+R-b-150,claims_first_claim,3,80.66666666666667,58.0,104.0,s1=58.0; s2=80.0; s3=104.0
+R-b-150,claims_replication,3,135.66666666666666,114.0,157.0,s1=157.0; s2=114.0; s3=136.0
+R-b-150,claims_extension,3,12.666666666666666,0.0,24.0,s1=14.0; s2=0.0; s3=24.0
+R-b-150,claims_contradiction,3,50.0,29.0,64.0,s1=57.0; s2=64.0; s3=29.0
+R-b-150,share_claims_linked_to_earlier_claim,3,0.6894560273003006,0.6468531468531469,0.7286821705426356,s1=0.647; s2=0.729; s3=0.693
+R-b-150,share_focal_claims_linked_to_earlier_claim,3,0.7119308833990111,0.6630434782608695,0.7654320987654321,s1=0.707; s2=0.765; s3=0.663
+R-b-150,claim_references_all,3,916.0,804.0,976.0,s1=976.0; s2=968.0; s3=804.0
+R-b-150,claim_references_stated,3,845.3333333333334,701.0,940.0,s1=940.0; s2=895.0; s3=701.0
+R-b-150,share_stated_refs_to_inherited,3,0.1253270630066154,0.054748603351955305,0.1797432239657632,s1=0.141; s2=0.055; s3=0.18
+R-b-150,share_stated_refs_to_own_lab,3,0.42215871616843686,0.31383737517831667,0.5217877094972067,s1=0.431; s2=0.522; s3=0.314
+R-b-150,share_stated_refs_to_false,3,0.4208070588398873,0.2957446808510638,0.5173184357541899,s1=0.296; s2=0.517; s3=0.449
+R-b-150,share_stated_refs_to_true,3,0.5575432842058452,0.4759776536312849,0.6617021276595745,s1=0.662; s2=0.476; s3=0.535
+R-b-150,max_reference_depth,3,22.666666666666668,19.0,25.0,s1=25.0; s2=24.0; s3=19.0
+R-b-150,mean_reference_depth_live_claims,3,3.685931864080923,2.945392491467577,4.612403100775194,s1=3.5; s2=4.612; s3=2.945
+R-b-150,mean_reference_depth_live_focal,3,4.3837677668242065,3.608695652173913,5.493827160493828,s1=4.049; s2=5.494; s3=3.609
+R-b-150,filed_focal_true,3,47.0,42.0,51.0,s1=48.0; s2=42.0; s3=51.0
+R-b-150,share_true_focal_verified,3,0.7080999066293184,0.6904761904761905,0.7254901960784313,s1=0.708; s2=0.69; s3=0.725
+R-b-150,share_true_focal_reproduced_at_least_once,3,0.46043417366946776,0.4523809523809524,0.47058823529411764,s1=0.458; s2=0.452; s3=0.471
+R-b-150,share_true_focal_ever_endorsed,3,0.17839635854341737,0.09523809523809523,0.29411764705882354,s1=0.146; s2=0.095; s3=0.294
+R-b-150,share_true_focal_certified_at_Q20,3,0.17839635854341737,0.09523809523809523,0.29411764705882354,s1=0.146; s2=0.095; s3=0.294
+R-b-150,share_true_focal_with_endorse_vote,3,0.8606442577030812,0.7843137254901961,0.9166666666666666,s1=0.917; s2=0.881; s3=0.784
+R-b-150,share_true_focal_with_challenge_vote,3,0.22607376283846872,0.19047619047619047,0.2916666666666667,s1=0.292; s2=0.19; s3=0.196
+R-b-150,share_true_focal_referenced_by_later_claim,3,0.8953081232492996,0.875,0.9285714285714286,s1=0.875; s2=0.929; s3=0.882
+R-b-150,share_true_focal_deposits_reused_later,3,0.05228758169934641,0.0,0.1568627450980392,s1=0.0; s2=0.0; s3=0.157
+R-b-150,mean_endorse_votes_true_focal,3,5.7557189542483655,5.0588235294117645,6.166666666666667,s1=6.042; s2=6.167; s3=5.059
+R-b-150,filed_focal_false,3,29.666666666666668,17.0,38.0,s1=17.0; s2=38.0; s3=34.0
+R-b-150,share_false_focal_verified,3,0.6496388028895769,0.5294117647058824,0.7352941176470589,s1=0.529; s2=0.684; s3=0.735
+R-b-150,share_false_focal_reproduced_at_least_once,3,0.325077399380805,0.21052631578947367,0.4117647058823529,s1=0.353; s2=0.211; s3=0.412
+R-b-150,share_false_focal_ever_endorsed,3,0.16563467492260062,0.02631578947368421,0.23529411764705882,s1=0.235; s2=0.026; s3=0.235
+R-b-150,share_false_focal_certified_at_Q20,3,0.15583075335397317,0.02631578947368421,0.23529411764705882,s1=0.235; s2=0.026; s3=0.206
+R-b-150,share_false_focal_with_endorse_vote,3,0.7750257997936018,0.7368421052631579,0.8235294117647058,s1=0.765; s2=0.737; s3=0.824
+R-b-150,share_false_focal_with_challenge_vote,3,0.3364293085655315,0.23529411764705882,0.42105263157894735,s1=0.235; s2=0.421; s3=0.353
+R-b-150,share_false_focal_referenced_by_later_claim,3,0.8735810113519092,0.7647058823529411,0.9736842105263158,s1=0.765; s2=0.974; s3=0.882
+R-b-150,share_false_focal_deposits_reused_later,3,0.0392156862745098,0.0,0.11764705882352941,s1=0.0; s2=0.0; s3=0.118
+R-b-150,mean_endorse_votes_false_focal,3,4.67905056759546,4.117647058823529,5.735294117647059,s1=4.118; s2=4.184; s3=5.735
+R-b-150,filed_focal_unknown,3,8.333333333333334,1.0,17.0,s1=17.0; s2=1.0; s3=7.0
+R-b-150,share_unknown_focal_verified,3,0.5210084033613446,0.0,0.8571428571428571,s1=0.706; s2=0.0; s3=0.857
+R-b-150,share_unknown_focal_reproduced_at_least_once,3,0.34453781512605036,0.0,0.8571428571428571,s1=0.176; s2=0.0; s3=0.857
+R-b-150,share_unknown_focal_ever_endorsed,3,0.14285714285714285,0.0,0.42857142857142855,s1=0.0; s2=0.0; s3=0.429
+R-b-150,share_unknown_focal_certified_at_Q20,3,0.14285714285714285,0.0,0.42857142857142855,s1=0.0; s2=0.0; s3=0.429
+R-b-150,share_unknown_focal_with_endorse_vote,3,0.5714285714285715,0.0,1.0,s1=1.0; s2=0.0; s3=0.714
+R-b-150,share_unknown_focal_with_challenge_vote,3,0.0784313725490196,0.0,0.23529411764705882,s1=0.235; s2=0.0; s3=0.0
+R-b-150,share_unknown_focal_referenced_by_later_claim,3,0.4369747899159664,0.0,0.8823529411764706,s1=0.882; s2=0.0; s3=0.429
+R-b-150,share_unknown_focal_deposits_reused_later,3,0.0,0.0,0.0,s1=0.0; s2=0.0; s3=0.0
+R-b-150,mean_endorse_votes_unknown_focal,3,3.745098039215686,0.0,7.235294117647059,s1=7.235; s2=0.0; s3=4.0
+R-b-150,inherited_false_refs_before_overturn,3,4.0,0.0,12.0,s1=0.0; s2=0.0; s3=12.0
+R-b-150,inherited_false_refs_after_overturn,3,0.0,0.0,0.0,s1=0.0; s2=0.0; s3=0.0
+R-b-150,inherited_false_refs_never_overturned,3,31.666666666666668,8.0,69.0,s1=8.0; s2=18.0; s3=69.0
+R-b-150,inherited_false_refs_per_unit_quarter_before,1,0.5,0.5,0.5,s1=n/a; s2=n/a; s3=0.5
+R-b-150,inherited_false_refs_per_unit_quarter_after,1,0.0,0.0,0.0,s1=n/a; s2=n/a; s3=0.0
+R-b-150,inherited_false_refs_per_unit_quarter_never_overturned,3,0.04712577160493827,0.014814814814814815,0.1078125,s1=0.015; s2=0.019; s3=0.108
+R-b-150,inherited_true_refs_per_unit_quarter,3,0.034956919032261495,0.014393939393939395,0.06643835616438357,s1=0.066; s2=0.024; s3=0.014
+R-b-150,inherited_false_refs_stated_before_overturn,3,4.0,0.0,12.0,s1=0.0; s2=0.0; s3=12.0
+R-b-150,inherited_false_refs_stated_after_overturn,3,0.0,0.0,0.0,s1=0.0; s2=0.0; s3=0.0
+R-b-150,inherited_false_refs_stated_never_overturned,3,31.666666666666668,8.0,69.0,s1=8.0; s2=18.0; s3=69.0
+R-b-150,inherited_false_refs_stated_per_unit_quarter_before,1,0.5,0.5,0.5,s1=n/a; s2=n/a; s3=0.5
+R-b-150,inherited_false_refs_stated_per_unit_quarter_after,1,0.0,0.0,0.0,s1=n/a; s2=n/a; s3=0.0
+R-b-150,inherited_false_refs_stated_per_unit_quarter_never_overturned,3,0.04712577160493827,0.014814814814814815,0.1078125,s1=0.015; s2=0.019; s3=0.108
+R-b-150,inherited_true_refs_stated_per_unit_quarter,3,0.034956919032261495,0.014393939393939395,0.06643835616438357,s1=0.066; s2=0.024; s3=0.014
+R-b-150,gini_endorse_votes_certified_focal_run,3,0.4062793914620002,0.3384615384615385,0.4426877470355731,s1=0.443; s2=0.338; s3=0.438
+R-b-150,gini_refs_received_certified_focal_all,3,0.8662766117163047,0.82194258446856,0.9340659340659341,s1=0.843; s2=0.934; s3=0.822
+R-b-150,top10pct_share_refs_received_certified_focal_all,3,0.7764722730725645,0.6525821596244131,0.9871794871794872,s1=0.69; s2=0.987; s3=0.653

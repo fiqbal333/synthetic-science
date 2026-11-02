@@ -1,0 +1,184 @@
+# Base configuration: every knob with its baseline value. Scenarios extend this file.
+# "declared" values are design defaults; "grounded" values come from the seeding tables.
+scenario: base
+regime: paper                 # paper | repository
+population: 60                # authors (the 150-author scenarios override this)
+horizon_quarters: 8           # quarters; 8, 20, 40, 120 = 2, 5, 10, 30 years
+seeds: {world: null, population: null, run: null}   # pin a layer for truth-fixed / population-fixed designs
+
+seeding:
+  table_set: seeding/smj.yaml        # SMJ tables; a set built from other journals is a regeneration, not a code change
+
+landscape:
+  core_questions: 48
+  families: 8
+  questions_per_family: 6
+  fringe_pool: 150
+  fringe_promotion_units: 3
+  menu: {affinity: 3, crowded: 1, random: 1, fringe: 1, weight_power: 1.0, view_abstracts: 8, view_rule: "4cited+4recent"}
+  truth:
+    pi0: 0.45
+    slab_scale: 0.05
+    q_T: {dist: uniform, low: 0.55, high: 0.95, fixed: null}
+    moderator_zero_p: 0.6
+    moderator_scale: 0.03
+    subsample_offset_sd: 0.02
+    secondary_dv_sd: 0.01
+    confounder_r: {low: 0.05, high: 0.20}
+    confounder_time_invariant: {low: 0.4, high: 0.8}
+    instrument_p: 0.25
+    instrument_F: {low: 8, high: 40}
+    instrument_exclusion_r: 0.03
+    drift: {enabled: false, annual_sd: 0.005}
+  legacy: {size: 100, core_share: 0.70, t_threshold: 1.96}
+
+datasets:
+  n_cap: 45841                 # corpus p90 (grounded)
+  perturb_z_sd: 0.18           # between-paper SD of r (grounded, 06b)
+  min_eigen: 0.05
+  missing_rate: 0.10
+  archival_validity: {low: 0.6, high: 0.9}
+  survey_alpha: {median: 0.81, p10: 0.70}
+  traps:
+    density: {one: 0.60, two: 0.10}     # declared, swept
+    registry: [duplicates, scale_mixture, reverse_coded, selection_on_outcome, bad_control, miscoded_values, unit_mismatch, omitted_standard_control]
+    admissibility: {bias_share: 0.25, max_redraws: 6}
+  keep_csv: null               # null = by mode (llm keeps data.csv; mock/fast delete it after use; regenerable from seed + id)
+  forensics: {mode: inprocess, tolerance: 1.0e-6}
+
+population_profile:
+  stages: {doctoral: 0.20, assistant: 0.30, associate: 0.30, full: 0.20}   # declared
+  productivity_log_sd: 0.6
+  availability_p: 0.33                        # declared; used when productivity_target.papers_per_author_year is null
+  productivity_target:
+    papers_per_author_year: null              # grounded option: 0.25 = median top-7-journal papers per career year (author_profiles, n=638)
+    planned_acceptance: 0.6                   # declared planning share of starts that end published (used only to derive p)
+  care: {auto_share: 0.0}                     # share of AUTO authors (codebook-only analysis, one run)
+  throughput: {t1_share: 0.0}                 # share of T1 authors (extra robustness specifications)
+  care_throughput_assignment: independent     # independent | correlated | anticorrelated
+  teams: {solo: 0.15, two: 0.40, three: 0.35, four: 0.10}
+  tier: sonnet
+  starts_stop_before_end: 2
+
+journal:
+  research_batch_size: 1               # 1-3 studies by different authors per research call (grouping: disjoint menus, no coauthor history)
+  paper_contract: full                 # full (1,200-1,800 words) | lean (same claims.json/table.csv, shorter paper)
+  paper_words: {full: [1200, 1800], lean: [500, 800]}
+  reviewers_per_paper: 3
+  reviewer_cap: 4
+  # Realistic review timing. A quarter is three calendar months, so horizons of 8/20/40/120 quarters are 2/5/10/30 years.
+  # Latencies are quarters; per-paper draws from a discretised lognormal (median_quarters, sigma of log; sigma 0 = fixed).
+  # Grounding (grounding/tables/4j_05_review_durations_by_journal.csv; GROUNDING-INVENTORY.md 3.4): submission to acceptance,
+  # months: SMJ median 22.1 (p10 11.1, p25 16.1, p75 30.5, p90 43.5; n 773), OS median 23.9 (p10 12.3, p90 42.3; n 746);
+  # OS received-to-first-revision median 10.6, revision-to-acceptance median 11.8. The two-round path below (first round 3,
+  # revision 2, re-review 2 quarters, sigma .7 each) gives months p25 18, p50 24, p75 31, p90 42 against SMJ 16/22/31/44
+  # (tests/test_timing_pressure.py); papers accepted after one round (9 months median) fill the lower tail (SMJ p10 11).
+  # Setting every median to 0/1 with sigma 0 gives the simple timing in which everything is decided within the quarter.
+  timing:
+    research_quarters: 1                                 # quarters from a study's start to its submission (1 = the same quarter)
+    review_round: {median_quarters: 3, sigma: 0.7}       # submission -> first decision (0 = decided in the submission quarter)
+    revision: {median_quarters: 2, sigma: 0.7}           # revise-and-resubmit -> resubmission (at least 1)
+    rereview: {median_quarters: 2, sigma: 0.7}           # resubmission -> final decision
+    accept_to_publish_quarters: 0                        # acceptance -> citable (0: online-first in the acceptance quarter; 4j_05 year lag SMJ mean .62 years)
+    # WARM START: the world opens with a full pipeline. The pre-history quarters 1-K..0 run the same loop with the rule agents
+    # (no model calls, no budget debits; data drawn then is regenerable from seed + id). Papers still in review or revision at
+    # quarter 0 are then handled by the live agents; papers published before quarter 1 join the starting literature as earlier work.
+    warm_start: {enabled: true, quarters: 16}            # 16 quarters = 4 years >= the p90 sojourn, so the pipeline is stationary at quarter 0
+  reviewer_assistance: none            # none | prescreen | ai_written
+  blinding: double                     # open | signed | single | double | triple
+  desk_strictness: scope_only          # scope_only | contribution | design
+  decision_process: editor             # editor | reviewer_vote | panel | board | deliberating_board | mixed_board
+  panel_size: 3
+  aggregation: majority                # majority | unanimity | reject_veto | mean_threshold | confidence_weighted
+  show_question_count_to_editor: true
+  exclude_same_question_reviewers: true
+  revision_reviewers: same
+  ai_disclosure: none
+  results_blind: false
+  preprints: false
+  editor_tier: sonnet
+  reviewer_tier: sonnet
+
+repository:
+  analyst_batch_size: 1           # 1-3 analyses by different labs on different questions per analyst call
+  skip_idle_lab_calls: false      # true: a lab with no available member, no drafts, no open claims in view and no challenges makes no call this quarter
+  variant: b                      # a | b | c | d
+  endorsement_k: 3
+  endorsement_share: 0.6667
+  reproductions_k: 2
+  vote_weighting: one_lab_one_vote
+  view_rule: agenda_theory_menu   # | all
+  hidden_tally: false
+  blinded_registry: false
+  view_ranking: status_recency
+  access_rule: open               # open | embargo | lab_restricted
+  embargo_quarters: 2
+  pooling: {enabled: true, max_deposits: 2}
+  reanalysis_instead_of_fresh: false
+  silence_endorsement: {enabled: true, labs_in_view: 5, quarters: 2}
+  stakes: {menu: [5, 10, 20], endowment: 100, proposal_stake: 10, max_per_quarter: 6}
+  reputation_formula: baseline    # baseline | proposal_heavy | verification_heavy
+  autonomous_filing: false
+  verification_assignment: offers_only   # | rotation
+  reciprocity_rule: measured      # measured | forbid_verification | forbid_endorsement
+  legacy_deposits: false
+  lab_mean_size: 4.4
+  lab_size_dist: {2: 0.15, 3: 0.25, 4: 0.25, 5: 0.15, 6: 0.10, 7: 0.05, 8: 0.05}
+  verifications_per_member: 2
+  lapse_quarters: 3
+  view_caps: {menu_claims: 10, open_claims: 12, drafts: 4, challenges: 3, verification_requests: 3}
+
+budget:
+  rule: pairing                  # pairing | fixed
+  paired_scenario: S0            # the paper scenario whose realized spend becomes R's allotment
+  # The pairing balances COMPUTE only (R's compute allotment per quarter = P's realized compute spend). Data
+  # floats under a safety ceiling of data_ceiling_multiple x P's realized data spend; data used is a reported outcome of the
+  # audit (observations per certified unit, per correct handbook answer), not a constraint. Every deferral names the binding resource.
+  data_ceiling_multiple: 2.0     # default (R-b and the test worlds); the reported R-b-150 sets 4.0
+  fixed: {data_per_quarter: 250000, compute_per_quarter: 4000000}
+  tariffs: tariffs.yaml
+  priority: [responses_tests, verifications, analyses]
+  allocation: service_debt       # | proportional_size
+
+long_horizon:
+  # careers. min_horizon_quarters: the annual step runs only in runs at least this long (20 = the long horizons);
+  # the 150-author scenarios set 1 so that promotion and tenure are real consequences in an 8-quarter run.
+  # tenure_threshold: publications (any authorship, P) or endorsed claims + verification_credit x verifications (R) over the
+  # tenure clock; 3 is the declared default. prior_credit_rate: publications per year before the record began, seeded per
+  # scientist from career stage x years in rank (null = the scenario's papers_per_author_year target, else the grounded
+  # median 0.25 top-7 papers per career year, author_profiles n = 638, 4j_06); it counts toward the tenure and promotion checks.
+  turnover: {enabled: true, min_horizon_quarters: 20, doctoral_years: 5, tenure_years: 6, tenure_threshold: 3, assoc_to_full_years: 6, retire_years: 30,
+             exit_hazard: 0.0, growth: 0.0, midcareer_entry_p: 0.3, verification_credit: 0.5, prior_credit_rate: null}
+  renewal: {fringe_refill: 150, new_family_share: 0.10, remove_settled_from_affinity: false}
+  memory: {abstracts: 8, registry_claims: 10, record_words: 200, lab_words: 250, handbook_units_single_call: 300}
+  textbook: true
+  handbook_every_quarters: 8
+  window_schedule: null           # time-lapse windows (list of quarters); not used yet
+
+# Career pressure (consequences only, never instructions). `none`: the plain record card.
+# `visible`: the author's profile also states the career stage and tenure clock, the publication record promotion has
+# required in this department (the turnover rule's own bar), the department's recent promotion outcomes (true outcomes of
+# the simulated population) and the Journal's public statistics (decisions, acceptance rate, acceptance by the authors'
+# reported main result) computed from the run's own record. No text tells an agent what to prefer.
+incentives:
+  career_pressure: none          # none | visible
+  news_window_quarters: 8        # department news: career outcomes of the last N quarters
+  journal_stats_window_quarters: 8
+
+handbook:
+  snapshots: [4, 8]
+  panel: {writers: [opus, sonnet, sonnet]}
+  quarter0: true
+  endorsed_only: false
+
+fastmode:
+  params: fastmode/params.yaml
+
+models: models.yaml
+leakscan: leakscan.yaml
+
+# Backend-specific lines of the dispatch stub (never design content). environment_note is the sentence that tells a Claude Code
+# subagent how files are written on this machine (in an early test run an agent wrote with a Bash heredoc, which fails on
+# this machine, and reported success with no files on disk). An API or self-hosted backend sets it to "" or to its own tool rule.
+backend:
+  environment_note: "Create files with the Write tool and run programs with PowerShell; the Bash tool does not work on this machine. Before you finish, list your output folder to confirm every file you report actually exists."

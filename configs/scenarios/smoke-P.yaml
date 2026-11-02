@@ -1,0 +1,15 @@
+# Smoke test P: a small journal world for the tests, 12 authors x 6 quarters, handbooks at quarters 4 and 6.
+# 12 authors so that smoke-R (3 labs x 4) is the same population at the same seed, and six quarters so that the paired
+# claim lifecycle (analyse -> file -> verify -> certify) can complete.
+extends: S0.yaml
+scenario: smoke-P
+population: 12
+horizon_quarters: 6
+handbook:
+  snapshots: [4, 6]
+landscape:
+  fringe_pool: 40
+  legacy: {size: 30, core_share: 0.70, t_threshold: 1.96}
+journal:
+  timing:
+    warm_start: {enabled: true, quarters: 8}   # a shorter pre-history for the test world (the reported scenarios use 16 quarters)

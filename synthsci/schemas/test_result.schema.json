@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "test_result.json (decisive test, v4 7.6 variant c)",
+  "type": "object",
+  "required": ["nonce", "claim_id", "focal", "notes"],
+  "properties": {
+    "nonce": {"type": "string"}, "claim_id": {"type": "string"},
+    "focal": {"type": "object", "required": ["estimate", "se", "p", "n"],
+              "properties": {"estimate": {"type": ["number", "null"]}, "se": {"type": ["number", "null"]}, "p": {"type": ["number", "null"]}, "n": {"type": ["integer", "null"]}}},
+    "notes": {"type": "string"}, "executed_code": {"type": "string"}, "commands_run": {"type": "integer"}
+  }
+}

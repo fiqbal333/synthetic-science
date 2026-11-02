@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "reviews.json (v4 5.3)",
+  "type": "object",
+  "required": ["nonce", "reviews"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "reviews": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["paper_id", "recommendation", "flaw_found", "issues", "validity_probability", "relation_to_prior", "confidence", "summary"],
+        "properties": {
+          "paper_id": {"type": "string"},
+          "recommendation": {"type": "string", "enum": ["accept", "minor_revision", "major_revision", "reject"]},
+          "flaw_found": {"type": "boolean"},
+          "issues": {"type": "array", "items": {"type": "object", "required": ["location", "description", "severity", "kind"],
+            "properties": {"location": {"type": "string"}, "description": {"type": "string"},
+                           "severity": {"type": "string", "enum": ["minor", "major"]},
+                           "kind": {"type": "string", "enum": ["data", "specification", "inference", "reporting", "interpretation", "framing"]}}}},
+          "validity_probability": {"type": "number", "minimum": 0, "maximum": 100},
+          "relation_to_prior": {"type": "string", "enum": ["first study", "replication", "extension", "contradiction", "unclear"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "summary": {"type": "string"}
+        }
+      }
+    }
+  }
+}

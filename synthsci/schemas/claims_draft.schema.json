@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "claims_draft.json (analysis contract, v4 7.5)",
+  "type": "object",
+  "required": ["nonce", "question_id", "deposits", "relation_to_prior", "entries", "sample_changes", "n_models_run", "robustness_models", "executed_code", "commands_run"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "question_id": {"type": "string"},
+    "deposits": {"type": "array", "items": {"type": "string"}},
+    "relation_to_prior": {"type": "string", "enum": ["first claim", "replication", "extension", "contradiction"]},
+    "entries": {
+      "type": "array", "minItems": 1, "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["entry_id", "iv", "dv", "kind", "statement", "sign", "magnitude_band", "confidence", "model_id", "estimate", "se", "p", "n", "estimator", "se_type", "controls", "verdict", "predicted_sign"],
+        "properties": {
+          "entry_id": {"type": "string"},
+          "iv": {"type": "string"}, "dv": {"type": "string"}, "moderator": {"type": ["string", "null"]},
+          "kind": {"type": "string", "enum": ["focal", "moderation", "subsample", "secondary"]},
+          "statement": {"type": "string"},
+          "sign": {"type": "string", "enum": ["positive", "negative", "none"]},
+          "magnitude_band": {"type": "string", "enum": ["negligible", "small", "moderate", "large"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 100},
+          "model_id": {"type": "string"},
+          "estimate": {"type": ["number", "null"]}, "se": {"type": ["number", "null"]}, "p": {"type": ["number", "null"]}, "n": {"type": ["integer", "null"]},
+          "estimator": {"type": "string"}, "se_type": {"type": "string"},
+          "controls": {"type": "array", "items": {"type": "string"}},
+          "verdict": {"type": "string", "enum": ["supported", "partially", "not_supported"]},
+          "predicted_sign": {"type": "string", "enum": ["positive", "negative"]}
+        }
+      }
+    },
+    "sample_changes": {"type": "array", "items": {"type": "string"}},
+    "n_models_run": {"type": "integer", "minimum": 0},
+    "robustness_models": {"type": "array", "items": {"type": "string"}},
+    "executed_code": {"type": "string"},
+    "commands_run": {"type": "integer", "minimum": 0},
+    "correction": {"type": ["object", "null"], "properties": {"script": {"type": "string"}, "changelog": {"type": "string"}}}
+  }
+}

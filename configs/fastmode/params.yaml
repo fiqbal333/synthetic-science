@@ -1,0 +1,103 @@
+# Rule-agent parameters: the behaviour of the scripted (rule) agents used in mock mode, in fast mode and for the journal's
+# warm-start pre-history in every mode, including the reported live runs. STATUS: calibrated 2026-10-14 from two early live
+# test runs of the smoke worlds (one seed each, with batched calls and the lean paper contract): the journal run (12 AI
+# authors, 6 quarters, 16 papers, 69 reviews, 23 editor decisions) and its paired repository run (3 labs, 18 lab calls,
+# 13 analyses, 101 votes, 10 verifications). python tools/calibrate_fastmode.py <the two run folders> regenerates the
+# provenance table, with every number's n. ONE seed of a 12-person world: every n is small, proportions with n < 30 are
+# Laplace-smoothed ((k+1)/(n+2)), and a value marked `declared` is a design default that the runs do not identify. Every
+# fast-mode/mock output row is labelled mode=fast|mock. Results of a pilot study of LLM reviewers'
+# flaw detection informed the declared reviewer rows.
+status: calibrated-smoke-2026-10-14   # small n; see the provenance table
+author:
+  # P(trap handled | style) by trap; VERIFIED inspects the data, AUTO never opens it (bad_control and omitted size are
+  # codebook/correlation-visible and therefore partly handled by AUTO as well).
+  # VERIFIED: smoke P+R, every live author was VERIFIED-T0; handled = the scorer raised no flag for a planted problem.
+  #   omitted_standard_control 8/8 -> .90; duplicates 4/4 -> .83; unit_mismatch 3/3 -> .80; bad_control 2/2 -> .75;
+  #   miscoded_values 3/5 -> .57; scale_mixture 1/2 -> .50 (Laplace); reverse_coded and selection_on_outcome: no observation, declared.
+  # AUTO: no AUTO author in the smoke runs; declared.
+  p_handle:
+    VERIFIED: {duplicates: 0.83, scale_mixture: 0.50, reverse_coded: 0.75, selection_on_outcome: 0.55, bad_control: 0.75,
+               miscoded_values: 0.57, unit_mismatch: 0.80, omitted_standard_control: 0.90}
+    AUTO:     {duplicates: 0.05, scale_mixture: 0.05, reverse_coded: 0.05, selection_on_outcome: 0.20, bad_control: 0.45,
+               miscoded_values: 0.05, unit_mismatch: 0.05, omitted_standard_control: 0.85}
+  # archival_regression: 6/11 panel studies (P+R) used firm fixed effects (the rest OLS with firm-clustered errors) -> .54 Laplace;
+  # causal_design and survey: declared (no such repertoire among the smoke authors)
+  p_use_fe_panel: {archival_regression: 0.54, causal_design: 0.95, survey: 0.50}
+  # hypotheses (P) or claim entries (R) per study, n = 29 (P+R); the corpus reference (07a) is 3-8 per paper, the AI authors
+  # wrote fewer (median 4)
+  n_hypotheses: {2: 0.03, 3: 0.17, 4: 0.66, 5: 0.10, 6: 0.03}
+  p_choose_fringe: 0.06            # 0/16 P menu choices took the fringe slot (R: 1 of 15 agenda items); Laplace
+  p_choose_crowded: 0.22           # 3/16 P menu choices took the crowded slot; Laplace
+  affinity_weight_power: 1.0       # declared
+  p_mark_contradiction_when_disagree: 0.7   # declared: 1 contradiction among 29 relation_to_prior statements, denominator not in the ledger
+  n_models_run: {VERIFIED: [4, 14], AUTO: [1, 2]}   # VERIFIED: p10-p90 of 29 studies (median 6); AUTO declared
+  p_revise_when_asked: 0.9         # 7/7 revise decisions were followed by a resubmission (Laplace .89)
+  p_limitations_mention_selection: {VERIFIED: 0.6, AUTO: 0.2}   # declared: no selection trap was planted in the smoke runs
+reviewer:
+  # P(notice the planted problem) by trap: NOT identified by the smoke run (every review of a flagged paper raised a
+  # data/specification/inference issue, and 22/24 reviews of clean papers raised a major issue too), so the declared values
+  # stand; the reviewer pilot study found noticing >= .79 on page-visible errors, lower on data-only errors
+  p_notice: {duplicates: 0.30, scale_mixture: 0.35, reverse_coded: 0.30, selection_on_outcome: 0.50, bad_control: 0.60,
+             miscoded_values: 0.30, unit_mismatch: 0.30, omitted_standard_control: 0.70, se_not_clustered: 0.55,
+             n_inflated: 0.25, causal_language: 0.80, claims_text_mismatch: 0.60}
+  p_notice_assist_multiplier: {none: 1.0, prescreen: 1.15, ai_written: 0.85}   # declared
+  load_penalty_per_paper: 0.02     # declared (noticing saturated in the smoke run; the reviewer pilot study measured -0.135 at 8 papers per reviewer vs 1)
+  # validity probability (0-100) stated by the LLM reviewers, n = 69: flagged papers 51 (n 45), unflagged (all nulls) 53 (n 24);
+  # validity did not discriminate true from false papers (AUC .43) nor flagged from unflagged; clean_supported: no observation
+  validity_mean: {clean_supported: 72, clean_null: 53, flawed_noticed: 51, flawed_unnoticed: 51, contradiction_penalty: -6, replication_bonus: 2}
+  validity_sd: 17                  # within-group SD, n = 69
+  # cut points at the validity quantiles that reproduce the observed recommendation shares (reject .14, major .65, minor .20, accept 0)
+  recommendation_cuts: {reject: 34, major: 68, minor: 80}
+  p_accept_above_minor_cut: 0.06   # 0/14 minor-or-better reviews recommended accept; Laplace
+  confidence: {mean: 0.59, sd: 0.05}   # n = 69
+  p_flaw_found_given_noticed_major: 0.39   # 24/61 reviews with >= 1 major issue set flaw_found
+  p_prefer_fresh_reviewers_round2: 0.0     # declared
+editor:
+  # 0/16 desk rejections (12 of the 16 were nulls) -> .06 in total (Laplace), split evenly between the base and the null extra
+  desk_reject_p: {scope_only: 0.03, contribution: 0.15, design: 0.20}   # contribution / design: declared
+  desk_reject_null_extra: 0.03
+  w_mean_validity: 0.08            # declared
+  w_reject_votes: -1.2             # declared
+  w_major_votes: -0.5              # declared
+  w_accept_votes: 0.6              # declared
+  w_log_count_on_question: -0.15   # declared
+  w_contradiction: -0.2            # declared
+  # intercepts fitted by maximum likelihood over the 23 live decisions with the weights above (round 1: 9 reject, 7 revise,
+  # 0 accept; round 2: 4 accept, 3 reject); the LLM editor accepted nothing in round 1 and more than half in round 2
+  intercept_round1: -3.5
+  intercept_round2: -4.25
+  revise_band: 1.2                 # declared
+  merit_sd: 6                      # declared
+lab_head:
+  p_reuse_given_catalogue: 0.50    # 1/2 agenda items with a catalogued dataset reused it (Laplace); n = 2
+  p_pool_given_two: 0.67           # 1/1 reuses pooled two deposits (Laplace); n = 1
+  p_file_draft: {significant: 0.62, insignificant: 0.62}   # 7/11 and 23/37 draft entries filed (Laplace): filing did not depend on significance
+  stated_confidence: {significant: 60, insignificant: 56, sd: 14}   # n = 7 / 23 filed claims
+  vote:
+    # logit of endorse on prior endorsements and significance, n = 101 votes by 3 labs (endorse .65, abstain .30, challenge .05)
+    intercept: 1.04                 # fitted 1.24 (se .33) minus the declared b_log_n term at a typical N
+    b_significant: -0.64            # fitted (se .60): not distinguishable from 0; significance did not raise endorsement
+    b_log_n: 0.15                   # declared (collinear in the fit)
+    b_prior_endorsements: -0.72     # fitted (se .25): NEGATIVE, confounded with the contested claims that carried endorsements; no positive cascade seen in 6 quarters; set 0 for the structural "ignore tallies" sweep
+    b_same_theory: 0.4              # declared: every vote was on another theory's claim (view_rule all, 3 labs)
+    b_reciprocity: 0.31             # endorse share .68 (n 68) with vs .61 (n 33) without a recent endorsement from the proposer
+    b_proposer_size: 0.05           # declared: every proposer had 4 members
+    p_challenge_base: 0.06          # 1/16 votes on significant claims
+    p_challenge_insignificant: 0.05 # 4/85 votes on insignificant claims
+    stated_probability: {endorse: 60, challenge: 35, abstain: 47, sd: 6}   # n = 66 / 5 / 30
+  p_offer_verify: 0.95              # every lab offered at its verification capacity in every quarter with open claims (capacity-bound; 11 lab-quarters)
+  response: {defend: 0.14, revise: 0.72, withdraw: 0.14}   # 4/4 responses to challenges were revisions (Laplace over three actions, normalised)
+  stake: {p_stake: 0.3, amount_weights: {5: 0.5, 10: 0.35, 20: 0.15}, p_for_given_endorse_logit: 0.8}   # declared (variant d not run)
+  p_challenge_with_test: 0.10       # declared (variant c not run)
+verifier:
+  p_handle: VERIFIED              # verifiers run under their own protocol (uses author.p_handle[style])
+  factor_tolerance: 2.0           # kept: the rule agreed with the LLM verifier's own verdict in 8/10 verifications (reproduce rate .60, n = 10)
+handbook:
+  # pseudo-B4: a multinomial over the counting rules' answers. Writer agreement with the rules at Q4/Q6 (P+R): B1 .77, B2 .70, B3 .70
+  w_B2: 0.35
+  w_B1: 0.40
+  w_B3: 0.25
+  confidence_scale: 0.71           # mean writer confidence / B2 confidence over 146 answered questions
+  p_no_evidence_when_uncovered: 0.90   # 378/420 writer answers on uncovered questions said "no evidence" (P 1.00, R .81)
+  p_contested_when_rules_disagree: 0.27   # 22/81 writer answers where B1/B2/B3 disagreed said "contested"
+# Tokens per call by role are tariffs, not rule-agent behaviour: measured medians are in configs/tariffs.yaml (same runs).

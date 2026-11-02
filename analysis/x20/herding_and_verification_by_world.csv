@@ -1,0 +1,76 @@
+world,metric,n_seeds,mean,min,max,per_seed
+S0-150,studies_or_analyses,3,105.66666666666667,99.0,113.0,s1=105; s2=113; s3=99
+S0-150,distinct_questions,3,30.333333333333332,26.0,33.0,s1=26; s2=33; s3=32
+S0-150,share_on_core,3,0.9468677504075734,0.9292035398230089,0.9619047619047619,s1=0.962; s2=0.929; s3=0.949
+S0-150,question_hhi,3,0.06869868215426773,0.062260161328216775,0.07499234771962045,s1=0.069; s2=0.062; s3=0.075
+S0-150,top5_question_share,3,0.47454060197423037,0.4513274336283186,0.5151515151515152,s1=0.457; s2=0.451; s3=0.515
+S0-150,replication_share,3,0.4229467025927203,0.40707964601769914,0.44761904761904764,s1=0.448; s2=0.407; s3=0.414
+S0-150,contradiction_share,3,0.04764969543730605,0.0380952380952381,0.06060606060606061,s1=0.038; s2=0.044; s3=0.061
+S0-150,referee_reports,3,484.0,447.0,504.0,s1=501; s2=504; s3=447
+S0-150,reviewer_kappa,3,0.24864292406603586,0.21324222431668244,0.26669678352005777,s1=0.267; s2=0.213; s3=0.266
+S0-150,accept_rate_mean,3,0.08310545935545936,0.05333513708513708,0.10960858585858586,s1=0.086; s2=0.110; s3=0.053
+S0-150,verifications,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,reproduced,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,not_reproduced,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,inconclusive,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,verification_powered_share,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,votes_endorse,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,votes_challenge,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,votes_abstain,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,verification_offers,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,herding_cascade_slope,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,unverified_endorsement_share,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,late_vote_accuracy,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,early_vote_accuracy,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,lapsed_true_claims,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,single_deposit_share_of_endorsed,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0P-150,studies_or_analyses,2,109.0,107.0,111.0,s1=107; s2=111
+S0P-150,distinct_questions,2,30.0,29.0,31.0,s1=31; s2=29
+S0P-150,share_on_core,2,0.9537762061126547,0.9345794392523364,0.972972972972973,s1=0.935; s2=0.973
+S0P-150,question_hhi,2,0.06339470181467477,0.05983055288671498,0.06695885074263455,s1=0.060; s2=0.067
+S0P-150,top5_question_share,2,0.4536920097667761,0.42990654205607476,0.47747747747747743,s1=0.430; s2=0.477
+S0P-150,replication_share,2,0.3665908899553759,0.34579439252336447,0.38738738738738737,s1=0.346; s2=0.387
+S0P-150,contradiction_share,2,0.03237349499031742,0.018018018018018018,0.04672897196261682,s1=0.047; s2=0.018
+S0P-150,referee_reports,2,498.0,489.0,507.0,s1=507; s2=489
+S0P-150,reviewer_kappa,2,0.17577769927429954,0.1748866312792211,0.17666876726937794,s1=0.177; s2=0.175
+S0P-150,accept_rate_mean,2,0.07390415140415141,0.07304639804639804,0.07476190476190477,s1=0.073; s2=0.075
+S0P-150,verifications,0,,,,s1=n/a; s2=n/a
+S0P-150,reproduced,0,,,,s1=n/a; s2=n/a
+S0P-150,not_reproduced,0,,,,s1=n/a; s2=n/a
+S0P-150,inconclusive,0,,,,s1=n/a; s2=n/a
+S0P-150,verification_powered_share,0,,,,s1=n/a; s2=n/a
+S0P-150,votes_endorse,0,,,,s1=n/a; s2=n/a
+S0P-150,votes_challenge,0,,,,s1=n/a; s2=n/a
+S0P-150,votes_abstain,0,,,,s1=n/a; s2=n/a
+S0P-150,verification_offers,0,,,,s1=n/a; s2=n/a
+S0P-150,herding_cascade_slope,0,,,,s1=n/a; s2=n/a
+S0P-150,unverified_endorsement_share,0,,,,s1=n/a; s2=n/a
+S0P-150,late_vote_accuracy,0,,,,s1=n/a; s2=n/a
+S0P-150,early_vote_accuracy,0,,,,s1=n/a; s2=n/a
+S0P-150,lapsed_true_claims,0,,,,s1=n/a; s2=n/a
+S0P-150,single_deposit_share_of_endorsed,0,,,,s1=n/a; s2=n/a
+R-b-150,studies_or_analyses,3,80.33333333333333,70.0,100.0,s1=71; s2=70; s3=100
+R-b-150,distinct_questions,3,30.0,21.0,41.0,s1=21; s2=28; s3=41
+R-b-150,share_on_core,3,0.8797920858484239,0.81,0.9436619718309859,s1=0.944; s2=0.886; s3=0.810
+R-b-150,question_hhi,3,0.059510617022051814,0.046,0.0680420551477881,s1=0.068; s2=0.064; s3=0.046
+R-b-150,top5_question_share,3,0.4434339369550637,0.38,0.47887323943661975,s1=0.479; s2=0.471; s3=0.380
+R-b-150,replication_share,3,0.4656136820925553,0.38571428571428573,0.5211267605633803,s1=0.521; s2=0.386; s3=0.490
+R-b-150,contradiction_share,3,0.15300469483568077,0.09,0.2,s1=0.169; s2=0.200; s3=0.090
+R-b-150,referee_reports,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,reviewer_kappa,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,accept_rate_mean,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,verifications,3,311.6666666666667,254.0,388.0,s1=254; s2=293; s3=388
+R-b-150,reproduced,3,179.66666666666666,144.0,243.0,s1=152; s2=144; s3=243
+R-b-150,not_reproduced,3,132.0,102.0,149.0,s1=102; s2=149; s3=145
+R-b-150,inconclusive,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,verification_powered_share,3,0.4686871819763601,0.42010309278350516,0.5017064846416383,s1=0.484; s2=0.502; s3=0.420
+R-b-150,votes_endorse,3,1467.6666666666667,1313.0,1597.0,"s1=1,597; s2=1,313; s3=1,493"
+R-b-150,votes_challenge,3,175.0,153.0,188.0,s1=153; s2=188; s3=184
+R-b-150,votes_abstain,3,559.6666666666666,516.0,595.0,s1=568; s2=516; s3=595
+R-b-150,verification_offers,3,1854.3333333333333,1736.0,1928.0,"s1=1,899; s2=1,736; s3=1,928"
+R-b-150,herding_cascade_slope,3,0.0092296915115252,0.008059165106552685,0.011172383323497211,s1=0.011; s2=0.008; s3=0.008
+R-b-150,unverified_endorsement_share,3,0.48273532840571143,0.38509705698184094,0.5452109845947756,s1=0.385; s2=0.518; s3=0.545
+R-b-150,late_vote_accuracy,3,0.625385587748421,0.5953420669577875,0.6790830945558739,s1=0.602; s2=0.679; s3=0.595
+R-b-150,early_vote_accuracy,3,0.5943685335132703,0.5794871794871795,0.6036184210526315,s1=0.579; s2=0.600; s3=0.604
+R-b-150,lapsed_true_claims,3,24.0,14.0,41.0,s1=41; s2=17; s3=14
+R-b-150,single_deposit_share_of_endorsed,3,0.7999742002063983,0.725,0.9117647058823529,s1=0.725; s2=0.912; s3=0.763

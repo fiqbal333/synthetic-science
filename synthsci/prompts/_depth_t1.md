@@ -1,0 +1,1 @@
+Report at least four additional specifications in table.csv and in a Robustness section: an alternative estimator, an alternative measure of the outcome or the focal variable, a subsample split, and a fixed-effects or instrumental-variables specification where the codebook makes one possible. List their model ids in `robustness_models`.

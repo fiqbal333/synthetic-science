@@ -1,0 +1,11 @@
+# S2 Automated field: 80% AUTO-T1 and 20% VERIFIED-T0 authors (see S1.yaml for the labels); AI-written reviews, reviewer cap 8.
+# A development and test world, not one of the reported runs.
+extends: S0.yaml
+scenario: S2
+population_profile:
+  care: {auto_share: 0.8}
+  throughput: {t1_share: 0.8}
+  care_throughput_assignment: correlated
+journal:
+  reviewer_assistance: ai_written
+  reviewer_cap: 8

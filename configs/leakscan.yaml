@@ -1,0 +1,111 @@
+# Leak-scanner token lists (kept in config so the lists can be audited and changed without touching code).
+# DESIGN tokens may never appear in anything an agent sees, including embedded agent-written text.
+# STRICT tokens may never appear in text we wrote (templates, codebooks, sample frames, menus, views).
+design:
+  - trap
+  - planted
+  - theta
+  - truth.json
+  - truth/
+  - truth\
+  - ledger
+  - oracle
+  - hidden_truth
+  - scale_mixture
+  - reverse_coded
+  - selection_on_outcome
+  - bad_control
+  - miscoded_values
+  - unit_mismatch
+  - omitted_standard_control
+  - duplicates_not_removed
+  - n_inflated
+  - se_not_clustered
+  - admissib
+  - leakscan
+  - leak scan
+  - fastmode
+  - rule agent
+  - rule-agent
+  - dataset_seed
+  - q_T
+  - pi0
+  - synthsci/
+  - synthsci\
+  - configs/
+  - configs\
+strict:
+  - ground truth
+  - ground-truth
+  - data-generating
+  - data generating
+  - dgp
+  - simulat
+  - synthetic
+  - experiment condition
+  - treatment arm
+  - scenario
+  - regime
+  - the study's purpose
+  - you are a model
+  - language model
+  - llm
+  - deliberately
+  - intentionally
+  - error was added
+  - errors were added
+  - seeded flaw
+  - seeded error
+  - reverse coded
+  - reverse-coded
+  - percent for one source
+  - scale mixture
+  - bad control
+  - miscoded
+  - mis-coded
+  - unit mismatch
+  - selection on outcome
+  - omitted control
+  - planted problem
+  - survivorship
+  - selection on the outcome
+  - post-treatment control
+  - mediator
+  - confounder
+  - impossible values
+  - publish or perish
+  - novelty matters
+  - verify carefully
+  - incentive
+# Matching: a single-word token matches on word boundaries (letters and digits are word characters; `_` is a
+# separator, so `theta_fe` trips `theta` while `bootstrap` does not trip `trap`), with s/es/ed/ing/ly/'s allowed on the
+# right. A token with a space, hyphen, slash, backslash or dot is a phrase and matches as a substring. Tokens listed here
+# match any word that starts with them; each must also be listed under design or strict.
+prefix:
+  - simulat
+  - admissib
+  - leakscan
+# Words allowed even though they contain a token above (checked after tokenization)
+allow:
+  - "regimen"
+  - "bootstrap"
+  - "competency trap"
+  - "competency-trap"
+  - "competence trap"
+  - "competence-trap"
+  - "success trap"
+  - "failure trap"
+  - "poverty trap"
+# Phrases allowed in AGENT-WRITTEN text only (ingest validation). They coincide with internal problem-type ids but are
+# ordinary methods vocabulary an author or reviewer can coin unprompted (e.g. "bad control" -> sample_changes code
+# "dropped_bad_control"). Text we write is never given this list.
+agent_allow:
+  - "bad_control"
+  - "reverse_coded"
+  - "unit_mismatch"
+  - "selection_on_outcome"
+  - "se_not_clustered"
+  - "duplicates_not_removed"
+  - "miscoded_values"
+  - "scale_mixture"
+  - "omitted_standard_control"

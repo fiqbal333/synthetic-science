@@ -1,0 +1,18 @@
+# S0P-150 (reported journal world with career pressure): the S0-150 world with career pressure VISIBLE, paired with S0-150 as
+# the no-pressure baseline at the same seed (same truth, population, timing, turnover rule and budget rule; the only difference
+# is what the agents can see). Pressure reaches them as consequences only, never as instructions, in profile.md:
+#   - a career line: stage, the tenure clock, publications before the record began and since, and the publication record
+#     that promotion has required in this department (the turnover rule's own bar, stated as a fact);
+#   - department news: colleagues' promotion and tenure outcomes of the last 8 quarters (true outcomes of the simulated population);
+#   - the Journal's public statistics: submissions, decisions, acceptance rate and acceptance by the authors' reported main result,
+#     computed from the run's own record.
+# No text tells an agent what to prefer; tests/test_timing_pressure.py scans every pressure line for instruction verbs and design tokens.
+extends: S0-150.yaml
+scenario: S0P-150
+# common random numbers: task, group and dataset ids are named in S0-150's namespace, so the rule agents' warm start and every
+# random draw match the baseline at the same seed; only the profile lines above differ
+crn_with: S0-150
+incentives:
+  career_pressure: visible
+  news_window_quarters: 8
+  journal_stats_window_quarters: 8

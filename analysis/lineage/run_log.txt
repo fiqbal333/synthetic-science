@@ -1,0 +1,14 @@
+S0-150 s1: state quarter 20, phase annual
+done ('S0-150', 1)
+S0-150 s2: state quarter 20, phase annual
+done ('S0-150', 2)
+S0-150 s3: state quarter 20, phase annual
+done ('S0-150', 3)
+S0P-150 s1: state quarter 20, phase annual
+done ('S0P-150', 1)
+S0P-150 s2: state quarter 20, phase annual
+done ('S0P-150', 2)
+done ('R-b-150', 1)
+done ('R-b-150', 2)
+done ('R-b-150', 3)
+figure font: Arial

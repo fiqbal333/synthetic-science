@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "claims.json (paper contract, v4 4.5)",
+  "type": "object",
+  "required": ["nonce", "question_id", "relation_to_prior", "hypotheses", "builds_on", "sample_changes", "n_models_run", "robustness_models", "executed_code", "commands_run"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "question_id": {"type": "string"},
+    "relation_to_prior": {"type": "string", "enum": ["first study", "replication", "extension", "contradiction"]},
+    "hypotheses": {
+      "type": "array", "minItems": 1, "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["hyp_id", "iv", "dv", "predicted_sign", "model_id", "estimate", "se", "p", "n", "estimator", "se_type", "controls", "verdict"],
+        "properties": {
+          "hyp_id": {"type": "string"},
+          "iv": {"type": "string"},
+          "dv": {"type": "string"},
+          "moderator": {"type": ["string", "null"]},
+          "predicted_sign": {"type": "string", "enum": ["positive", "negative"]},
+          "model_id": {"type": "string"},
+          "estimate": {"type": ["number", "null"]},
+          "se": {"type": ["number", "null"]},
+          "p": {"type": ["number", "null"]},
+          "p_adjusted": {"type": ["number", "null"]},
+          "n": {"type": ["integer", "null"]},
+          "estimator": {"type": "string"},
+          "se_type": {"type": "string"},
+          "controls": {"type": "array", "items": {"type": "string"}},
+          "verdict": {"type": "string", "enum": ["supported", "partially", "not_supported"]}
+        }
+      }
+    },
+    "builds_on": {"type": "array", "items": {"type": "object", "required": ["paper_id"], "properties": {"paper_id": {"type": "string"}, "informed": {"type": "array", "items": {"type": "string"}}}}},
+    "sample_changes": {"type": "array", "items": {"type": "string"}},
+    "n_models_run": {"type": "integer", "minimum": 0},
+    "robustness_models": {"type": "array", "items": {"type": "string"}},
+    "executed_code": {"type": "string"},
+    "commands_run": {"type": "integer", "minimum": 0}
+  }
+}

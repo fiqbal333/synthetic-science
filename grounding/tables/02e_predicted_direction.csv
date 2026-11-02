@@ -1,0 +1,25 @@
+predicted_direction,share
+positive,0.5991989567809239
+negative,0.3102645305514158
+not_specified,0.05616616989567809
+curvilinear_invU,0.02188897168405365
+curvilinear_U,0.008103576751117735
+not_reported,0.0012108792846497764
+null predicted,0.0007451564828614009
+not_significant,0.00037257824143070045
+inverted_U,0.00027943368107302534
+positive_then_negative,0.00027943368107302534
+positive_moderation,0.00018628912071535022
+negative_then_positive,0.00018628912071535022
+nonmonotonic_inverted_U,9.314456035767511e-05
+inverted_u,9.314456035767511e-05
+U-shaped (negative then positive),9.314456035767511e-05
+negative (hypothesized; not supported),9.314456035767511e-05
+positive (confirming U-shape),9.314456035767511e-05
+negative (APP×Complexity) strengthening U-shape,9.314456035767511e-05
+negative (confirming inverted U-shape),9.314456035767511e-05
+inverted U-shaped (positive then negative),9.314456035767511e-05
+"positive (WPP×Complexity) and negative (WPP²×Complexity), steepening inverted U",9.314456035767511e-05
+positive_rookie_negative_seasoned,9.314456035767511e-05
+outside_rookie_positive_inside_rookie_null,9.314456035767511e-05
+negative_moderation,9.314456035767511e-05

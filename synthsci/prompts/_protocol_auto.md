@@ -1,0 +1,1 @@
+Write analysis.py from the codebook. Do not open, read, print or plot data.csv in any way. Run the script exactly once; only if it fails may you fix the error and run again, at most three runs. Report what the run produced. Do not change the code, sample or specification after seeing the output. Leave `sample_changes` empty unless the codebook itself required a transformation.

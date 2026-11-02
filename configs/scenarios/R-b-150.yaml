@@ -1,0 +1,22 @@
+# R-b-150 (reported repository world): the reproduction field at 150 scientists in about 15 labs of ~10 (fewer, larger labs keep
+# the paired budget equal), paired with S0-150 at the same seed; analyst calls batched 3.
+# The pairing balances compute only: R-b-150 receives each quarter the compute S0-150 actually used. Data floats under a
+# ceiling of 4x S0-150's realized data and is reported as an outcome.
+extends: R-b.yaml
+scenario: R-b-150
+population: 150
+population_profile:
+  productivity_target: {papers_per_author_year: 0.25, planned_acceptance: 0.6}
+repository:
+  analyst_batch_size: 3
+  # at realistic productivity most labs have nothing to decide in a given quarter; a per-lab call for every lab every quarter
+  # (34 x 75k tokens) would exceed the paired paper field's whole compute allotment and starve every analysis
+  skip_idle_lab_calls: true
+  lab_mean_size: 10
+  lab_size_dist: {6: 0.10, 8: 0.20, 10: 0.35, 12: 0.20, 14: 0.15}
+budget:
+  rule: pairing
+  paired_scenario: S0-150
+  data_ceiling_multiple: 4.0   # a 2x ceiling bound at 150 scientists (257 data-bound deferrals and 19% of compute unspent in a mock check), so data would have constrained a world meant to be balanced on compute
+long_horizon:
+  turnover: {min_horizon_quarters: 1, tenure_threshold: 2}   # the same career rule as the paired S0-150 (credit: endorsed claims + half the verifications)

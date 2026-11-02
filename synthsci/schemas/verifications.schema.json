@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "verifications.json (v4 7.6 variant b)",
+  "type": "object",
+  "required": ["nonce", "verifications"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "verifications": {"type": "array", "minItems": 1, "items": {"type": "object",
+      "required": ["claim_id", "own", "discrepancies", "result", "confidence"],
+      "properties": {"claim_id": {"type": "string"},
+                     "rerun": {"type": ["object", "null"]},
+                     "own": {"type": "object", "required": ["estimate", "se", "p", "n"],
+                             "properties": {"estimate": {"type": ["number", "null"]}, "se": {"type": ["number", "null"]}, "p": {"type": ["number", "null"]}, "n": {"type": ["integer", "null"]},
+                                            "estimator": {"type": "string"}, "controls": {"type": "array", "items": {"type": "string"}}}},
+                     "discrepancies": {"type": "string"},
+                     "result": {"type": "string", "enum": ["reproduced", "not_reproduced", "inconclusive"]},
+                     "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+                     "sample_changes": {"type": "array", "items": {"type": "string"}},
+                     "executed_code": {"type": "string"}, "commands_run": {"type": "integer"}}}}
+  }
+}

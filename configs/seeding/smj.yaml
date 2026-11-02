@@ -1,0 +1,43 @@
+# Seeding table set: SMJ deep extraction.
+# Every landscape quantity is read from these tables. A set built from other journals replaces the files under the same
+# names and schema. Paths are relative to the repository root.
+name: smj-deep-2026-10-13
+source: "grounding/GROUNDING-INVENTORY.md (SMJ deep extraction, 2,358 articles 1997-2025)"
+tables:
+  pairs:            grounding/tables/02b_top50_construct_pairs.csv
+  pairs_all:        grounding/tables/02b_all_construct_pairs.csv
+  theory_shares:    grounding/tables/02a_theory_families.csv
+  pair_theory:      configs/seeding/smj/pair_theory.csv          # DECLARED (a design mapping, not read from the corpus); replace by the corpus join when available
+  roles:            grounding/tables/03a_construct_usage_harmonized.csv
+  design_shares:    grounding/tables/04a_paper_data_source_design.csv
+  unit_shares:      grounding/tables/04b_unit_of_analysis.csv
+  panel_shares:     grounding/tables/04b_panel_structure.csv
+  frames:           grounding/tables/04c_sample_size_quantiles.csv
+  estimators:       grounding/tables/04d_estimator_shares.csv
+  controls_counts:  grounding/tables/04f_controls_counts.csv
+  controls_top:     grounding/tables/04f_top_control_families.csv
+  causal:           grounding/tables/04h_causal_inference_strategy.csv
+  corr25:           grounding/tables/06c_pooled_corr_matrix_top25_psd.csv
+  pair_sd:          grounding/tables/06b_construct_pair_correlations.csv
+  measurement:      grounding/tables/03e_measurement_quality.csv
+  descriptives:     grounding/tables/03g_descriptives_by_family_top80.csv
+  effects:          grounding/tables/05a_partial_r_distributions.csv
+  effects_verdict:  grounding/tables/05c_partial_r_by_support_verdict.csv
+  hypotheses:       grounding/tables/07a_hypotheses_per_paper.csv
+  predicted_dir:    grounding/tables/02e_predicted_direction.csv
+  construct_measures: configs/seeding/smj/construct_measures.yaml   # DECLARED mapping construct -> measured variable family (03g)
+families:
+  # the eight core theory families and the corpus families folded into them
+  agency:               {label: "Agency theory",                corpus: [agency_theory]}
+  rbv:                  {label: "Resource-based view",          corpus: [resource_based_view]}
+  tce:                  {label: "Transaction cost economics",   corpus: [transaction_cost_economics]}
+  org_learning:         {label: "Organizational learning",      corpus: [organizational_learning, knowledge_based_view, absorptive_capacity]}
+  institutional:        {label: "Institutional theory",         corpus: [institutional_theory, legitimacy]}
+  networks:             {label: "Social network theory",        corpus: [social_network_theory, social_capital]}
+  upper_echelons:       {label: "Upper echelons theory",        corpus: [upper_echelons]}
+  dynamic_capabilities: {label: "Dynamic capabilities",         corpus: [dynamic_capabilities, behavioral_theory_of_firm]}
+standard_dvs: [accounting_performance, market_performance, innovation_output, firm_survival, corporate_transactions, overall_performance]
+performance_ivs: [accounting_performance, market_performance, overall_performance]
+# which performance -> X pairs a family may keep as a question (performance is otherwise an outcome, not a cause)
+performance_iv_allowed: {agency: [executive_compensation, corporate_transactions], dynamic_capabilities: [], rbv: []}
+units_used: [firm-year, firm, individual, event, dyad]

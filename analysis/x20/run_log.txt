@@ -1,0 +1,26 @@
+loaded S0-150-x20 s1: horizon 20, extended from 8, source unchanged True
+loaded S0-150-x20 s2: horizon 20, extended from 8, source unchanged True
+loaded S0-150-x20 s3: horizon 20, extended from 8, source unchanged True
+loaded S0P-150-x20 s1: horizon 20, extended from 8, source unchanged True
+loaded S0P-150-x20 s2: horizon 20, extended from 8, source unchanged True
+loaded R-b-150-x20 s1: horizon 20, extended from 8, source unchanged True
+loaded R-b-150-x20 s2: horizon 20, extended from 8, source unchanged True
+loaded R-b-150-x20 s3: horizon 20, extended from 8, source unchanged True
+('S0-150', 1): inherited false 30 (audit 30); overturned Q8 0 (original 8q audit 0), Q20 2 (audit 2)
+('S0-150', 2): inherited false 48 (audit 48); overturned Q8 0 (original 8q audit 0), Q20 4 (audit 4)
+('S0-150', 3): inherited false 35 (audit 35); overturned Q8 0 (original 8q audit 0), Q20 6 (audit 6)
+('S0P-150', 1): inherited false 30 (audit 30); overturned Q8 0 (original 8q audit 0), Q20 2 (audit 2)
+('S0P-150', 2): inherited false 48 (audit 48); overturned Q8 0 (original 8q audit 0), Q20 3 (audit 3)
+('R-b-150', 1): legacy claim LC0050 superseded at Q13 (superseded by C0329); its truth check true_discovery_negligible
+('R-b-150', 1): inherited false 27 (audit 27); overturned Q8 0 (original 8q audit 0), Q20 0 (audit 0)
+('R-b-150', 2): inherited false 48 (audit 48); overturned Q8 0 (original 8q audit 0), Q20 0 (audit 0)
+NOTE ('R-b-150', 3): overturned 2 here vs audit 0 (audit drops superseded legacy claims from its inherited set: audit n_units 97, here 100)
+('R-b-150', 3): legacy claim LC0124 superseded at Q8 (superseded by C0328); its truth check false_discovery
+('R-b-150', 3): legacy claim LC0225 superseded at Q18 (superseded by C0423); its truth check true_discovery
+('R-b-150', 3): legacy claim LC0162 superseded at Q18 (superseded by C0452); its truth check false_discovery
+('R-b-150', 3): inherited false 34 (audit 32); overturned Q8 1 (original 8q audit 0), Q20 2 (audit 0)
+parity s1: paired-spend record matches S0-x20 spend in 20/20 quarters; cumulative compute ratio Q8 0.772, Q20 0.802
+parity s2: paired-spend record matches S0-x20 spend in 20/20 quarters; cumulative compute ratio Q8 0.955, Q20 0.786
+parity s3: paired-spend record matches S0-x20 spend in 20/20 quarters; cumulative compute ratio Q8 0.985, Q20 0.991
+figure font: Arial
+figures written: fig1_handbook_trajectory.png, fig2_knowledge_units_over_time.png, fig3_truth_composition.png, fig4_planted_false_literature.png, fig5_compute_parity.png, fig6_careers.png

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "handbook.json (v4 10.4)",
+  "type": "object",
+  "required": ["nonce", "questions", "theories", "open_questions"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "questions": {"type": "array", "items": {"type": "object", "required": ["question_id", "answer", "confidence"],
+      "properties": {"question_id": {"type": "string"},
+                     "answer": {"type": "string", "enum": ["positive", "negative", "null", "contested", "no evidence"]},
+                     "confidence": {"type": "number", "minimum": 0, "maximum": 100},
+                     "n_read": {"type": "integer"}, "key_units": {"type": "array", "items": {"type": "string"}},
+                     "agree": {"type": "boolean"}, "reasoning": {"type": "string"}}}},
+    "theories": {"type": "array", "items": {"type": "object", "required": ["theory", "standing"],
+      "properties": {"theory": {"type": "string"}, "standing": {"type": "string", "enum": ["strong", "moderate", "weak", "contested", "untested"]},
+                     "share_supported": {"type": "number", "minimum": 0, "maximum": 1}, "reasoning": {"type": "string"}}}},
+    "open_questions": {"type": "array", "maxItems": 10, "items": {"type": "object", "required": ["question_id", "reason"],
+      "properties": {"question_id": {"type": "string"},
+                     "reason": {"type": "string", "enum": ["few_studies", "conflicting_results", "small_samples", "single_dominant_unit"]},
+                     "text": {"type": "string"}}}}
+  }
+}

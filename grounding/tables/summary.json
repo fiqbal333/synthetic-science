@@ -1,0 +1,286 @@
+{
+ "coverage": {
+  "all articles": 2358,
+  "quant + mixed empirical": 1863,
+  "papers with >=1 stated hypothesis (hypotheses_total>0)": 1773,
+  "papers with paper-level support_rate": 1776,
+  "hypothesis-level rows with a support verdict": 10675,
+  "papers with hypothesis-level verdicts": 1870,
+  "focal coefficient rows, any tier": 9709,
+  "focal coefficient rows, tier high": 3816,
+  "focal coefficient rows, tier high+medium": 7390,
+  "papers with >=1 high-tier coefficient": 903,
+  "papers with >=1 high/medium-tier coefficient": 1517,
+  "rows with verified coef AND SE (t computable)": 4475,
+  "correlation cells, all": 194701,
+  "papers with correlation tables, all": 1542,
+  "correlation cells, final_risk<3": 179407,
+  "papers with correlation tables, final_risk<3": 1451,
+  "correlation cells verified (>=2 channels/adjudicated), final_risk<3": 125941,
+  "descriptives rows (means/SDs), all": 23576,
+  "descriptives rows, extraction_confidence high": 16341,
+  "papers with descriptives, high confidence": 1030,
+  "variable rows (rep_variables_clean)": 29519,
+  "measurement rows (rep_measurement_clean)": 22603
+ },
+ "theory_top": {
+  "other_unclassified": 1531,
+  "resource_based_view": 663,
+  "agency_theory": 321,
+  "transaction_cost_economics": 316,
+  "organizational_learning": 219,
+  "institutional_theory": 214,
+  "social_network_theory": 199,
+  "upper_echelons": 172,
+  "knowledge_based_view": 172,
+  "dynamic_capabilities": 145
+ },
+ "n_with_theory": 1801,
+ "rel_x_mapped": 0.38943894389438943,
+ "rel_y_mapped": 0.5551888522185552,
+ "rel_pair_mapped": 0.2553171983865053,
+ "top_pairs": [
+  [
+   "innovation_output",
+   "innovation_output",
+   29
+  ],
+  [
+   "corporate_transactions",
+   "corporate_transactions",
+   20
+  ],
+  [
+   "corporate_transactions",
+   "market_performance",
+   19
+  ],
+  [
+   "diversification",
+   "accounting_performance",
+   16
+  ],
+  [
+   "innovation_input",
+   "innovation_output",
+   14
+  ],
+  [
+   "diversification",
+   "market_performance",
+   13
+  ],
+  [
+   "ceo_characteristics",
+   "ceo_characteristics",
+   12
+  ],
+  [
+   "innovation_input",
+   "market_performance",
+   12
+  ],
+  [
+   "internationalization",
+   "accounting_performance",
+   10
+  ],
+  [
+   "executive_demographics",
+   "executive_demographics",
+   10
+  ]
+ ],
+ "var_mapped_share": 0.4580439716792574,
+ "dict_entries": 233,
+ "SUMMARY_alpha_median": 0.812,
+ "data_design": {
+  "archival_only": 0.436,
+  "archival+hand_collected": 0.282,
+  "survey+archival": 0.129,
+  "survey_only": 0.072,
+  "experiment": 0.048,
+  "other/unknown": 0.033
+ },
+ "N_quant": {
+  "group": "all quant+mixed (sample_size_final)",
+  "n": 1731,
+  "mean": 161807.60196418254,
+  "sd": 1894504.5742646796,
+  "p01": 26.900000000000002,
+  "p05": 70.0,
+  "p10": 105.0,
+  "p25": 227.0,
+  "p50": 845.0,
+  "p75": 7339.5,
+  "p90": 45841.0,
+  "p95": 168055.5,
+  "p99": 2054484.6000000047,
+  "min": 2.0,
+  "max": 60530000.0
+ },
+ "estimators": {
+  "OLS": 0.2,
+  "fixed_effects": 0.09,
+  "other": 0.085,
+  "logistic": 0.068,
+  "missing": 0.065,
+  "negative_binomial": 0.038,
+  "diff_in_diff": 0.035,
+  "survival_parametric": 0.033
+ },
+ "controls": {
+  "p25": 4.0,
+  "p50": 8.0,
+  "p75": 11.0
+ },
+ "endo": {
+  "not_discussed": 0.312,
+  "multiple_strategies": 0.153,
+  "acknowledged_not_addressed": 0.102,
+  "fixed_effects": 0.073,
+  "IV": 0.072,
+  "heckman": 0.071,
+  "missing": 0.067,
+  "natural_experiment": 0.045
+ },
+ "es": {
+  "n_focal_t": 5008,
+  "n_direct": 3086,
+  "abs_r_direct_med": 0.08440090224954927,
+  "abs_r_direct_p25": 0.029909081167296365,
+  "abs_r_direct_p75": 0.19328950896731503,
+  "abs_r_mod_med": 0.053300179088902604,
+  "share_wrong_sign_direct": 0.15257104194857915,
+  "egger_slope": 1.353833872697871,
+  "egger_intercept": 0.04586539618983233,
+  "corr_r_invsqrtN": 0.29439684652747655,
+  "corr_abs_t_logN": 0.17657636079419123,
+  "t_src": {
+   "verified_coef_se": 4127,
+   "reported_t_or_z": 881
+  }
+ },
+ "corr_cells_mapped_share": 0.257030104733929,
+ "corr_abs_r": {
+  "n": 179407,
+  "mean": 0.1356976305105152,
+  "sd": 0.16213452701217773,
+  "p01": 0.0,
+  "p05": 0.004430000000000109,
+  "p10": 0.01,
+  "p25": 0.03,
+  "p50": 0.08,
+  "p75": 0.177,
+  "p90": 0.34,
+  "p95": 0.48,
+  "p99": 0.797,
+  "min": 0.0,
+  "max": 1.0
+ },
+ "corr_matrix": {
+  "k": 25,
+  "missing_pairs": 0,
+  "min_eig_raw": 0.2954195785888848,
+  "max_abs_change_psd": 1.096345236817342e-15,
+  "topk": [
+   "firm_size",
+   "accounting_performance",
+   "innovation_input",
+   "experience_learning",
+   "ceo_characteristics",
+   "innovation_output",
+   "firm_age",
+   "capital_structure",
+   "diversification",
+   "market_performance",
+   "environmental_conditions",
+   "ownership_structure",
+   "overall_performance",
+   "corporate_transactions",
+   "alliances",
+   "board_composition",
+   "internationalization",
+   "executive_compensation",
+   "executive_demographics",
+   "investment_intensity",
+   "human_capital",
+   "network_position",
+   "competition",
+   "industry_structure",
+   "reputation"
+  ]
+ },
+ "corr_het_median_sd": 0.17822004635237526,
+ "corr_pairs_n5": 652,
+ "support": {
+  "n": 1772,
+  "share_100": 0.4057562076749436,
+  "mean": 0.780023137697517,
+  "median": 0.8,
+  "share_0": 0.01580135440180587,
+  "hyp_median": 5.0,
+  "hyp_mean": 5.711972238288028,
+  "rel_supported": 0.7453864168618267,
+  "rel_partial": 0.07971896955503513,
+  "rel_not": 0.17489461358313818
+ },
+ "caliper": [
+  {
+   "p_source": "p_verified, tier high",
+   "window": "[0.04,0.05) vs [0.05,0.06)",
+   "n_below": 104,
+   "n_above": 31,
+   "ratio": 3.3548387096774195
+  },
+  {
+   "p_source": "p_verified, tier high",
+   "window": "[0.045,0.05) vs [0.05,0.055)",
+   "n_below": 68,
+   "n_above": 16,
+   "ratio": 4.25
+  },
+  {
+   "p_source": "p_verified, tier high",
+   "window": "[0.03,0.05) vs [0.05,0.07)",
+   "n_below": 189,
+   "n_above": 67,
+   "ratio": 2.8208955223880596
+  },
+  {
+   "p_source": "p_verified, tier high",
+   "window": "[0.005,0.01) vs [0.01,0.015)",
+   "n_below": 84,
+   "n_above": 72,
+   "ratio": 1.1666666666666667
+  },
+  {
+   "p_source": "p_verified, tier high",
+   "window": "[0.09,0.1) vs [0.1,0.11)",
+   "n_below": 31,
+   "n_above": 15,
+   "ratio": 2.066666666666667
+  }
+ ],
+ "share_p_lt05_focal": 0.6579472843450479,
+ "practices": {
+  "placebo_test": 0.068,
+  "subsample_analysis": 0.56,
+  "alternative_dv": 0.41,
+  "alternative_iv": 0.47,
+  "alternative_estimation": 0.535,
+  "alternative_sample": 0.422,
+  "robustness_any_conclusion_changed": 0.06,
+  "robustness_all_confirmed": 0.836,
+  "lagged_iv": 0.366,
+  "lagged_dv_included": 0.092,
+  "winsorization_used": 0.075,
+  "multicollinearity_check": 0.41,
+  "cmv_test": 0.0,
+  "exact_p_values_reported": 0.384,
+  "effect_sizes_reported": 0.463,
+  "marginal_significance_invoked": 0.407,
+  "preregistered": 0.006,
+  "endogeneity_discussed": 0.582
+ }
+}

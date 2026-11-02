@@ -1,0 +1,36 @@
+# Tariff table: harness tokens per call, the planning price of each call type. Both regimes are debited by this one table,
+# so a paired journal and repository run are charged by the same rule.
+# STATUS 2026-10-14: rows marked `measured` are the median total_tokens of accepted Claude Code subagent calls in two early
+# live test runs of the smoke worlds (agent-reported usage, which includes the ~45k fixed overhead per call); n is small
+# (3-38 per row) and every value is rounded to 1k. Rows marked `estimate` were not observed (no T1 author, no AI-written
+# review, prescreen, legacy-abstract, prior-probe or decisive-test call ran); the t1 rows are scaled from the measured t0
+# rows by the t1/t0 ratio of the earlier estimates. tools/calibrate_fastmode.py regenerates the measured rows from those runs.
+# The test runs' research and revision calls ran under the LEAN paper contract, so the measured 64k / 83k are the lean
+# figures; the research_t0 / revision_t0 rows below are the full-contract equivalents (measured / lean_paper_multiplier .85,
+# which the runs do not identify separately).
+status: measured-smoke-2026-10-14
+calls:
+  research_t0:      {tokens: 75000,  seconds: 180, tier: sonnet, batch: 1, source: "measured lean 64,029 (n 7) / .85"}
+  research_t1:      {tokens: 96000,  seconds: 240, tier: sonnet, batch: 1, source: "estimate: research_t0 x 115/90"}
+  revision_t0:      {tokens: 98000,  seconds: 180, tier: sonnet, batch: 1, source: "measured lean 82,964 (n 7) / .85"}
+  revision_t1:      {tokens: 125000, seconds: 240, tier: sonnet, batch: 1, source: "estimate: revision_t0 x 115/90"}
+  desk_screen:      {tokens: 49000,  seconds: 30,  tier: sonnet, batch: 10, source: "measured 48,691 (n 5)"}
+  review:           {tokens: 64000,  seconds: 40,  tier: sonnet, batch: 4, source: "measured 63,622 (n 38)"}
+  review_ai_written: {tokens: 60000, seconds: 30,  tier: sonnet, batch: 6, source: "estimate"}
+  decision:         {tokens: 70000,  seconds: 40,  tier: sonnet, batch: 8, source: "measured 70,469 (n 6)"}
+  prescreen:        {tokens: 55000,  seconds: 20,  tier: haiku,  batch: 4, source: "estimate"}
+  legacy_abstracts: {tokens: 50000,  seconds: 20,  tier: haiku,  batch: 10, source: "estimate"}
+  handbook:         {tokens: 74000,  seconds: 180, tier: mixed,  batch: 1, source: "measured 73,889 (n 18; opus 75k, sonnet 70-76k)"}
+  prior_probe:      {tokens: 55000,  seconds: 30,  tier: mixed,  batch: 1, source: "estimate"}
+  lab_decision:     {tokens: 66000,  seconds: 90,  tier: sonnet, batch: 1, source: "measured 65,865 (n 18)"}
+  analyst_t0:       {tokens: 63000,  seconds: 150, tier: sonnet, batch: 1, source: "measured 62,635 (n 3)"}
+  analyst_t1:       {tokens: 79000,  seconds: 200, tier: sonnet, batch: 1, source: "estimate: analyst_t0 x 100/80"}
+  verification:     {tokens: 67000,  seconds: 150, tier: sonnet, batch: 2, source: "measured 67,130 (n 6)"}
+  decisive_test:    {tokens: 70000,  seconds: 120, tier: sonnet, batch: 1, source: "estimate"}
+# Calls not debited to the field's compute budget (identical across regimes): handbook, prior_probe, legacy_abstracts
+not_debited: [handbook, prior_probe, legacy_abstracts]
+# Multipliers for a research or analyst call that carries several studies (the fixed subagent overhead is shared; the
+# task-specific part scales with the number of studies). Measured: research batch 2 = 1.24 (n 3), batch 3 = 1.51 (n 1);
+# analyst batch 2 = 1.12 (n 2), batch 3 = 1.39 (n 2); pooled 1.2 / 1.45 (the declared 1.6 / 2.1 were too high).
+batch_tariff_multiplier: {1: 1.0, 2: 1.2, 3: 1.45}
+lean_paper_multiplier: 0.85   # declared; the smoke run was lean only, so the lean/full ratio is not measured

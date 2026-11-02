@@ -1,0 +1,23 @@
+item,n
+all articles,2358
+quant + mixed empirical,1863
+papers with >=1 stated hypothesis (hypotheses_total>0),1773
+papers with paper-level support_rate,1776
+hypothesis-level rows with a support verdict,10675
+papers with hypothesis-level verdicts,1870
+"focal coefficient rows, any tier",9709
+"focal coefficient rows, tier high",3816
+"focal coefficient rows, tier high+medium",7390
+papers with >=1 high-tier coefficient,903
+papers with >=1 high/medium-tier coefficient,1517
+rows with verified coef AND SE (t computable),4475
+"correlation cells, all",194701
+"papers with correlation tables, all",1542
+"correlation cells, final_risk<3",179407
+"papers with correlation tables, final_risk<3",1451
+"correlation cells verified (>=2 channels/adjudicated), final_risk<3",125941
+"descriptives rows (means/SDs), all",23576
+"descriptives rows, extraction_confidence high",16341
+"papers with descriptives, high confidence",1030
+variable rows (rep_variables_clean),29519
+measurement rows (rep_measurement_clean),22603

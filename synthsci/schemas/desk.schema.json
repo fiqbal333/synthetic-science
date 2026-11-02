@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "desk.json (v4 5.2)",
+  "type": "object",
+  "required": ["nonce", "decisions"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "decisions": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["paper_id", "decision", "reason"],
+      "properties": {"paper_id": {"type": "string"}, "decision": {"type": "string", "enum": ["send_out", "desk_reject"]}, "reason": {"type": "string"}}}}
+  }
+}

@@ -1,0 +1,15 @@
+﻿# runs and caches
+runs/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.tmp
+# input corpus (not distributed; see DATA.md). Only each frozen folder's README.md and SHA256SUMS.txt are tracked.
+corpus/*
+!corpus/*/
+corpus/*/*
+!corpus/*/README.md
+!corpus/*/SHA256SUMS.txt
+# large grounding logs
+grounding/*.log
+tmp/

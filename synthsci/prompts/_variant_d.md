@@ -1,0 +1,1 @@
+- You hold reputation points (see `lab.md`); filing a claim stakes 10. For each open claim you may add `"stake": {"side": "for|against", "amount": 5|10|20}` to your vote, with your probability; at most six stakes this quarter.

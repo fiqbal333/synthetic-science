@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "decisions.json (v4 5.2)",
+  "type": "object",
+  "required": ["nonce", "decisions"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "decisions": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["paper_id", "decision", "merit", "required_changes", "letter"],
+      "properties": {"paper_id": {"type": "string"}, "decision": {"type": "string", "enum": ["accept", "revise", "reject"]},
+                     "merit": {"type": "number", "minimum": 0, "maximum": 100},
+                     "required_changes": {"type": "array", "items": {"type": "string"}}, "letter": {"type": "string"}}}}
+  }
+}

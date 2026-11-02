@@ -1,0 +1,8 @@
+# R-a Voting field: the repository world in which a claim is certified by lab vote (k = 3 labs and two-thirds of the
+# non-abstaining votes) instead of by reproduction; paired with S0. A development and test world, not one of the reported runs.
+extends: R-b.yaml
+scenario: R-a
+repository:
+  variant: a
+  endorsement_k: 3
+  endorsement_share: 0.6667

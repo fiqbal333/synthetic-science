@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "prescreen.json",
+  "type": "object", "required": ["nonce", "flags"],
+  "properties": {"nonce": {"type": "string"},
+                 "flags": {"type": "array", "items": {"type": "object", "required": ["paper_id", "flags"],
+                           "properties": {"paper_id": {"type": "string"}, "flags": {"type": "string"}}}}}
+}

@@ -1,0 +1,14 @@
+x_category,finance_capital,firm_demographics,governance_ownership,human_capital_tmt,industry_environment,innovation_knowledge,international_institutional,leadership_tmt,macro_context,networks_alliances,performance,stakeholders_reputation,strategy_actions
+finance_capital,5,2,0,1,0,12,6,4,0,1,62,5,17
+firm_demographics,3,4,3,1,1,5,4,0,0,0,36,1,10
+governance_ownership,6,9,26,2,4,9,9,10,5,3,122,20,40
+human_capital_tmt,0,17,10,3,2,29,7,1,0,11,96,3,35
+industry_environment,0,8,1,1,0,16,2,4,0,16,46,0,52
+innovation_knowledge,4,2,3,0,0,130,7,4,0,14,119,10,39
+international_institutional,0,0,3,0,0,14,34,4,0,0,58,3,8
+leadership_tmt,0,7,25,5,2,36,1,68,1,0,102,21,34
+macro_context,0,1,0,0,0,0,4,0,0,0,2,0,1
+networks_alliances,5,8,4,0,1,74,1,0,0,32,72,5,40
+performance,5,1,34,0,0,21,0,9,0,8,76,20,34
+stakeholders_reputation,7,4,10,0,0,11,2,13,0,16,107,24,15
+strategy_actions,9,11,11,5,4,47,11,9,0,10,278,6,151

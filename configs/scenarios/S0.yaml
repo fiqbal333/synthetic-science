@@ -1,0 +1,14 @@
+# S0 Unassisted field: every author works under the verified protocol at the base throughput (VERIFIED-T0), reviews are
+# unassisted (each reviewer takes at most 4 papers a quarter), one editor; 60 authors, 8 quarters. The 60-author base of the
+# reported journal worlds S0-150 and S0P-150.
+extends: ../base.yaml
+scenario: S0
+regime: paper
+population: 60
+horizon_quarters: 8
+population_profile:
+  care: {auto_share: 0.0}
+  throughput: {t1_share: 0.0}
+journal:
+  reviewer_assistance: none
+  reviewer_cap: 4

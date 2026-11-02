@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "decisions.json (lab decision call, v4 7.2 / 7.12)",
+  "type": "object",
+  "required": ["nonce", "agenda", "filings", "votes", "verifications", "responses"],
+  "properties": {
+    "nonce": {"type": "string"},
+    "agenda": {"type": "array", "items": {"type": "object", "required": ["question_id", "data", "lead", "brief"],
+      "properties": {"question_id": {"type": "string"},
+                     "data": {"oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}, "maxItems": 2}]},
+                     "lead": {"type": "string"}, "brief": {"type": "string"},
+                     "n": {"type": ["integer", "null"], "minimum": 60}}}},
+    "filings": {"type": "array", "items": {"type": "object", "required": ["draft_id", "entry", "action", "probability"],
+      "properties": {"draft_id": {"type": "string"}, "entry": {"type": "string"},
+                     "action": {"type": "string", "enum": ["file", "revise", "drop"]},
+                     "probability": {"type": "number", "minimum": 0, "maximum": 100}, "note": {"type": "string"}}}},
+    "votes": {"type": "array", "items": {"type": "object", "required": ["claim_id", "vote", "probability", "reason"],
+      "properties": {"claim_id": {"type": "string"}, "vote": {"type": "string", "enum": ["endorse", "challenge", "abstain"]},
+                     "probability": {"type": "number", "minimum": 0, "maximum": 100}, "reason": {"type": "string"},
+                     "objection_kind": {"type": ["string", "null"], "enum": ["data", "specification", "inference", "reporting", "interpretation", null]},
+                     "test": {"type": ["object", "null"]},
+                     "stake": {"type": ["object", "null"], "properties": {"side": {"type": "string", "enum": ["for", "against"]}, "amount": {"type": "integer", "enum": [5, 10, 20]}}}}}},
+    "verifications": {"type": "array", "items": {"type": "string"}},
+    "responses": {"type": "array", "items": {"type": "object", "required": ["claim_id", "action"],
+      "properties": {"claim_id": {"type": "string"},
+                     "action": {"type": "string", "enum": ["defend", "revise", "withdraw", "accept_test", "amend_test"]},
+                     "text": {"type": "string"}, "test": {"type": ["object", "null"]}}}}
+  }
+}

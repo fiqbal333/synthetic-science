@@ -1,0 +1,23 @@
+rel_type,not_supported,partially_supported,supported
+comparative,0.0,0.0,1.0
+conditional_indirect,0.2,0.1,0.7
+curvilinear,0.164804469273743,0.09497206703910614,0.7402234636871509
+curvilinear_squared,0.0,0.0,1.0
+direct,0.18619436875567666,0.07311534968210717,0.7406902815622162
+direct_nonlinear,0.0,0.0,1.0
+main,0.0,0.0,1.0
+main_effect_comparison,0.0,0.0,1.0
+main_effect_interaction,0.5,0.0625,0.4375
+mediation,0.07407407407407407,0.1111111111111111,0.8148148148148148
+moderated_main_effect,0.0,0.0,1.0
+moderation,0.1668806161745828,0.09082156611039795,0.7422978177150192
+moderation_nonlinear,0.0,0.0,1.0
+nonlinear_direct,0.0,0.0,1.0
+nonlinear_main,0.0,0.0,1.0
+null_hypothesis,0.0,0.0,1.0
+other,0.07653061224489796,0.05102040816326531,0.8724489795918368
+selection_effect,0.0,0.0,1.0
+three-way interaction,0.0,0.0,1.0
+three_way,0.10526315789473684,0.11695906432748537,0.7777777777777778
+three_way_interaction,0.5,0.0,0.5
+three_way_moderation,0.0,0.125,0.875

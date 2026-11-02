@@ -1,0 +1,12 @@
+# S1 Mixed field: 40% VERIFIED-T0, 20% AUTO-T0, 20% VERIFIED-T1, 20% AUTO-T1 authors (VERIFIED = inspects the data before
+# analysing; AUTO = writes the analysis from the codebook and runs it once; T1 = reports extra robustness specifications);
+# an AI pre-screen for reviewers, reviewer cap 6. A development and test world, not one of the reported runs.
+extends: S0.yaml
+scenario: S1
+population_profile:
+  care: {auto_share: 0.4}
+  throughput: {t1_share: 0.4}
+  care_throughput_assignment: independent
+journal:
+  reviewer_assistance: prescreen
+  reviewer_cap: 6

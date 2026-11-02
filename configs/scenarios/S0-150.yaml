@@ -1,0 +1,21 @@
+# S0-150 (reported journal world): the unassisted field at 150 authors, at about the token cost of 60 authors.
+# Four config knobs do the scaling:
+#   1. realistic productivity: 0.25 published top-journal papers per author-year (any authorship) = the median top-7-journal
+#      papers per career year of high-confidence author profiles (n = 638; mean .34); the engine derives the per-slot start
+#      probability from it, so cost scales with papers, not authors (about 7 starts per quarter at 150 authors; 0.5 doubles it)
+#   2. research_batch_size 3: one research call carries three different authors' studies (disjoint menus, no coauthor history)
+#   3. lean paper contract: 500-800 words, same claims.json and table.csv
+#   4. careers move at every annual step even in an 8-quarter run (min_horizon_quarters 1), so that promotion and tenure are real
+#      consequences of the record in the pressure pair (S0P-150 extends this file and only makes them visible). The tenure bar is
+#      the grounded productivity over the clock: 0.25 papers per author-year (4j_06 author profiles, median) x 6 years = 1.5,
+#      rounded to 2 publications (any authorship); the base default of 3 would fail most assistants at the grounded rate.
+extends: S0.yaml
+scenario: S0-150
+population: 150
+population_profile:
+  productivity_target: {papers_per_author_year: 0.25, planned_acceptance: 0.6}
+journal:
+  research_batch_size: 3
+  paper_contract: lean
+long_horizon:
+  turnover: {min_horizon_quarters: 1, tenure_threshold: 2}

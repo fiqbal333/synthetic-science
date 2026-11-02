@@ -1,0 +1,9 @@
+world,seed,builds_on_refs,builds_on_targets_missing,citation_events,citation_events_duplicated,realized_pairs_from_events,cited_by_pairs_snapshot,cited_by_pairs_state,events_not_in_snapshot_cited_by,snapshot_cited_by_not_in_events,events_not_in_builds_on,published_builds_on_not_cited,citations_json_total,snapshot_citations_total,citations_json_vs_snapshot_mismatched_papers,citations_count_vs_cited_by_len_mismatch,self_cites_engine_total,self_cites_from_edges_total,claims_json_builds_on_match,claims_json_builds_on_mismatch,claims_json_missing,state_citations_vs_snapshot_mismatch,registry_claims,claims_ledger_ids,claims_ledger_ids_missing_from_registry,registry_deposits_missing_from_datasets_ledger,verifications_ledger,verifications_in_registry,endorse_votes_ledger,endorsements_in_registry,status_final_ledger_vs_registry_mismatch
+S0-150,1,322.0,0.0,42.0,0.0,42.0,42.0,42.0,0.0,0.0,0.0,0.0,42.0,42.0,0.0,0.0,12.0,14.0,209.0,0.0,0.0,0.0,,,,,,,,,
+S0-150,2,327.0,0.0,32.0,0.0,32.0,32.0,32.0,0.0,0.0,0.0,0.0,32.0,32.0,0.0,0.0,7.0,7.0,219.0,0.0,0.0,0.0,,,,,,,,,
+S0-150,3,230.0,0.0,16.0,0.0,16.0,16.0,16.0,0.0,0.0,0.0,0.0,16.0,16.0,0.0,0.0,9.0,7.0,183.0,0.0,0.0,0.0,,,,,,,,,
+S0P-150,1,312.0,0.0,31.0,0.0,31.0,31.0,31.0,0.0,0.0,0.0,0.0,31.0,31.0,0.0,0.0,13.0,14.0,211.0,0.0,0.0,0.0,,,,,,,,,
+S0P-150,2,330.0,0.0,31.0,0.0,31.0,31.0,31.0,0.0,0.0,0.0,0.0,31.0,31.0,0.0,0.0,9.0,10.0,217.0,0.0,0.0,0.0,,,,,,,,,
+R-b-150,1,,,,,,,,,,,,,,,,,,,,,,568.0,287.0,0.0,0.0,254.0,254.0,1597.0,1597.0,0.0
+R-b-150,2,,,,,,,,,,,,,,,,,,,,,,548.0,258.0,0.0,0.0,293.0,293.0,1313.0,1313.0,0.0
+R-b-150,3,,,,,,,,,,,,,,,,,,,,,,569.0,296.0,0.0,0.0,388.0,388.0,1493.0,1493.0,0.0

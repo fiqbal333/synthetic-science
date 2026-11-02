@@ -1,0 +1,217 @@
+world,set,metric,n_seeds,mean,min,max,per_seed
+S0-150,certified_units,n_items,3,14.0,8.0,18.0,s1=16; s2=18; s3=8
+S0-150,certified_units,items_with_planted_flaw,3,8.0,7.0,9.0,s1=7; s2=9; s3=8
+S0-150,certified_units,flaws_planted,3,8.666666666666666,8.0,9.0,s1=9; s2=9; s3=8
+S0-150,certified_units,flaws_caught,3,8.0,7.0,9.0,s1=8; s2=9; s3=7
+S0-150,certified_units,flaws_missed,3,0.6666666666666666,0.0,1.0,s1=1; s2=0; s3=1
+S0-150,certified_units,share_caught,3,0.9212962962962963,0.875,1.0,s1=0.889; s2=1; s3=0.875
+S0-150,certified_units,items_with_a_missed_flaw,3,0.6666666666666666,0.0,1.0,s1=1; s2=0; s3=1
+S0-150,certified_units,items_with_missed_flaw_false_discovery,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units,duplicates_planted,3,1.3333333333333333,0.0,2.0,s1=2; s2=2; s3=0
+S0-150,certified_units,duplicates_caught,3,1.3333333333333333,0.0,2.0,s1=2; s2=2; s3=0
+S0-150,certified_units,scale_mixture_planted,3,0.6666666666666666,0.0,1.0,s1=1; s2=1; s3=0
+S0-150,certified_units,scale_mixture_caught,3,0.3333333333333333,0.0,1.0,s1=0; s2=1; s3=0
+S0-150,certified_units,reverse_coded_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units,reverse_coded_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units,selection_on_outcome_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units,selection_on_outcome_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units,bad_control_planted,3,2.6666666666666665,2.0,3.0,s1=3; s2=3; s3=2
+S0-150,certified_units,bad_control_caught,3,2.6666666666666665,2.0,3.0,s1=3; s2=3; s3=2
+S0-150,certified_units,miscoded_values_planted,3,1.0,0.0,2.0,s1=0; s2=1; s3=2
+S0-150,certified_units,miscoded_values_caught,3,1.0,0.0,2.0,s1=0; s2=1; s3=2
+S0-150,certified_units,unit_mismatch_planted,3,1.3333333333333333,0.0,2.0,s1=2; s2=0; s3=2
+S0-150,certified_units,unit_mismatch_caught,3,1.0,0.0,2.0,s1=2; s2=0; s3=1
+S0-150,certified_units,omitted_standard_control_planted,3,1.6666666666666667,1.0,2.0,s1=1; s2=2; s3=2
+S0-150,certified_units,omitted_standard_control_caught,3,1.6666666666666667,1.0,2.0,s1=1; s2=2; s3=2
+S0-150,certified_units_live_authored,n_items,3,10.333333333333334,6.0,13.0,s1=12; s2=13; s3=6
+S0-150,certified_units_live_authored,items_with_planted_flaw,3,4.666666666666667,4.0,6.0,s1=4; s2=4; s3=6
+S0-150,certified_units_live_authored,flaws_planted,3,5.0,4.0,6.0,s1=5; s2=4; s3=6
+S0-150,certified_units_live_authored,flaws_caught,3,4.666666666666667,4.0,5.0,s1=5; s2=4; s3=5
+S0-150,certified_units_live_authored,flaws_missed,3,0.3333333333333333,0.0,1.0,s1=0; s2=0; s3=1
+S0-150,certified_units_live_authored,share_caught,3,0.9444444444444445,0.8333333333333334,1.0,s1=1; s2=1; s3=0.833
+S0-150,certified_units_live_authored,items_with_a_missed_flaw,3,0.3333333333333333,0.0,1.0,s1=0; s2=0; s3=1
+S0-150,certified_units_live_authored,items_with_missed_flaw_false_discovery,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units_live_authored,duplicates_planted,3,1.0,0.0,2.0,s1=1; s2=2; s3=0
+S0-150,certified_units_live_authored,duplicates_caught,3,1.0,0.0,2.0,s1=1; s2=2; s3=0
+S0-150,certified_units_live_authored,scale_mixture_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units_live_authored,scale_mixture_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units_live_authored,reverse_coded_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units_live_authored,reverse_coded_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units_live_authored,selection_on_outcome_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units_live_authored,selection_on_outcome_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,certified_units_live_authored,bad_control_planted,3,1.3333333333333333,1.0,2.0,s1=2; s2=1; s3=1
+S0-150,certified_units_live_authored,bad_control_caught,3,1.3333333333333333,1.0,2.0,s1=2; s2=1; s3=1
+S0-150,certified_units_live_authored,miscoded_values_planted,3,0.6666666666666666,0.0,2.0,s1=0; s2=0; s3=2
+S0-150,certified_units_live_authored,miscoded_values_caught,3,0.6666666666666666,0.0,2.0,s1=0; s2=0; s3=2
+S0-150,certified_units_live_authored,unit_mismatch_planted,3,1.3333333333333333,0.0,2.0,s1=2; s2=0; s3=2
+S0-150,certified_units_live_authored,unit_mismatch_caught,3,1.0,0.0,2.0,s1=2; s2=0; s3=1
+S0-150,certified_units_live_authored,omitted_standard_control_planted,3,0.6666666666666666,0.0,1.0,s1=0; s2=1; s3=1
+S0-150,certified_units_live_authored,omitted_standard_control_caught,3,0.6666666666666666,0.0,1.0,s1=0; s2=1; s3=1
+S0-150,live_studies_all,n_items,3,105.66666666666667,99.0,113.0,s1=105; s2=113; s3=99
+S0-150,live_studies_all,items_with_planted_flaw,3,57.0,51.0,63.0,s1=51; s2=57; s3=63
+S0-150,live_studies_all,flaws_planted,3,63.666666666666664,54.0,74.0,s1=54; s2=63; s3=74
+S0-150,live_studies_all,flaws_caught,3,59.666666666666664,50.0,69.0,s1=50; s2=60; s3=69
+S0-150,live_studies_all,flaws_missed,3,4.0,3.0,5.0,s1=4; s2=3; s3=5
+S0-150,live_studies_all,share_caught,3,0.9369131035797702,0.9259259259259259,0.9523809523809523,s1=0.926; s2=0.952; s3=0.932
+S0-150,live_studies_all,items_with_a_missed_flaw,3,4.0,3.0,5.0,s1=4; s2=3; s3=5
+S0-150,live_studies_all,items_with_missed_flaw_false_discovery,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,live_studies_all,duplicates_planted,3,14.333333333333334,12.0,16.0,s1=12; s2=16; s3=15
+S0-150,live_studies_all,duplicates_caught,3,14.0,12.0,16.0,s1=12; s2=16; s3=14
+S0-150,live_studies_all,scale_mixture_planted,3,12.0,10.0,16.0,s1=10; s2=10; s3=16
+S0-150,live_studies_all,scale_mixture_caught,3,10.333333333333334,8.0,14.0,s1=8; s2=9; s3=14
+S0-150,live_studies_all,reverse_coded_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,live_studies_all,reverse_coded_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,live_studies_all,selection_on_outcome_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,live_studies_all,selection_on_outcome_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,live_studies_all,bad_control_planted,3,9.0,7.0,11.0,s1=11; s2=9; s3=7
+S0-150,live_studies_all,bad_control_caught,3,9.0,7.0,11.0,s1=11; s2=9; s3=7
+S0-150,live_studies_all,miscoded_values_planted,3,11.333333333333334,10.0,14.0,s1=10; s2=10; s3=14
+S0-150,live_studies_all,miscoded_values_caught,3,10.333333333333334,9.0,13.0,s1=9; s2=9; s3=13
+S0-150,live_studies_all,unit_mismatch_planted,3,4.666666666666667,4.0,6.0,s1=4; s2=4; s3=6
+S0-150,live_studies_all,unit_mismatch_caught,3,3.6666666666666665,3.0,5.0,s1=3; s2=3; s3=5
+S0-150,live_studies_all,omitted_standard_control_planted,3,12.333333333333334,7.0,16.0,s1=7; s2=14; s3=16
+S0-150,live_studies_all,omitted_standard_control_caught,3,12.333333333333334,7.0,16.0,s1=7; s2=14; s3=16
+S0P-150,certified_units,n_items,2,12.5,12.0,13.0,s1=12; s2=13
+S0P-150,certified_units,items_with_planted_flaw,2,6.0,4.0,8.0,s1=4; s2=8
+S0P-150,certified_units,flaws_planted,2,6.5,5.0,8.0,s1=5; s2=8
+S0P-150,certified_units,flaws_caught,2,6.5,5.0,8.0,s1=5; s2=8
+S0P-150,certified_units,flaws_missed,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units,share_caught,2,1.0,1.0,1.0,s1=1; s2=1
+S0P-150,certified_units,items_with_a_missed_flaw,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units,items_with_missed_flaw_false_discovery,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units,duplicates_planted,2,2.0,1.0,3.0,s1=1; s2=3
+S0P-150,certified_units,duplicates_caught,2,2.0,1.0,3.0,s1=1; s2=3
+S0P-150,certified_units,scale_mixture_planted,2,0.5,0.0,1.0,s1=0; s2=1
+S0P-150,certified_units,scale_mixture_caught,2,0.5,0.0,1.0,s1=0; s2=1
+S0P-150,certified_units,reverse_coded_planted,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units,reverse_coded_caught,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units,selection_on_outcome_planted,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units,selection_on_outcome_caught,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units,bad_control_planted,2,1.0,0.0,2.0,s1=2; s2=0
+S0P-150,certified_units,bad_control_caught,2,1.0,0.0,2.0,s1=2; s2=0
+S0P-150,certified_units,miscoded_values_planted,2,1.0,1.0,1.0,s1=1; s2=1
+S0P-150,certified_units,miscoded_values_caught,2,1.0,1.0,1.0,s1=1; s2=1
+S0P-150,certified_units,unit_mismatch_planted,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units,unit_mismatch_caught,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units,omitted_standard_control_planted,2,1.5,0.0,3.0,s1=0; s2=3
+S0P-150,certified_units,omitted_standard_control_caught,2,1.5,0.0,3.0,s1=0; s2=3
+S0P-150,certified_units_live_authored,n_items,2,10.0,10.0,10.0,s1=10; s2=10
+S0P-150,certified_units_live_authored,items_with_planted_flaw,2,4.0,3.0,5.0,s1=3; s2=5
+S0P-150,certified_units_live_authored,flaws_planted,2,4.5,4.0,5.0,s1=4; s2=5
+S0P-150,certified_units_live_authored,flaws_caught,2,4.5,4.0,5.0,s1=4; s2=5
+S0P-150,certified_units_live_authored,flaws_missed,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,share_caught,2,1.0,1.0,1.0,s1=1; s2=1
+S0P-150,certified_units_live_authored,items_with_a_missed_flaw,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,items_with_missed_flaw_false_discovery,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,duplicates_planted,2,1.5,1.0,2.0,s1=1; s2=2
+S0P-150,certified_units_live_authored,duplicates_caught,2,1.5,1.0,2.0,s1=1; s2=2
+S0P-150,certified_units_live_authored,scale_mixture_planted,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,scale_mixture_caught,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,reverse_coded_planted,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,reverse_coded_caught,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,selection_on_outcome_planted,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,selection_on_outcome_caught,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,certified_units_live_authored,bad_control_planted,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units_live_authored,bad_control_caught,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units_live_authored,miscoded_values_planted,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units_live_authored,miscoded_values_caught,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units_live_authored,unit_mismatch_planted,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units_live_authored,unit_mismatch_caught,2,0.5,0.0,1.0,s1=1; s2=0
+S0P-150,certified_units_live_authored,omitted_standard_control_planted,2,1.5,0.0,3.0,s1=0; s2=3
+S0P-150,certified_units_live_authored,omitted_standard_control_caught,2,1.5,0.0,3.0,s1=0; s2=3
+S0P-150,live_studies_all,n_items,2,109.0,107.0,111.0,s1=107; s2=111
+S0P-150,live_studies_all,items_with_planted_flaw,2,57.5,53.0,62.0,s1=53; s2=62
+S0P-150,live_studies_all,flaws_planted,2,63.5,57.0,70.0,s1=57; s2=70
+S0P-150,live_studies_all,flaws_caught,2,57.5,52.0,63.0,s1=52; s2=63
+S0P-150,live_studies_all,flaws_missed,2,6.0,5.0,7.0,s1=5; s2=7
+S0P-150,live_studies_all,share_caught,2,0.906140350877193,0.9,0.9122807017543859,s1=0.912; s2=0.900
+S0P-150,live_studies_all,items_with_a_missed_flaw,2,6.0,5.0,7.0,s1=5; s2=7
+S0P-150,live_studies_all,items_with_missed_flaw_false_discovery,0,,,,s1=n/a; s2=n/a
+S0P-150,live_studies_all,duplicates_planted,2,16.0,14.0,18.0,s1=14; s2=18
+S0P-150,live_studies_all,duplicates_caught,2,16.0,14.0,18.0,s1=14; s2=18
+S0P-150,live_studies_all,scale_mixture_planted,2,10.5,9.0,12.0,s1=9; s2=12
+S0P-150,live_studies_all,scale_mixture_caught,2,9.0,9.0,9.0,s1=9; s2=9
+S0P-150,live_studies_all,reverse_coded_planted,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,live_studies_all,reverse_coded_caught,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,live_studies_all,selection_on_outcome_planted,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,live_studies_all,selection_on_outcome_caught,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,live_studies_all,bad_control_planted,2,10.5,9.0,12.0,s1=12; s2=9
+S0P-150,live_studies_all,bad_control_caught,2,10.5,9.0,12.0,s1=12; s2=9
+S0P-150,live_studies_all,miscoded_values_planted,2,10.0,10.0,10.0,s1=10; s2=10
+S0P-150,live_studies_all,miscoded_values_caught,2,7.0,7.0,7.0,s1=7; s2=7
+S0P-150,live_studies_all,unit_mismatch_planted,2,4.5,4.0,5.0,s1=4; s2=5
+S0P-150,live_studies_all,unit_mismatch_caught,2,4.0,4.0,4.0,s1=4; s2=4
+S0P-150,live_studies_all,omitted_standard_control_planted,2,12.0,8.0,16.0,s1=8; s2=16
+S0P-150,live_studies_all,omitted_standard_control_caught,2,11.0,6.0,16.0,s1=6; s2=16
+R-b-150,certified_units,n_items,3,13.666666666666666,5.0,25.0,s1=11; s2=5; s3=25
+R-b-150,certified_units,items_with_planted_flaw,3,9.333333333333334,5.0,16.0,s1=7; s2=5; s3=16
+R-b-150,certified_units,flaws_planted,3,10.666666666666666,5.0,18.0,s1=9; s2=5; s3=18
+R-b-150,certified_units,flaws_caught,3,8.0,4.0,13.0,s1=7; s2=4; s3=13
+R-b-150,certified_units,flaws_missed,3,2.6666666666666665,1.0,5.0,s1=2; s2=1; s3=5
+R-b-150,certified_units,share_caught,3,0.7666666666666667,0.7222222222222222,0.8,s1=0.778; s2=0.800; s3=0.722
+R-b-150,certified_units,items_with_a_missed_flaw,3,2.3333333333333335,1.0,4.0,s1=2; s2=1; s3=4
+R-b-150,certified_units,items_with_missed_flaw_false_discovery,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units,duplicates_planted,3,2.3333333333333335,1.0,3.0,s1=3; s2=1; s3=3
+R-b-150,certified_units,duplicates_caught,3,2.3333333333333335,1.0,3.0,s1=3; s2=1; s3=3
+R-b-150,certified_units,scale_mixture_planted,3,2.3333333333333335,1.0,4.0,s1=1; s2=2; s3=4
+R-b-150,certified_units,scale_mixture_caught,3,1.0,1.0,1.0,s1=1; s2=1; s3=1
+R-b-150,certified_units,reverse_coded_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units,reverse_coded_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units,selection_on_outcome_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units,selection_on_outcome_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units,bad_control_planted,3,0.6666666666666666,0.0,1.0,s1=1; s2=0; s3=1
+R-b-150,certified_units,bad_control_caught,3,0.6666666666666666,0.0,1.0,s1=1; s2=0; s3=1
+R-b-150,certified_units,miscoded_values_planted,3,1.6666666666666667,0.0,4.0,s1=1; s2=0; s3=4
+R-b-150,certified_units,miscoded_values_caught,3,0.6666666666666666,0.0,2.0,s1=0; s2=0; s3=2
+R-b-150,certified_units,unit_mismatch_planted,3,1.0,0.0,2.0,s1=1; s2=0; s3=2
+R-b-150,certified_units,unit_mismatch_caught,3,1.0,0.0,2.0,s1=1; s2=0; s3=2
+R-b-150,certified_units,omitted_standard_control_planted,3,2.6666666666666665,2.0,4.0,s1=2; s2=2; s3=4
+R-b-150,certified_units,omitted_standard_control_caught,3,2.3333333333333335,1.0,4.0,s1=1; s2=2; s3=4
+R-b-150,certified_units_live_authored,n_items,3,13.666666666666666,5.0,25.0,s1=11; s2=5; s3=25
+R-b-150,certified_units_live_authored,items_with_planted_flaw,3,9.333333333333334,5.0,16.0,s1=7; s2=5; s3=16
+R-b-150,certified_units_live_authored,flaws_planted,3,10.666666666666666,5.0,18.0,s1=9; s2=5; s3=18
+R-b-150,certified_units_live_authored,flaws_caught,3,8.0,4.0,13.0,s1=7; s2=4; s3=13
+R-b-150,certified_units_live_authored,flaws_missed,3,2.6666666666666665,1.0,5.0,s1=2; s2=1; s3=5
+R-b-150,certified_units_live_authored,share_caught,3,0.7666666666666667,0.7222222222222222,0.8,s1=0.778; s2=0.800; s3=0.722
+R-b-150,certified_units_live_authored,items_with_a_missed_flaw,3,2.3333333333333335,1.0,4.0,s1=2; s2=1; s3=4
+R-b-150,certified_units_live_authored,items_with_missed_flaw_false_discovery,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units_live_authored,duplicates_planted,3,2.3333333333333335,1.0,3.0,s1=3; s2=1; s3=3
+R-b-150,certified_units_live_authored,duplicates_caught,3,2.3333333333333335,1.0,3.0,s1=3; s2=1; s3=3
+R-b-150,certified_units_live_authored,scale_mixture_planted,3,2.3333333333333335,1.0,4.0,s1=1; s2=2; s3=4
+R-b-150,certified_units_live_authored,scale_mixture_caught,3,1.0,1.0,1.0,s1=1; s2=1; s3=1
+R-b-150,certified_units_live_authored,reverse_coded_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units_live_authored,reverse_coded_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units_live_authored,selection_on_outcome_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units_live_authored,selection_on_outcome_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,certified_units_live_authored,bad_control_planted,3,0.6666666666666666,0.0,1.0,s1=1; s2=0; s3=1
+R-b-150,certified_units_live_authored,bad_control_caught,3,0.6666666666666666,0.0,1.0,s1=1; s2=0; s3=1
+R-b-150,certified_units_live_authored,miscoded_values_planted,3,1.6666666666666667,0.0,4.0,s1=1; s2=0; s3=4
+R-b-150,certified_units_live_authored,miscoded_values_caught,3,0.6666666666666666,0.0,2.0,s1=0; s2=0; s3=2
+R-b-150,certified_units_live_authored,unit_mismatch_planted,3,1.0,0.0,2.0,s1=1; s2=0; s3=2
+R-b-150,certified_units_live_authored,unit_mismatch_caught,3,1.0,0.0,2.0,s1=1; s2=0; s3=2
+R-b-150,certified_units_live_authored,omitted_standard_control_planted,3,2.6666666666666665,2.0,4.0,s1=2; s2=2; s3=4
+R-b-150,certified_units_live_authored,omitted_standard_control_caught,3,2.3333333333333335,1.0,4.0,s1=1; s2=2; s3=4
+R-b-150,live_studies_all,n_items,3,80.33333333333333,70.0,100.0,s1=71; s2=70; s3=100
+R-b-150,live_studies_all,items_with_planted_flaw,3,54.0,49.0,64.0,s1=49; s2=49; s3=64
+R-b-150,live_studies_all,flaws_planted,3,66.33333333333333,61.0,75.0,s1=63; s2=61; s3=75
+R-b-150,live_studies_all,flaws_caught,3,46.333333333333336,35.0,56.0,s1=35; s2=48; s3=56
+R-b-150,live_studies_all,flaws_missed,3,20.0,13.0,28.0,s1=28; s2=13; s3=19
+R-b-150,live_studies_all,share_caught,3,0.6963691560412872,0.5555555555555556,0.7868852459016393,s1=0.556; s2=0.787; s3=0.747
+R-b-150,live_studies_all,items_with_a_missed_flaw,3,17.666666666666668,12.0,24.0,s1=24; s2=12; s3=17
+R-b-150,live_studies_all,items_with_missed_flaw_false_discovery,0,,,,s1=n/a; s2=n/a; s3=n/a
+R-b-150,live_studies_all,duplicates_planted,3,16.666666666666668,11.0,21.0,s1=11; s2=18; s3=21
+R-b-150,live_studies_all,duplicates_caught,3,15.666666666666666,10.0,20.0,s1=10; s2=17; s3=20
+R-b-150,live_studies_all,scale_mixture_planted,3,13.666666666666666,11.0,16.0,s1=11; s2=14; s3=16
+R-b-150,live_studies_all,scale_mixture_caught,3,6.666666666666667,5.0,9.0,s1=5; s2=9; s3=6
+R-b-150,live_studies_all,reverse_coded_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,live_studies_all,reverse_coded_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,live_studies_all,selection_on_outcome_planted,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,live_studies_all,selection_on_outcome_caught,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+R-b-150,live_studies_all,bad_control_planted,3,6.0,5.0,7.0,s1=7; s2=5; s3=6
+R-b-150,live_studies_all,bad_control_caught,3,6.0,5.0,7.0,s1=7; s2=5; s3=6
+R-b-150,live_studies_all,miscoded_values_planted,3,12.666666666666666,9.0,16.0,s1=13; s2=9; s3=16
+R-b-150,live_studies_all,miscoded_values_caught,3,5.666666666666667,2.0,11.0,s1=2; s2=4; s3=11
+R-b-150,live_studies_all,unit_mismatch_planted,3,5.666666666666667,4.0,8.0,s1=8; s2=5; s3=4
+R-b-150,live_studies_all,unit_mismatch_caught,3,3.0,1.0,4.0,s1=4; s2=4; s3=1
+R-b-150,live_studies_all,omitted_standard_control_planted,3,11.666666666666666,10.0,13.0,s1=13; s2=10; s3=12
+R-b-150,live_studies_all,omitted_standard_control_caught,3,9.333333333333334,7.0,12.0,s1=7; s2=9; s3=12

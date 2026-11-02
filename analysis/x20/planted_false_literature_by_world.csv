@@ -1,0 +1,85 @@
+world,snapshot,metric,n_seeds,mean,min,max,per_seed
+S0-150,Q8,inherited_units,3,117.0,113.0,120.0,s1=120; s2=118; s3=113
+S0-150,Q8,inherited_false_units,3,37.666666666666664,30.0,48.0,s1=30; s2=48; s3=35
+S0-150,Q8,challenged_by_a_live_analysis_or_unit,3,4.0,0.0,11.0,s1=0; s2=11; s3=1
+S0-150,Q8,overturned_by_a_later_certified_unit,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,Q8,formally_retracted_or_superseded,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,Q8,still_believed_B1,3,32.666666666666664,25.0,42.0,s1=25; s2=42; s3=31
+S0-150,Q8,still_believed_B2,3,26.666666666666668,19.0,37.0,s1=19; s2=37; s3=24
+S0-150,Q8,still_believed_B3,3,34.666666666666664,25.0,46.0,s1=25; s2=46; s3=33
+S0-150,Q8,still_believed_B5,3,33.0,25.0,42.0,s1=25; s2=42; s3=32
+S0-150,Q8,on_core_questions,3,27.333333333333332,22.0,32.0,s1=22; s2=32; s3=28
+S0-150,Q8,handbook_states_false_direction,3,22.666666666666668,17.0,26.0,s1=17; s2=26; s3=25
+S0-150,Q8,share_overturned,3,0.0,0.0,0.0,s1=0; s2=0; s3=0
+S0-150,Q8,share_still_believed_B1,3,0.8646825396825397,0.8333333333333334,0.8857142857142857,s1=0.833; s2=0.875; s3=0.886
+S0-150,Q8,share_handbook_states_false_of_core,3,0.8260281385281386,0.7727272727272727,0.8928571428571429,s1=0.773; s2=0.812; s3=0.893
+S0-150,Q20,inherited_units,3,117.0,113.0,120.0,s1=120; s2=118; s3=113
+S0-150,Q20,inherited_false_units,3,37.666666666666664,30.0,48.0,s1=30; s2=48; s3=35
+S0-150,Q20,challenged_by_a_live_analysis_or_unit,3,13.666666666666666,6.0,18.0,s1=6; s2=18; s3=17
+S0-150,Q20,overturned_by_a_later_certified_unit,3,4.0,2.0,6.0,s1=2; s2=4; s3=6
+S0-150,Q20,formally_retracted_or_superseded,0,,,,s1=n/a; s2=n/a; s3=n/a
+S0-150,Q20,still_believed_B1,3,30.666666666666668,23.0,40.0,s1=23; s2=40; s3=29
+S0-150,Q20,still_believed_B2,3,25.333333333333332,19.0,35.0,s1=19; s2=35; s3=22
+S0-150,Q20,still_believed_B3,3,34.666666666666664,25.0,46.0,s1=25; s2=46; s3=33
+S0-150,Q20,still_believed_B5,3,33.0,25.0,42.0,s1=25; s2=42; s3=32
+S0-150,Q20,on_core_questions,3,27.333333333333332,22.0,32.0,s1=22; s2=32; s3=28
+S0-150,Q20,handbook_states_false_direction,3,19.333333333333332,15.0,24.0,s1=15; s2=24; s3=19
+S0-150,Q20,share_overturned,3,0.10714285714285714,0.06666666666666667,0.17142857142857143,s1=0.067; s2=0.083; s3=0.171
+S0-150,Q20,share_still_believed_B1,3,0.8095238095238096,0.7666666666666667,0.8333333333333334,s1=0.767; s2=0.833; s3=0.829
+S0-150,Q20,share_handbook_states_false_of_core,3,0.7034632034632035,0.6785714285714286,0.75,s1=0.682; s2=0.750; s3=0.679
+S0P-150,Q8,inherited_units,2,119.0,118.0,120.0,s1=120; s2=118
+S0P-150,Q8,inherited_false_units,2,39.0,30.0,48.0,s1=30; s2=48
+S0P-150,Q8,challenged_by_a_live_analysis_or_unit,2,6.5,3.0,10.0,s1=3; s2=10
+S0P-150,Q8,overturned_by_a_later_certified_unit,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,Q8,formally_retracted_or_superseded,0,,,,s1=n/a; s2=n/a
+S0P-150,Q8,still_believed_B1,2,33.5,25.0,42.0,s1=25; s2=42
+S0P-150,Q8,still_believed_B2,2,28.0,19.0,37.0,s1=19; s2=37
+S0P-150,Q8,still_believed_B3,2,35.5,25.0,46.0,s1=25; s2=46
+S0P-150,Q8,still_believed_B5,2,33.5,25.0,42.0,s1=25; s2=42
+S0P-150,Q8,on_core_questions,2,27.0,22.0,32.0,s1=22; s2=32
+S0P-150,Q8,handbook_states_false_direction,2,21.5,17.0,26.0,s1=17; s2=26
+S0P-150,Q8,share_overturned,2,0.0,0.0,0.0,s1=0; s2=0
+S0P-150,Q8,share_still_believed_B1,2,0.8541666666666667,0.8333333333333334,0.875,s1=0.833; s2=0.875
+S0P-150,Q8,share_handbook_states_false_of_core,2,0.7926136363636364,0.7727272727272727,0.8125,s1=0.773; s2=0.812
+S0P-150,Q20,inherited_units,2,119.0,118.0,120.0,s1=120; s2=118
+S0P-150,Q20,inherited_false_units,2,39.0,30.0,48.0,s1=30; s2=48
+S0P-150,Q20,challenged_by_a_live_analysis_or_unit,2,15.5,13.0,18.0,s1=13; s2=18
+S0P-150,Q20,overturned_by_a_later_certified_unit,2,2.5,2.0,3.0,s1=2; s2=3
+S0P-150,Q20,formally_retracted_or_superseded,0,,,,s1=n/a; s2=n/a
+S0P-150,Q20,still_believed_B1,2,32.0,23.0,41.0,s1=23; s2=41
+S0P-150,Q20,still_believed_B2,2,27.5,19.0,36.0,s1=19; s2=36
+S0P-150,Q20,still_believed_B3,2,36.5,27.0,46.0,s1=27; s2=46
+S0P-150,Q20,still_believed_B5,2,33.5,25.0,42.0,s1=25; s2=42
+S0P-150,Q20,on_core_questions,2,27.0,22.0,32.0,s1=22; s2=32
+S0P-150,Q20,handbook_states_false_direction,2,20.0,15.0,25.0,s1=15; s2=25
+S0P-150,Q20,share_overturned,2,0.06458333333333333,0.0625,0.06666666666666667,s1=0.067; s2=0.062
+S0P-150,Q20,share_still_believed_B1,2,0.8104166666666667,0.7666666666666667,0.8541666666666666,s1=0.767; s2=0.854
+S0P-150,Q20,share_handbook_states_false_of_core,2,0.7315340909090908,0.6818181818181818,0.78125,s1=0.682; s2=0.781
+R-b-150,Q8,inherited_units,3,100.0,100.0,100.0,s1=100; s2=100; s3=100
+R-b-150,Q8,inherited_false_units,3,36.333333333333336,27.0,48.0,s1=27; s2=48; s3=34
+R-b-150,Q8,challenged_by_a_live_analysis_or_unit,3,1.0,1.0,1.0,s1=1; s2=1; s3=1
+R-b-150,Q8,overturned_by_a_later_certified_unit,3,0.3333333333333333,0.0,1.0,s1=0; s2=0; s3=1
+R-b-150,Q8,formally_retracted_or_superseded,3,0.3333333333333333,0.0,1.0,s1=0; s2=0; s3=1
+R-b-150,Q8,still_believed_B1,3,31.333333333333332,22.0,42.0,s1=22; s2=42; s3=30
+R-b-150,Q8,still_believed_B2,3,25.666666666666668,18.0,37.0,s1=18; s2=37; s3=22
+R-b-150,Q8,still_believed_B3,3,33.333333333333336,23.0,46.0,s1=23; s2=46; s3=31
+R-b-150,Q8,still_believed_B5,3,31.333333333333332,22.0,42.0,s1=22; s2=42; s3=30
+R-b-150,Q8,on_core_questions,3,26.0,19.0,32.0,s1=19; s2=32; s3=27
+R-b-150,Q8,handbook_states_false_direction,3,19.0,14.0,26.0,s1=14; s2=26; s3=17
+R-b-150,Q8,share_overturned,3,0.00980392156862745,0.0,0.029411764705882353,s1=0; s2=0; s3=0.029
+R-b-150,Q8,share_still_believed_B1,3,0.8573892519970951,0.8148148148148148,0.8823529411764706,s1=0.815; s2=0.875; s3=0.882
+R-b-150,Q8,share_handbook_states_false_of_core,3,0.7263239116309292,0.6296296296296297,0.8125,s1=0.737; s2=0.812; s3=0.630
+R-b-150,Q20,inherited_units,3,100.0,100.0,100.0,s1=100; s2=100; s3=100
+R-b-150,Q20,inherited_false_units,3,36.333333333333336,27.0,48.0,s1=27; s2=48; s3=34
+R-b-150,Q20,challenged_by_a_live_analysis_or_unit,3,4.333333333333333,1.0,10.0,s1=1; s2=2; s3=10
+R-b-150,Q20,overturned_by_a_later_certified_unit,3,0.6666666666666666,0.0,2.0,s1=0; s2=0; s3=2
+R-b-150,Q20,formally_retracted_or_superseded,3,0.6666666666666666,0.0,2.0,s1=0; s2=0; s3=2
+R-b-150,Q20,still_believed_B1,3,31.0,22.0,42.0,s1=22; s2=42; s3=29
+R-b-150,Q20,still_believed_B2,3,25.333333333333332,18.0,37.0,s1=18; s2=37; s3=21
+R-b-150,Q20,still_believed_B3,3,33.0,23.0,46.0,s1=23; s2=46; s3=30
+R-b-150,Q20,still_believed_B5,3,31.0,22.0,42.0,s1=22; s2=42; s3=29
+R-b-150,Q20,on_core_questions,3,26.0,19.0,32.0,s1=19; s2=32; s3=27
+R-b-150,Q20,handbook_states_false_direction,3,16.666666666666668,12.0,24.0,s1=14; s2=24; s3=12
+R-b-150,Q20,share_overturned,3,0.0196078431372549,0.0,0.058823529411764705,s1=0; s2=0; s3=0.059
+R-b-150,Q20,share_still_believed_B1,3,0.8475853304284677,0.8148148148148148,0.875,s1=0.815; s2=0.875; s3=0.853
+R-b-150,Q20,share_handbook_states_false_of_core,3,0.6437621832358674,0.4444444444444444,0.75,s1=0.737; s2=0.750; s3=0.444

@@ -1,0 +1,99 @@
+# Rule-agent parameters recalibrated for fast mode from the eight 8-quarter live runs of the reported worlds. Fast mode only:
+# the reported live runs' warm start used configs/fastmode/params.yaml.
+# STATUS: calibrated-stage1-2026-10-15. Written by tools/calibrate_fastmode_stage1.py (do not edit by hand; rerun it).
+# Sources (read-only, quarters >= 1 only; the warm-start pre-history is rule-made in every mode):
+#   paper world: runs/S0-150/{1,2,3}/llm and runs/S0P-150/{1,2}/llm pooled (authors, referees, editor);
+#   repository world: runs/R-b-150/{1,2,3}/llm pooled (lab heads, analysts, verifiers); author role pooled across P and R.
+# The same script writes a table with every value's estimate, n and source. Convention: proportions with n < 30
+# Laplace-smoothed ((k+1)/(n+2)); `declared (kept)` = not identified by these runs, carried over from
+# configs/fastmode/params.yaml (the 2026-10-14 calibration from the early test runs).
+# Keys new in this file (absent or 0 in params.yaml = the earlier rule behaviour): reviewer.validity_paper_sd, p_unprompted_issue,
+# p_unprompted_major; editor.accept_cut_round1; author.analyst_reports_found_sign; lab_head.p_request_n, request_n_multiple.
+# Institutional settings (timing, tenure, capacity, truth) are NOT here: they live in the scenario configs and are design
+# choices grounded in the corpus.
+# REFIT 1 (tools/fastcal_refit.py, after the second validation round failed some pass criteria): editor intercepts moved by
+# the composite-to-engine offset; fast analyses and verifications keep a deposit's requested size. The refit saves the first
+# fit next to this file as params-stage1-fit1.yaml.
+status: calibrated-stage1-2026-10-15-refit1
+author:
+  # VERIFIED: live-authored P papers + R analyses (all VERIFIED); reverse_coded and selection_on_outcome never planted: declared (kept)
+  p_handle:
+    VERIFIED: {duplicates: 1.0, scale_mixture: 0.75, reverse_coded: 0.75, selection_on_outcome: 0.55, bad_control: 0.97, miscoded_values: 0.61, unit_mismatch: 0.83, omitted_standard_control: 0.9}
+    AUTO:     {duplicates: 0.05, scale_mixture: 0.05, reverse_coded: 0.05, selection_on_outcome: 0.2, bad_control: 0.45, miscoded_values: 0.05, unit_mismatch: 0.05, omitted_standard_control: 0.85}   # declared (kept): no AUTO author in Stage 1
+  p_use_fe_panel: {archival_regression: 0.84, causal_design: 0.65, survey: 0.83}   # panel studies with firm fixed effects, by lead repertoire (P+R)
+  n_hypotheses: {1: 0.01, 2: 0.016, 3: 0.055, 4: 0.285, 5: 0.44, 6: 0.129, 7: 0.032, 8: 0.016, 9: 0.006, 10: 0.01}   # hypotheses per P paper and entries per R analysis, pooled
+  p_choose_fringe: 0.04            # live P menu choices
+  p_choose_crowded: 0.11
+  affinity_weight_power: 1.0       # declared (kept)
+  p_mark_contradiction_when_disagree: 0.7   # declared (kept)
+  n_models_run: {VERIFIED: [5, 14], AUTO: [1, 2]}   # VERIFIED p10-p90 (P+R); AUTO declared
+  p_revise_when_asked: 0.9         # kept: an engine lottery in live and fast alike, not re-identifiable
+  p_limitations_mention_selection: {VERIFIED: 0.6, AUTO: 0.2}   # declared (kept)
+  analyst_reports_found_sign: true   # R analysts state the direction found (no predicted sign): supported = significant either way
+reviewer:
+  # noticing a specific planted problem is not identified: live referees raised data/specification/inference objections on every
+  # paper, flagged or not, at the same kind-specific rates (detection lift ~0); the objections are p_unprompted_issue
+  p_notice: {duplicates: 0.0, scale_mixture: 0.0, reverse_coded: 0.0, selection_on_outcome: 0.0, bad_control: 0.0, miscoded_values: 0.0, unit_mismatch: 0.0, omitted_standard_control: 0.0, se_not_clustered: 0.0, n_inflated: 0.0, causal_language: 0.0, claims_text_mismatch: 0.0}
+  p_notice_assist_multiplier: {none: 1.0, prescreen: 1.15, ai_written: 0.85}   # declared (kept)
+  load_penalty_per_paper: 0.02     # declared (kept)
+  p_unprompted_issue: 1.0        # reviews of unflagged papers raising a data/specification/inference objection
+  p_unprompted_major: 0.935        # ... with at least one major issue
+  # validity (0-100): round-1 cell means (OLS, relation adjusted), a shift shared by the paper's referees (between-paper SD),
+  # and the referee's own draw (within-paper SD)
+  validity_mean: {clean_supported: 51.5, clean_null: 54.7, flawed_noticed: 50.1, flawed_unnoticed: 50.1, contradiction_penalty: -14.6, replication_bonus: -2.1}
+  validity_paper_sd: 18.2
+  validity_sd: 10.2
+  recommendation_cuts: {reject: 44.0, major: 84.8, minor: 99.5}   # indirect inference: quantiles of the composite simulation's validity at the live reject and minor shares
+  p_accept_above_minor_cut: 0.0    # 0 accept recommendations in 909 live reviews
+  confidence: {mean: 0.609, sd: 0.06}
+  p_flaw_found_given_noticed_major: 0.514
+  p_prefer_fresh_reviewers_round2: 0.0   # declared (kept)
+editor:
+  desk_reject_p: {scope_only: 0.0, contribution: 0.15, design: 0.2}   # scope_only: 0/202 live; others declared (kept)
+  desk_reject_null_extra: 0.0
+  # weights: ML over the live decisions given the live reviews; intercepts: indirect inference through the rule reviewers
+  w_mean_validity: 0.007
+  w_reject_votes: -1.149
+  w_major_votes: -0.5
+  w_accept_votes: 0.6             # declared (kept): no live accept recommendation
+  w_log_count_on_question: -0.14
+  w_contradiction: -0.695
+  intercept_round1: 0.287   # refit (tools/fastcal_refit.py): first fit 0.484; composite target 0.600 = live .541 + engine shortfall 0.059
+  intercept_round2: 0.12   # refit: first fit -0.073; composite target 0.295 = composite at the new i1 0.226 + engine shortfall 0.068
+  accept_cut_round1: 1.5   # refit: first fit 1.697, moved with intercept_round1 (0/231 live round-1 acceptances)
+  revise_band: 1.2                 # declared (kept)
+  merit_sd: 6                     # declared (kept)
+lab_head:
+  p_reuse_given_catalogue: 0.741
+  p_pool_given_two: 0.425
+  p_file_draft: {significant: 0.66, insignificant: 0.829}   # of the entries the head decided
+  stated_confidence: {significant: 53.7, insignificant: 58.0, sd: 14.4}
+  vote:
+    intercept: -4.477
+    b_significant: -0.81
+    b_log_n: 3.045
+    b_prior_endorsements: 0.079
+    b_same_theory: 0.514
+    b_reciprocity: 0.063
+    b_proposer_size: -0.016
+    p_challenge_base: 0.16
+    p_challenge_insignificant: 0.06
+    stated_probability: {endorse: 64.5, challenge: 27.8, abstain: 44.4, sd: 8.3}
+  p_offer_verify: 0.95              # kept: capacity-bound, not re-identified
+  response: {defend: 0.0, revise: 0.491, withdraw: 0.509}
+  p_request_n: 0.98               # fresh-data agenda items that name a dataset size
+  request_n_multiple: {1.48: 0.1, 2.47: 0.1, 3.52: 0.1, 4.45: 0.1, 6.22: 0.1, 7.41: 0.1, 10.39: 0.1, 12.77: 0.1, 14.49: 0.1, 26.81: 0.1}   # requested N / the question's median frame N (deciles)
+  stake: {"p_stake": 0.3, "amount_weights": {"5": 0.5, "10": 0.35, "20": 0.15}, "p_for_given_endorse_logit": 0.8}   # declared (kept): variant d not run
+  p_challenge_with_test: 0.1       # declared (kept): variant c not run
+verifier:
+  p_handle: VERIFIED
+  factor_tolerance: 2.0           # kept
+handbook:
+  w_B1: 0.19
+  w_B2: 0.03
+  w_B3: 0.78
+  confidence_scale: 0.764
+  p_no_evidence_when_uncovered: 0.836
+  p_contested_when_rules_disagree: 0.169
+# Tokens per call by role are tariffs (configs/tariffs.yaml), not rule-agent behaviour; not refitted here.
+fast_honours_deposit_n: true   # the fast analytic study keeps a requested deposit size and a verification draw's claim N

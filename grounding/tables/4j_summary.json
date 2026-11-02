@@ -1,0 +1,735 @@
+{
+ "wos_quality": [
+  {
+   "meta_journal": "AMJ",
+   "n": 1760,
+   "wos_any": 0.982,
+   "wos_dup_id": 0.423,
+   "wos_ok_strict": 0.001,
+   "wos_ok_lenient": 0.557,
+   "year_resolved": 1.0
+  },
+  {
+   "meta_journal": "ASQ",
+   "n": 470,
+   "wos_any": 1.0,
+   "wos_dup_id": 0.472,
+   "wos_ok_strict": 0.528,
+   "wos_ok_lenient": 0.528,
+   "year_resolved": 1.0
+  },
+  {
+   "meta_journal": "OS",
+   "n": 1905,
+   "wos_any": 0.781,
+   "wos_dup_id": 0.11,
+   "wos_ok_strict": 0.022,
+   "wos_ok_lenient": 0.671,
+   "year_resolved": 1.0
+  },
+  {
+   "meta_journal": "SMJ",
+   "n": 2597,
+   "wos_any": 0.998,
+   "wos_dup_id": 0.15,
+   "wos_ok_strict": 0.848,
+   "wos_ok_lenient": 0.848,
+   "year_resolved": 0.977
+  }
+ ],
+ "coverage": {
+  "SMJ": 2597,
+  "OS": 1905,
+  "AMJ": 1760,
+  "ASQ": 470
+ },
+ "yr_range": [
+  1998.0,
+  2025.0
+ ],
+ "yr_by_j": {
+  "AMJ": {
+   "min": 1999.0,
+   "max": 2025.0,
+   "<lambda_0>": 0
+  },
+  "ASQ": {
+   "min": 1999.0,
+   "max": 2025.0,
+   "<lambda_0>": 0
+  },
+  "OS": {
+   "min": 1999.0,
+   "max": 2025.0,
+   "<lambda_0>": 0
+  },
+  "SMJ": {
+   "min": 1998.0,
+   "max": 2025.0,
+   "<lambda_0>": 61
+  }
+ },
+ "theory_top": {
+  "rbv": {
+   "AMJ": 0.077,
+   "ASQ": 0.036,
+   "OS": 0.078,
+   "SMJ": 0.239,
+   "all4": 0.137
+  },
+  "org_learning": {
+   "AMJ": 0.095,
+   "ASQ": 0.079,
+   "OS": 0.156,
+   "SMJ": 0.118,
+   "all4": 0.12
+  },
+  "institutional": {
+   "AMJ": 0.115,
+   "ASQ": 0.168,
+   "OS": 0.117,
+   "SMJ": 0.075,
+   "all4": 0.104
+  },
+  "tce": {
+   "AMJ": 0.048,
+   "ASQ": 0.028,
+   "OS": 0.069,
+   "SMJ": 0.134,
+   "all4": 0.085
+  },
+  "agency": {
+   "AMJ": 0.068,
+   "ASQ": 0.038,
+   "OS": 0.063,
+   "SMJ": 0.117,
+   "all4": 0.083
+  },
+  "dynamic_capabilities": {
+   "AMJ": 0.032,
+   "ASQ": 0.023,
+   "OS": 0.068,
+   "SMJ": 0.133,
+   "all4": 0.08
+  },
+  "sensemaking": {
+   "AMJ": 0.112,
+   "ASQ": 0.109,
+   "OS": 0.092,
+   "SMJ": 0.032,
+   "all4": 0.075
+  },
+  "social_identity": {
+   "AMJ": 0.089,
+   "ASQ": 0.106,
+   "OS": 0.077,
+   "SMJ": 0.022,
+   "all4": 0.061
+  },
+  "social_network": {
+   "AMJ": 0.053,
+   "ASQ": 0.094,
+   "OS": 0.067,
+   "SMJ": 0.046,
+   "all4": 0.057
+  },
+  "upper_echelons": {
+   "AMJ": 0.062,
+   "ASQ": 0.036,
+   "OS": 0.028,
+   "SMJ": 0.066,
+   "all4": 0.052
+  },
+  "microfoundations": {
+   "AMJ": 0.031,
+   "ASQ": 0.034,
+   "OS": 0.06,
+   "SMJ": 0.053,
+   "all4": 0.048
+  },
+  "competitive_dynamics": {
+   "AMJ": 0.042,
+   "ASQ": 0.03,
+   "OS": 0.024,
+   "SMJ": 0.06,
+   "all4": 0.043
+  }
+ },
+ "design": {
+  "meth_is_quantitative": {
+   "AMJ": 0.526,
+   "ASQ": 0.383,
+   "OS": 0.424,
+   "SMJ": 0.522
+  },
+  "meth_is_qualitative": {
+   "AMJ": 0.34,
+   "ASQ": 0.455,
+   "OS": 0.374,
+   "SMJ": 0.29
+  },
+  "meth_is_mixed_methods": {
+   "AMJ": 0.289,
+   "ASQ": 0.411,
+   "OS": 0.298,
+   "SMJ": 0.244
+  },
+  "meth_is_conceptual": {
+   "AMJ": 0.05,
+   "ASQ": 0.038,
+   "OS": 0.043,
+   "SMJ": 0.049
+  },
+  "meth_is_simulation": {
+   "AMJ": 0.084,
+   "ASQ": 0.123,
+   "OS": 0.16,
+   "SMJ": 0.139
+  },
+  "meth_is_meta_analysis": {
+   "AMJ": 0.244,
+   "ASQ": 0.085,
+   "OS": 0.148,
+   "SMJ": 0.121
+  },
+  "meth_is_survey": {
+   "AMJ": 0.126,
+   "ASQ": 0.07,
+   "OS": 0.078,
+   "SMJ": 0.149
+  },
+  "meth_ols": {
+   "AMJ": 0.276,
+   "ASQ": 0.264,
+   "OS": 0.288,
+   "SMJ": 0.341
+  },
+  "meth_logit": {
+   "AMJ": 0.22,
+   "ASQ": 0.283,
+   "OS": 0.245,
+   "SMJ": 0.284
+  },
+  "meth_fixed_effects": {
+   "AMJ": 0.227,
+   "ASQ": 0.291,
+   "OS": 0.146,
+   "SMJ": 0.268
+  },
+  "meth_did": {
+   "AMJ": 0.891,
+   "ASQ": 0.894,
+   "OS": 0.766,
+   "SMJ": 0.653
+  },
+  "meth_iv": {
+   "AMJ": 0.177,
+   "ASQ": 0.166,
+   "OS": 0.163,
+   "SMJ": 0.206
+  },
+  "meth_psm": {
+   "AMJ": 0.036,
+   "ASQ": 0.057,
+   "OS": 0.051,
+   "SMJ": 0.062
+  },
+  "meth_heckman": {
+   "AMJ": 0.115,
+   "ASQ": 0.138,
+   "OS": 0.108,
+   "SMJ": 0.162
+  },
+  "meth_gmm": {
+   "AMJ": 0.017,
+   "ASQ": 0.011,
+   "OS": 0.01,
+   "SMJ": 0.03
+  },
+  "meth_sem": {
+   "AMJ": 0.156,
+   "ASQ": 0.047,
+   "OS": 0.069,
+   "SMJ": 0.072
+  },
+  "meth_hlm": {
+   "AMJ": 0.115,
+   "ASQ": 0.051,
+   "OS": 0.057,
+   "SMJ": 0.037
+  },
+  "meth_survival": {
+   "AMJ": 0.064,
+   "ASQ": 0.077,
+   "OS": 0.056,
+   "SMJ": 0.069
+  },
+  "meth_event_study": {
+   "AMJ": 0.079,
+   "ASQ": 0.098,
+   "OS": 0.103,
+   "SMJ": 0.115
+  },
+  "meth_panel": {
+   "AMJ": 0.137,
+   "ASQ": 0.121,
+   "OS": 0.142,
+   "SMJ": 0.192
+  },
+  "meth_is_longitudinal": {
+   "AMJ": 0.424,
+   "ASQ": 0.532,
+   "OS": 0.414,
+   "SMJ": 0.528
+  },
+  "meth_endogeneity_addressed": {
+   "AMJ": 0.366,
+   "ASQ": 0.455,
+   "OS": 0.429,
+   "SMJ": 0.511
+  },
+  "meth_causal_identification": {
+   "AMJ": 0.067,
+   "ASQ": 0.094,
+   "OS": 0.094,
+   "SMJ": 0.118
+  },
+  "meth_cmv_addressed": {
+   "AMJ": 0.202,
+   "ASQ": 0.062,
+   "OS": 0.102,
+   "SMJ": 0.082
+  },
+  "meth_preregistered": {
+   "AMJ": 0.071,
+   "ASQ": 0.023,
+   "OS": 0.066,
+   "SMJ": 0.083
+  },
+  "meth_power_analysis": {
+   "AMJ": 0.105,
+   "ASQ": 0.083,
+   "OS": 0.062,
+   "SMJ": 0.057
+  },
+  "meth_reports_effect_sizes": {
+   "AMJ": 0.235,
+   "ASQ": 0.219,
+   "OS": 0.183,
+   "SMJ": 0.22
+  },
+  "meth_multilevel": {
+   "AMJ": 0.115,
+   "ASQ": 0.051,
+   "OS": 0.057,
+   "SMJ": 0.037
+  },
+  "hyp_has_correlation_table": {
+   "AMJ": 0.021,
+   "ASQ": 0.102,
+   "OS": 0.066,
+   "SMJ": 0.13
+  },
+  "hyp_has_regression_table": {
+   "AMJ": 0.09,
+   "ASQ": 0.281,
+   "OS": 0.141,
+   "SMJ": 0.267
+  },
+  "meth_datasource_compustat": {
+   "AMJ": 0.114,
+   "ASQ": 0.089,
+   "OS": 0.104,
+   "SMJ": 0.244
+  },
+  "meth_datasource_crsp": {
+   "AMJ": 0.036,
+   "ASQ": 0.034,
+   "OS": 0.024,
+   "SMJ": 0.079
+  },
+  "meth_datasource_execucomp": {
+   "AMJ": 0.032,
+   "ASQ": 0.021,
+   "OS": 0.024,
+   "SMJ": 0.05
+  },
+  "meth_datasource_sdc": {
+   "AMJ": 0.047,
+   "ASQ": 0.038,
+   "OS": 0.036,
+   "SMJ": 0.079
+  },
+  "meth_datasource_patent": {
+   "AMJ": 0.037,
+   "ASQ": 0.036,
+   "OS": 0.064,
+   "SMJ": 0.099
+  },
+  "meth_datasource_survey_primary": {
+   "AMJ": 0.595,
+   "ASQ": 0.472,
+   "OS": 0.5,
+   "SMJ": 0.381
+  },
+  "meth_datasource_interview": {
+   "AMJ": 0.272,
+   "ASQ": 0.336,
+   "OS": 0.278,
+   "SMJ": 0.127
+  },
+  "meth_datasource_case_study_data": {
+   "AMJ": 0.377,
+   "ASQ": 0.479,
+   "OS": 0.455,
+   "SMJ": 0.376
+  }
+ },
+ "cit": {
+  "AMJ": {
+   "n": 970.0,
+   "p25": 6.14,
+   "p50": 10.25,
+   "p75": 16.22,
+   "p90": 26.58,
+   "p99": 67.91,
+   "gini_cites": 0.54
+  },
+  "ASQ": {
+   "n": 246.0,
+   "p25": 4.86,
+   "p50": 8.47,
+   "p75": 14.0,
+   "p90": 23.91,
+   "p99": 59.83,
+   "gini_cites": 0.57
+  },
+  "OS": {
+   "n": 1275.0,
+   "p25": 2.86,
+   "p50": 5.27,
+   "p75": 8.86,
+   "p90": 14.04,
+   "p99": 51.4,
+   "gini_cites": 0.62
+  },
+  "SMJ": {
+   "n": 2047.0,
+   "p25": 4.0,
+   "p50": 7.42,
+   "p75": 13.81,
+   "p90": 25.09,
+   "p99": 71.06,
+   "gini_cites": 0.62
+  }
+ },
+ "cit_hc": 120,
+ "review": [
+  {
+   "journal": "AMJ",
+   "n": 0,
+   "p25": NaN,
+   "p50": NaN,
+   "p75": NaN,
+   "p90": NaN
+  },
+  {
+   "journal": "ASQ",
+   "n": 0,
+   "p25": NaN,
+   "p50": NaN,
+   "p75": NaN,
+   "p90": NaN
+  },
+  {
+   "journal": "OS",
+   "n": 746,
+   "p25": 16.9,
+   "p50": 23.9,
+   "p75": 32.4,
+   "p90": 42.3
+  },
+  {
+   "journal": "SMJ",
+   "n": 773,
+   "p25": 16.1,
+   "p50": 22.1,
+   "p75": 30.5,
+   "p90": 43.5
+  }
+ ],
+ "team": {
+  "AMJ": {
+   "mean": 2.948,
+   "<lambda_0>": 0.072
+  },
+  "ASQ": {
+   "mean": 2.224,
+   "<lambda_0>": 0.28
+  },
+  "OS": {
+   "mean": 2.512,
+   "<lambda_0>": 0.143
+  },
+  "SMJ": {
+   "mean": 2.49,
+   "<lambda_0>": 0.145
+  }
+ },
+ "lotka": {
+  "n_author_names": 6058,
+  "share_1paper": 0.6517002310993727,
+  "share_5plus": 0.07758336084516342,
+  "top1pct_share_of_authorships": 0.07346032288374477,
+  "gini": 0.3866155959491043
+ },
+ "authors_multi_journal_share_among_2plus": 0.6450236966824645,
+ "matthew": {
+  "n_authors": 532,
+  "spearman_early_cites_late_cites": 0.5838485577687939,
+  "spearman_early_cites_late_n": 0.48097236819355116,
+  "median_within_author_gini": 0.8150376897972085,
+  "gini_total_cites_across_authors": 0.7009302196222911,
+  "n_high_match_authors": 666
+ },
+ "matthew_article": {
+  "auth_first_prior_pubs_total": {
+   "n": 452,
+   "spearman_with_cites_per_year": 0.042700891120278195
+  },
+  "auth_first_career_years": {
+   "n": 452,
+   "spearman_with_cites_per_year": 0.01762592578700651
+  },
+  "auth_team_top7_total": {
+   "n": 481,
+   "spearman_with_cites_per_year": 0.1016771996265818
+  }
+ },
+ "author_coverage_by_j": {
+  "AMJ": 0.001,
+  "ASQ": 0.555,
+  "OS": 0.155,
+  "SMJ": 0.008
+ },
+ "ssrn": {
+  "n_records": 55276,
+  "pairs_matched_to_corpus": 8,
+  "pairs_journals": {
+   "SMJ": 8
+  },
+  "tiers": [
+   {
+    "relevance_tier": "adjacent",
+    "n": 38605,
+    "share_published_elsewhere": 0.021,
+    "median_cites": 1.0,
+    "median_authors": 2.0
+   },
+   {
+    "relevance_tier": "core",
+    "n": 1157,
+    "share_published_elsewhere": 0.013,
+    "median_cites": 1.0,
+    "median_authors": 3.0
+   },
+   {
+    "relevance_tier": "peripheral",
+    "n": 15514,
+    "share_published_elsewhere": 0.014,
+    "median_cites": 0.0,
+    "median_authors": 2.0
+   }
+  ]
+ },
+ "hot_nonzero": {
+  "AMJ": 0.0,
+  "ASQ": 0.0,
+  "OS": 0.0,
+  "SMJ": 0.0
+ },
+ "relcache": {
+  "files": 2773,
+  "extraction_json": 0,
+  "candidates_json": 2773,
+  "rel_relationships_csv_exists": false,
+  "rel_variables_csv_exists": false
+ },
+ "corr4j": [
+  {
+   "journal": "AMJ",
+   "tables": 1231,
+   "parsed": 1158,
+   "papers": 1158,
+   "median_k": 13.0,
+   "median_fill": 1.0,
+   "share_out_of_range": 0.0,
+   "diag_is_one": 0.997,
+   "median_N": 493.0,
+   "cells": 107321.0,
+   "abs_r_p25": 0.03,
+   "abs_r_med": 0.08,
+   "abs_r_p75": 0.188,
+   "abs_r_p90": 0.35,
+   "share_abs_gt_.5": 0.045
+  },
+  {
+   "journal": "ASQ",
+   "tables": 288,
+   "parsed": 245,
+   "papers": 245,
+   "median_k": 16.0,
+   "median_fill": 0.667,
+   "share_out_of_range": 0.0,
+   "diag_is_one": 1.0,
+   "median_N": 951.0,
+   "cells": 22332.0,
+   "abs_r_p25": 0.03,
+   "abs_r_med": 0.07,
+   "abs_r_p75": 0.16,
+   "abs_r_p90": 0.33,
+   "share_abs_gt_.5": 0.046
+  },
+  {
+   "journal": "OS",
+   "tables": 826,
+   "parsed": 649,
+   "papers": 649,
+   "median_k": 14.0,
+   "median_fill": 1.0,
+   "share_out_of_range": 0.001,
+   "diag_is_one": 0.997,
+   "median_N": 1398.0,
+   "cells": 67306.0,
+   "abs_r_p25": 0.009,
+   "abs_r_med": 0.03,
+   "abs_r_p75": 0.1,
+   "abs_r_p90": 0.25,
+   "share_abs_gt_.5": 0.035
+  },
+  {
+   "journal": "SMJ",
+   "tables": 908,
+   "parsed": 864,
+   "papers": 864,
+   "median_k": 13.0,
+   "median_fill": 0.871,
+   "share_out_of_range": 0.0,
+   "diag_is_one": 1.0,
+   "median_N": 417.0,
+   "cells": 68431.0,
+   "abs_r_p25": 0.03,
+   "abs_r_med": 0.09,
+   "abs_r_p75": 0.2,
+   "abs_r_p90": 0.41,
+   "share_abs_gt_.5": 0.074
+  }
+ ],
+ "corr4j_methods": {
+  "llm": 1943,
+  "null": 1310
+ },
+ "crosswalk_n": 2333,
+ "crosswalk": [
+  {
+   "field": "theory:rbv",
+   "n": 2333,
+   "deep_share": 0.28,
+   "keyword_share": 0.24,
+   "agreement": 0.75,
+   "kappa": 0.351,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "theory:agency",
+   "n": 2333,
+   "deep_share": 0.137,
+   "keyword_share": 0.118,
+   "agreement": 0.9,
+   "kappa": 0.552,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "theory:tce",
+   "n": 2333,
+   "deep_share": 0.131,
+   "keyword_share": 0.132,
+   "agreement": 0.873,
+   "kappa": 0.442,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "theory:institutional",
+   "n": 2333,
+   "deep_share": 0.101,
+   "keyword_share": 0.078,
+   "agreement": 0.902,
+   "kappa": 0.398,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "theory:upper_echelons",
+   "n": 2333,
+   "deep_share": 0.073,
+   "keyword_share": 0.069,
+   "agreement": 0.949,
+   "kappa": 0.609,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "theory:social_network",
+   "n": 2333,
+   "deep_share": 0.084,
+   "keyword_share": 0.05,
+   "agreement": 0.917,
+   "kappa": 0.337,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "theory:rdt",
+   "n": 2333,
+   "deep_share": 0.06,
+   "keyword_share": 0.047,
+   "agreement": 0.955,
+   "kappa": 0.549,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "quantitative",
+   "n": 2333,
+   "deep_share": 0.79,
+   "keyword_share": 0.535,
+   "agreement": 0.582,
+   "kappa": 0.128,
+   "spearman": NaN,
+   "exact_match": NaN
+  },
+  {
+   "field": "hypotheses_total~hyp_hypothesis_count",
+   "n": 1784,
+   "deep_share": NaN,
+   "keyword_share": NaN,
+   "agreement": NaN,
+   "kappa": NaN,
+   "spearman": 0.14,
+   "exact_match": 0.146
+  },
+  {
+   "field": "sample_size_final~meth_sample_size",
+   "n": 1365,
+   "deep_share": NaN,
+   "keyword_share": NaN,
+   "agreement": NaN,
+   "kappa": NaN,
+   "spearman": 0.717,
+   "exact_match": 0.481
+  }
+ ]
+}

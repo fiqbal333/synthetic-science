@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "abstracts.json (legacy abstracts)",
+  "type": "object", "required": ["nonce", "abstracts"],
+  "properties": {"nonce": {"type": "string"},
+                 "abstracts": {"type": "array", "items": {"type": "object", "required": ["paper_id", "abstract"],
+                               "properties": {"paper_id": {"type": "string"}, "abstract": {"type": "string"}}}}}
+}

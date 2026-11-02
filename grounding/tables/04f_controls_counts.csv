@@ -1,0 +1,4 @@
+measure,n,mean,sd,p01,p05,p10,p25,p50,p75,p90,p95,p99,min,max
+controls per focal model (relationship rows),10606,7.925325287573072,13.502876071403843,0.0,0.0,0.0,4.0,7.0,11.0,15.0,18.0,22.0,0.0,908.0
+controls per paper (median over its models),1860,8.34274193548387,11.748341808215844,0.0,0.0,0.0,4.0,8.0,11.0,15.5,18.0,24.0,0.0,456.0
+control variables listed per paper (rep_variables),1774,9.081172491544532,5.435895774008815,1.0,2.0,3.0,5.0,8.0,12.0,16.0,19.0,25.0,1.0,40.0

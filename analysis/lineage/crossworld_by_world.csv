@@ -1,0 +1,67 @@
+world,metric,n_seeds,mean,min,max,per_seed
+S0-150,run_certified_units,3,14.0,8.0,18.0,s1=16.0; s2=18.0; s3=8.0
+S0-150,I1_share_units_2plus_independent_data_groups,3,0.0,0.0,0.0,s1=0.0; s2=0.0; s3=0.0
+S0-150,I1_mean_data_groups_per_unit,3,1.0,1.0,1.0,s1=1.0; s2=1.0; s3=1.0
+S0-150,I2_share_units_corroborated_at_cert,3,0.3587962962962963,0.125,0.5625,s1=0.562; s2=0.389; s3=0.125
+S0-150,legacy_library_true_units,3,63.666666666666664,52.0,73.0,s1=73.0; s2=52.0; s3=66.0
+S0-150,B_legacy_library_share_true_built_on,3,0.42873944928739444,0.3013698630136986,0.5,s1=0.301; s2=0.5; s3=0.485
+S0-150,B_legacy_library_mean_refs_per_true_unit,3,1.3474071590509948,0.9041095890410958,1.8653846153846154,s1=0.904; s2=1.865; s3=1.273
+S0-150,B_legacy_library_share_true_affirmed,3,0.21699609370842246,0.15151515151515152,0.3076923076923077,s1=0.192; s2=0.308; s3=0.152
+S0-150,legacy_library_false_units,3,36.333333333333336,27.0,48.0,s1=27.0; s2=48.0; s3=34.0
+S0-150,B_legacy_library_share_false_built_on,3,0.4571078431372549,0.3333333333333333,0.5588235294117647,s1=0.333; s2=0.479; s3=0.559
+S0-150,B_legacy_library_mean_refs_per_false_unit,3,1.3541212781408858,0.8148148148148148,2.0416666666666665,s1=0.815; s2=2.042; s3=1.206
+S0-150,B_legacy_library_share_false_affirmed,3,0.06985294117647059,0.0,0.14705882352941177,s1=0.0; s2=0.062; s3=0.147
+S0-150,B_legacy_library_false_to_true_ratio_built_on,3,1.0723224896019012,0.9583333333333334,1.1525735294117647,s1=1.106; s2=0.958; s3=1.153
+S0-150,run_certified_true_units,3,10.0,7.0,13.0,s1=10.0; s2=13.0; s3=7.0
+S0-150,B_run_certified_share_true_built_on,3,0.7717948717948717,0.6153846153846154,1.0,s1=0.7; s2=0.615; s3=1.0
+S0-150,B_run_certified_mean_refs_per_true_unit,3,3.393772893772894,2.5384615384615383,4.142857142857143,s1=3.5; s2=2.538; s3=4.143
+S0-150,B_run_certified_share_true_affirmed,3,0.6509157509157509,0.5384615384615384,0.7142857142857143,s1=0.7; s2=0.538; s3=0.714
+S0-150,run_certified_false_units,3,3.6666666666666665,0.0,6.0,s1=6.0; s2=5.0; s3=0.0
+S0-150,B_run_certified_share_false_built_on,2,0.7166666666666667,0.6,0.8333333333333334,s1=0.833; s2=0.6; s3=n/a
+S0-150,B_run_certified_mean_refs_per_false_unit,2,2.6333333333333333,1.6,3.6666666666666665,s1=3.667; s2=1.6; s3=n/a
+S0-150,B_run_certified_share_false_affirmed,2,0.45,0.4,0.5,s1=0.5; s2=0.4; s3=n/a
+S0-150,B_run_certified_false_to_true_ratio_built_on,2,1.0827380952380952,0.9749999999999999,1.1904761904761907,s1=1.19; s2=0.975; s3=n/a
+S0P-150,run_certified_units,2,12.5,12.0,13.0,s1=12.0; s2=13.0
+S0P-150,I1_share_units_2plus_independent_data_groups,2,0.0,0.0,0.0,s1=0.0; s2=0.0
+S0P-150,I1_mean_data_groups_per_unit,2,1.0,1.0,1.0,s1=1.0; s2=1.0
+S0P-150,I2_share_units_corroborated_at_cert,2,0.5608974358974359,0.5384615384615384,0.5833333333333334,s1=0.583; s2=0.538
+S0P-150,legacy_library_true_units,2,62.5,52.0,73.0,s1=73.0; s2=52.0
+S0P-150,B_legacy_library_share_true_built_on,2,0.4212328767123288,0.3424657534246575,0.5,s1=0.342; s2=0.5
+S0P-150,B_legacy_library_mean_refs_per_true_unit,2,1.4765542676501582,1.0684931506849316,1.8846153846153846,s1=1.068; s2=1.885
+S0P-150,B_legacy_library_share_true_affirmed,2,0.244204425711275,0.2191780821917808,0.2692307692307692,s1=0.219; s2=0.269
+S0P-150,legacy_library_false_units,2,37.5,27.0,48.0,s1=27.0; s2=48.0
+S0P-150,B_legacy_library_share_false_built_on,2,0.4594907407407407,0.4375,0.48148148148148145,s1=0.481; s2=0.438
+S0P-150,B_legacy_library_mean_refs_per_false_unit,2,1.4641203703703705,1.0740740740740742,1.8541666666666667,s1=1.074; s2=1.854
+S0P-150,B_legacy_library_share_false_affirmed,2,0.04976851851851852,0.037037037037037035,0.0625,s1=0.037; s2=0.062
+S0P-150,B_legacy_library_false_to_true_ratio_built_on,2,1.140462962962963,0.875,1.405925925925926,s1=1.406; s2=0.875
+S0P-150,run_certified_true_units,2,8.0,5.0,11.0,s1=5.0; s2=11.0
+S0P-150,B_run_certified_share_true_built_on,2,0.4636363636363636,0.2,0.7272727272727273,s1=0.2; s2=0.727
+S0P-150,B_run_certified_mean_refs_per_true_unit,2,1.8363636363636364,0.4,3.272727272727273,s1=0.4; s2=3.273
+S0P-150,B_run_certified_share_true_affirmed,2,0.4181818181818182,0.2,0.6363636363636364,s1=0.2; s2=0.636
+S0P-150,run_certified_false_units,2,4.5,2.0,7.0,s1=7.0; s2=2.0
+S0P-150,B_run_certified_share_false_built_on,2,0.7142857142857143,0.42857142857142855,1.0,s1=0.429; s2=1.0
+S0P-150,B_run_certified_mean_refs_per_false_unit,2,2.7142857142857144,2.0,3.4285714285714284,s1=3.429; s2=2.0
+S0P-150,B_run_certified_share_false_affirmed,2,0.4642857142857143,0.42857142857142855,0.5,s1=0.429; s2=0.5
+S0P-150,B_run_certified_false_to_true_ratio_built_on,2,1.7589285714285714,1.375,2.142857142857143,s1=2.143; s2=1.375
+R-b-150,run_certified_units,3,13.666666666666666,5.0,25.0,s1=11.0; s2=5.0; s3=25.0
+R-b-150,I1_share_units_2plus_independent_data_groups,3,1.0,1.0,1.0,s1=1.0; s2=1.0; s3=1.0
+R-b-150,I1_mean_data_groups_per_unit,3,2.869090909090909,2.727272727272727,3.08,s1=2.727; s2=2.8; s3=3.08
+R-b-150,I2_share_units_corroborated_at_cert,3,0.23393939393939397,0.18181818181818182,0.32,s1=0.182; s2=0.2; s3=0.32
+R-b-150,legacy_library_true_units,3,63.666666666666664,52.0,73.0,s1=73.0; s2=52.0; s3=66.0
+R-b-150,B_legacy_library_share_true_built_on,3,0.13901129312088215,0.06060606060606061,0.2602739726027397,s1=0.26; s2=0.096; s3=0.061
+R-b-150,B_legacy_library_mean_refs_per_true_unit,3,0.69913838064523,0.2878787878787879,1.3287671232876712,s1=1.329; s2=0.481; s3=0.288
+R-b-150,B_legacy_library_share_true_affirmed,3,0.12803482666496366,0.06060606060606061,0.2465753424657534,s1=0.247; s2=0.077; s3=0.061
+R-b-150,legacy_library_false_units,3,36.333333333333336,27.0,48.0,s1=27.0; s2=48.0; s3=34.0
+R-b-150,B_legacy_library_share_false_built_on,3,0.14388162672476398,0.037037037037037035,0.35294117647058826,s1=0.037; s2=0.042; s3=0.353
+R-b-150,B_legacy_library_mean_refs_per_false_unit,3,1.017883079157589,0.2962962962962963,2.3823529411764706,s1=0.296; s2=0.375; s3=2.382
+R-b-150,B_legacy_library_share_false_affirmed,3,0.0755718954248366,0.0,0.20588235294117646,s1=0.0; s2=0.021; s3=0.206
+R-b-150,B_legacy_library_false_to_true_ratio_built_on,3,2.1330543133432713,0.14230019493177387,5.8235294117647065,s1=0.142; s2=0.433; s3=5.824
+R-b-150,run_certified_true_units,3,8.666666666666666,4.0,15.0,s1=7.0; s2=4.0; s3=15.0
+R-b-150,B_run_certified_share_true_built_on,3,0.7325396825396826,0.7142857142857143,0.75,s1=0.714; s2=0.75; s3=0.733
+R-b-150,B_run_certified_mean_refs_per_true_unit,3,3.4134920634920634,1.8571428571428572,4.25,s1=1.857; s2=4.25; s3=4.133
+R-b-150,B_run_certified_share_true_affirmed,3,0.9079365079365079,0.8571428571428571,1.0,s1=0.857; s2=1.0; s3=0.867
+R-b-150,run_certified_false_units,3,4.0,1.0,7.0,s1=4.0; s2=1.0; s3=7.0
+R-b-150,B_run_certified_share_false_built_on,3,0.9166666666666666,0.75,1.0,s1=0.75; s2=1.0; s3=1.0
+R-b-150,B_run_certified_mean_refs_per_false_unit,3,6.80952380952381,6.0,8.0,s1=6.0; s2=8.0; s3=6.429
+R-b-150,B_run_certified_share_false_affirmed,3,0.9166666666666666,0.75,1.0,s1=0.75; s2=1.0; s3=1.0
+R-b-150,B_run_certified_false_to_true_ratio_built_on,3,1.248989898989899,1.05,1.3636363636363638,s1=1.05; s2=1.333; s3=1.364
